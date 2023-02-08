@@ -1,0 +1,23 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{html,js}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        yellow: '#FFAB00',
+        grey: {
+          100: '#F9FAFB',
+          200: '#C0C8CF',
+          300: '#919EAB',
+          400: '#637381',
+          500: '#45515B',
+        },
+      },
+    },
+    fontFamily: {
+      noto: ['Noto Sans KR', 'sans-serif'],
+    },
+  },
+  plugins: [],
+};
