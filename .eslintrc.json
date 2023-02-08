@@ -11,8 +11,15 @@
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/no-unresolved": "off",
-    "global-require": 0
+    "global-require": 0,
+    "no-unused-vars": "off",
+    "no-console": "off"
   }
 }
