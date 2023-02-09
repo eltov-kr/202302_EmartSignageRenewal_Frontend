@@ -15,40 +15,30 @@
   </head>
   <body>
     <section class="font-noto">
-      <aside class="fixed top-0 left-0 w-64 h-full" aria-label="Sidenav">
-        <div
-          class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700"
-        >
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                  <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-                </svg>
-                <span class="ml-3">대시보드</span>
-              </a>
-            </li>
+      <!-- <aside
+        class="fixed top-0 left-0 w-64 h-full bg-white"
+        aria-label="Sidenav"
+      >
+        <div class="overflow-y-auto px-3 h-full border-r border-gray-200">
+          <a href="index.html">
+            <img
+              src="/images/logo_emart.png"
+              class="pt-[35px] pl-2 pb-10"
+              alt="Emart Logo"
+            />
+          </a>
 
+          <ul class="space-y-2">
             <li>
               <button
                 type="button"
-                class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                 aria-controls="dropdown-pages"
                 data-collapse-toggle="dropdown-pages"
               >
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,21 +66,18 @@
                   ></path>
                 </svg>
               </button>
-              <ul
-                id="dropdown-pages"
-                class="hidden py-2 space-y-2"
-              >
+              <ul id="dropdown-pages" class="hidden py-2 space-y-2">
                 <li>
                   <a
-                    href="#"
-                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    href="/src/1-dashboard.html"
+                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                     >디바이스관리</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                     >매체유형관리</a
                   >
                 </li>
@@ -100,11 +87,11 @@
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 group"
               >
                 <svg
                   aria-hidden="true"
-                  class="w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  class="w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,13 +106,13 @@
             <li>
               <button
                 type="button"
-                class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                 aria-controls="dropdown-sales"
                 data-collapse-toggle="dropdown-sales"
               >
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +124,7 @@
                   ></path>
                 </svg>
                 <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                  >콘텐츠계약관리</span
+                  >광고주계약관리</span
                 >
                 <svg
                   aria-hidden="true"
@@ -157,14 +144,14 @@
                 <li>
                   <a
                     href="#"
-                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                     >콘텐츠등록</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100"
                     >광고주등록</a
                   >
                 </li>
@@ -174,12 +161,183 @@
         </div>
 
         <div
-          class="hidden absolute bottom-0 left-0  p-4 space-x-4 w-full lg:flex z-20"
+          class="hidden absolute bottom-0 left-0 p-4 space-x-4 w-full lg:flex z-20"
         >
-        <img src="../images/logo.png"/>
+          <img src="../images/logo.png" />
+        </div>
+      </aside> -->
+
+      <nav class="fixed top-0 text-sm w-full py-2.5 px-8">
+        <div class="flex justify-end items-center space-x-3">
+          <div class="flex items-center gap-2">
+            <strong>강변점</strong>/
+            <strong>점포 관리자</strong>
+          </div>
+
+          <div
+            class="flex justify-center items-center gap-0.5 border-grey-200 border-2 py-1 px-2"
+          >
+            <span class="text-red">신규 가입 요청자</span>
+            <span
+              class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-xs"
+              >5</span
+            >
+          </div>
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+            >
+              <g id="top_menu_btn" transform="translate(-0.447)">
+                <circle
+                  id="타원"
+                  cx="17.5"
+                  cy="17.5"
+                  r="17.5"
+                  transform="translate(0.447)"
+                  fill="#dce0e4"
+                />
+                <line
+                  id="선"
+                  x2="12"
+                  transform="translate(11.947 12.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+                <line
+                  id="선-2"
+                  data-name="선"
+                  x2="12"
+                  transform="translate(11.947 17.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+                <line
+                  id="선-3"
+                  data-name="선"
+                  x2="12"
+                  transform="translate(11.947 22.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >사용자 정보</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >로그아웃</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </aside>
+      </nav>
+
+      <header class="pl-72 fixed top-16">
+        <h1 class="font-bold text-lg">대시보드</h1>
+      </header>
+
+      <main
+        class="pl-72 pr-8 fixed top-28 w-full grid grid-rows-6 grid-flow-col gap-4 h-[80%]"
+      >
+        <article
+          class="row-span-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+        >
+          <h5 class="font-medium text-gray-700">디바이스 수량</h5>
+          <aside>
+            <div class="font-normal text-sm py-3">
+              <h5 class="font-medium text-2xl inline-block">400</h5>
+              대 /
+              <span>558</span>대
+            </div>
+          </aside>
+        </article>
+        <article
+          class="row-span-5 row-start-2 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+        >
+          <h5 class="font-medium text-gray-700">전국분포도</h5>
+        </article>
+        <article
+          class="row-span-2 row-start-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+        >
+          <aside class="grid grid-cols-3 gap-2 h-full">
+            <ul
+              class="col-span-2 flex flex-col justify-between border-r-2 border-dashed pr-6"
+            >
+              <li>
+                <h5 class="font-medium text-gray-700">
+                  재생 비중<span class="text-gray-400 font-normal text-sm">
+                    (일 평균)</span
+                  >
+                </h5>
+              </li>
+              <li>
+                <h5 class="font-normal text-gray-700 text-sm">
+                  최대 재생 비중<span class="text-gray-400 font-normal text-sm">
+                    (죽전점)</span
+                  >
+                </h5>
+              </li>
+              <li>
+                <h5 class="font-normal text-gray-700 text-sm">
+                  최소 재생 비중<span class="text-gray-400 font-normal text-sm">
+                    (화정점)</span
+                  >
+                </h5>
+              </li>
+            </ul>
+            <ul class="flex flex-col justify-between gap-4 my-10 mx-4">
+              <li class="flex justify-between">
+                <span>편성횟수</span>
+                <span
+                  ><h5 class="font-medium text-2xl inline-block">7</h5>
+                  건</span
+                >
+              </li>
+              <li class="flex justify-between">
+                <span>전월대비</span>
+                <span
+                  ><h5 class="font-medium text-2xl inline-block">12</h5>
+                  %</span
+                >
+              </li>
+            </ul>
+          </aside>
+        </article>
+        <article
+          class="row-span-2 row-start-3 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+        >
+          <h5 class="font-medium text-gray-700">송출률 (%)</h5>
+        </article>
+        <article
+          class="row-span-2 row-start-5 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+        >
+          <h5 class="font-medium text-gray-700">영업률 (%)</h5>
+        </article>
+      </main>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
