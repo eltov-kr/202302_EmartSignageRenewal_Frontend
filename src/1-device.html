@@ -26,15 +26,15 @@
               </a>
             </li>
 
-            <li>
+            <li class="bg-gray-100">
               <button
                 type="button"
-                class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                class="flex items-center p-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 border-r-2 border-yellow"
                 aria-controls="dropdown-pages"
                 data-collapse-toggle="dropdown-pages"
               >
-                <img src="../images/menu_icon_device.png" />
-                <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                <img src="../images/menu_icon_device_o.png" />
+                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
                   >디바이스관리</span
                 >
                 <svg
@@ -51,13 +51,13 @@
                   ></path>
                 </svg>
               </button>
-              <ul id="dropdown-pages" class="hidden py-2 space-y-2">
+              <ul id="dropdown-pages" class="py-2 space-y-2">
                 <li>
                   <a
                     href="./1-device.html"
-                    class="flex gap-2 items-center p-2 pl-11 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    class="font-bold flex gap-2 items-center p-2 pl-11 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                     ><span
-                      class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                      class="w-1 h-1 border-2 rounded-full border-yellow flex justify-center"
                     ></span
                     >디바이스관리</a
                   >
@@ -87,7 +87,7 @@
             <li>
               <button
                 type="button"
-                class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                class="flex items-center p-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 aria-controls="dropdown-ad"
                 data-collapse-toggle="dropdown-ad"
               >
@@ -231,88 +231,19 @@
           </div>
         </nav>
 
-        <header><h1 class="font-bold text-xl my-4">대시보드</h1></header>
+        <header>
+          <h1 class="font-bold text-xl my-4">디바이스관리</h1>
+          <div class="flex gap-3 items-center font-bold text-sm">
+            <h2 class="text-gray-400">디바이스관리</h2>
+            <span
+              class="w-1 h-1 border-2 rounded-full border-yellow flex justify-center"
+            >
+            </span>
+            <h3>디바이스관리</h3>
+          </div>
+        </header>
 
-        <main class="w-full h-[80%] grid grid-rows-6 grid-flow-col gap-4">
-          <article
-            class="row-span-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
-          >
-            <h5 class="font-medium text-gray-700">디바이스 수량</h5>
-            <aside>
-              <div class="font-normal text-sm py-3">
-                <h5 class="font-medium text-2xl inline-block">400</h5>
-                대 /
-                <span>558</span>대
-              </div>
-            </aside>
-          </article>
-          <article
-            class="row-span-5 row-start-2 block p-6 bg-white border border-gray-200 rounded-sm shadow"
-          >
-            <h5 class="font-medium text-gray-700">전국분포도</h5>
-          </article>
-          <article
-            class="row-span-2 row-start-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
-          >
-            <aside class="grid grid-cols-3 gap-2 h-full">
-              <ul
-                class="col-span-2 flex flex-col justify-between border-r-2 border-dashed pr-6"
-              >
-                <li>
-                  <h5 class="font-medium text-gray-700">
-                    재생 비중<span class="text-gray-400 font-normal text-sm">
-                      (일 평균)</span
-                    >
-                  </h5>
-                </li>
-                <li>
-                  <h5 class="font-normal text-gray-700 text-sm">
-                    최대 재생 비중<span
-                      class="text-gray-400 font-normal text-sm"
-                    >
-                      (죽전점)</span
-                    >
-                  </h5>
-                </li>
-                <li>
-                  <h5 class="font-normal text-gray-700 text-sm">
-                    최소 재생 비중<span
-                      class="text-gray-400 font-normal text-sm"
-                    >
-                      (화정점)</span
-                    >
-                  </h5>
-                </li>
-              </ul>
-              <ul class="flex flex-col justify-between gap-4 my-10 mx-4">
-                <li class="flex justify-between">
-                  <span>편성횟수</span>
-                  <span
-                    ><h5 class="font-medium text-2xl inline-block">7</h5>
-                    건</span
-                  >
-                </li>
-                <li class="flex justify-between">
-                  <span>전월대비</span>
-                  <span
-                    ><h5 class="font-medium text-2xl inline-block">12</h5>
-                    %</span
-                  >
-                </li>
-              </ul>
-            </aside>
-          </article>
-          <article
-            class="row-span-2 row-start-3 block p-6 bg-white border border-gray-200 rounded-sm shadow"
-          >
-            <h5 class="font-medium text-gray-700">송출률 (%)</h5>
-          </article>
-          <article
-            class="row-span-2 row-start-5 block p-6 bg-white border border-gray-200 rounded-sm shadow"
-          >
-            <h5 class="font-medium text-gray-700">영업률 (%)</h5>
-          </article>
-        </main>
+        <main class="w-full h-[80%]">main contents</main>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
