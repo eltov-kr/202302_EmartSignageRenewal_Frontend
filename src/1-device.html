@@ -284,7 +284,7 @@
                 >
                   <a
                     href="#tabs-store"
-                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent active"
+                    class="nav-link block font-medium text-sm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent active"
                     id="tabs-store-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#tabs-store"
@@ -300,7 +300,7 @@
                 >
                   <a
                     href="#tabs-media"
-                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent"
+                    class="nav-link block font-medium text-sm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent"
                     id="tabs-media-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#tabs-media"
@@ -335,7 +335,7 @@
                   <div class="flex flex-col px-2 pb-1 space-y-1 h-full">
                     <div class="dropdown relative">
                       <a
-                        class="dropdown-toggle px-2 py-1 font-medium leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap border-2"
+                        class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap border-2"
                         href="#"
                         type="button"
                         id="dropdownMenuButton2"
@@ -385,26 +385,27 @@
                       </ul>
                     </div>
 
-                    <div
-                      class="bg-white w-full text-gray-900 overflow-y-auto top-0"
-                    >
+                    <div class="bg-white w-full text-gray-900 overflow-y-auto">
                       <button
                         type="button"
-                        class="text-left px-6 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
                       >
-                        1. 가든5점
+                        <span>1. 가든5점</span>
+                        <span>5</span>
                       </button>
                       <button
                         type="button"
-                        class="text-left px-6 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
                       >
-                        2. 강릉점
+                        <span>2. 강릉점</span>
+                        <span>5</span>
                       </button>
                       <button
                         type="button"
-                        class="text-left px-6 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
                       >
-                        3. 검단점
+                        <span>3. 검단점</span>
+                        <span>5 </span>
                       </button>
                     </div>
                   </div>
@@ -416,7 +417,34 @@
                   role="tabpanel"
                   aria-labelledby="tabs-media-tab"
                 >
-                  Tab 2 content
+                  <div class="flex flex-col px-2 pb-1 space-y-1 h-full">
+                    <div class="bg-white w-full text-gray-900 overflow-y-auto">
+                      <button
+                        type="button"
+                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                      >
+                        <span>매장입구 스크린</span>
+                        <span>3840 x 2160</span>
+                        <span>5</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                      >
+                        <span>포스 스크린-1</span>
+                        <span>3840 x 2160</span>
+                        <span>5</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-grey-100 text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                      >
+                        <span>포스 스크린-2</span>
+                        <span>3840 x 2160</span>
+                        <span>5</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
