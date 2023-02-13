@@ -1,0 +1,17 @@
+tr {
+  border: none !important;
+}
+td {
+  border: none !important;
+}
+
+/* 연결 상태 */
+.status {
+  width: 8px;
+  height: 8px;
+  background-color: var(--grey-500);
+  border-radius: 100%;
+}
+.status_on {
+  background-color: #40ab40;
+}

@@ -23,3 +23,30 @@
   align-items: center;
   gap: 10px;
 }
+
+/* 엑셀 다운받기 버튼 */
+.button_download {
+  background-color: var(--grey-300);
+  color: white;
+  border-radius: 2px;
+  padding: 6px 18px;
+  font-size: 13px;
+}
+
+/* table row 버튼 */
+.button_tr {
+  background-color: var(--grey-300);
+  color: white;
+  border-radius: 2px;
+  padding: 4px 14px;
+  font-size: 13px;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+}

@@ -2,6 +2,7 @@
 
 /* Components */
 @import 'components/buttons.css';
+@import 'components/table.css';
 
 /* Screens */
 @import 'screens/1-device.css';
