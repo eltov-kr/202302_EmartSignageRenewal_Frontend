@@ -1,0 +1,529 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMART SIGNING 2.0 | 대시보드</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+  </head>
+  <body>
+    <section class="font-noto">
+      <aside class="fixed top-0 left-0 w-64 h-full" aria-label="Sidenav">
+        <div
+          class="overflow-y-auto py-5 h-full bg-white border-r border-gray-200 shadow-md"
+        >
+          <ul class="space-y-2">
+            <li>
+              <a href="index.html" class="flex items-center px-4 py-2 mb-10">
+                <img src="images/logo_emart.png" alt="Emart Logo" />
+              </a>
+            </li>
+
+            <li class="bg-gray-100">
+              <a href="1-device.html">
+                <button
+                  type="button"
+                  class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-gray-100 dark:hover:bg-gray-700 border-r-2 border-yellow-primary"
+                  aria-controls="dropdown-pages"
+                  data-collapse-toggle="dropdown-pages"
+                >
+                  <img src="images/menu_icon_device_o.png" />
+                  <span
+                    class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
+                    >디바이스관리</span
+                  >
+                  <svg
+                    aria-hidden="true"
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+              <ul id="dropdown-pages" class="py-2 space-y-2">
+                <li>
+                  <a
+                    href="1-device.html"
+                    class="font-bold flex gap-2 items-center px-4 py-2 pl-11 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:hover:bg-gray-700"
+                    ><span
+                      class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                    ></span
+                    >디바이스관리</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-2 items-center px-4 py-2 pl-11 w-full text-sm font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:hover:bg-gray-700"
+                    ><span
+                      class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                    >
+                    </span>
+                    매체유형관리</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <img src="images/menu_icon_group.png" />
+                <span class="ml-3">점포그룹관리</span>
+              </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-gray-100 dark:hover:bg-gray-700"
+                aria-controls="dropdown-ad"
+                data-collapse-toggle="dropdown-ad"
+              >
+                <img src="images/menu_icon_contents.png" />
+                <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                  >광고주계약관리</span
+                >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <ul id="dropdown-ad" class="hidden py-2 space-y-2">
+                <li>
+                  <a
+                    href="1-device.html"
+                    class="flex gap-2 items-center px-4 py-2 pl-11 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:hover:bg-gray-700"
+                    ><span
+                      class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                    ></span
+                    >콘텐츠등록</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="1-device.html"
+                    class="flex gap-2 items-center px-4 py-2 pl-11 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:hover:bg-gray-700"
+                    ><span
+                      class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                    ></span
+                    >광고주등록</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="hidden absolute bottom-0 left-0 p-4 space-x-4 w-full lg:flex bg-white z-20"
+        >
+          <img src="images/logo.png" />
+        </div>
+      </aside>
+
+      <div class="pl-72 pr-8 pt-4 bg-grey-100 h-screen space-y-3">
+        <nav>
+          <div class="flex justify-end items-center space-x-3">
+            <div class="flex items-center gap-2">
+              <strong>강변점</strong>/
+              <strong>점포 관리자</strong>
+            </div>
+
+            <div
+              class="flex justify-center items-center gap-0.5 border-grey-200 border-2 py-1 px-2"
+            >
+              <span class="text-red">신규 가입 요청자</span>
+              <span
+                class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-xs"
+                >5</span
+              >
+            </div>
+            <button
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+              data-dropdown-placement="bottom-end"
+              type="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+              >
+                <g id="top_menu_btn" transform="translate(-0.447)">
+                  <circle
+                    id="타원"
+                    cx="17.5"
+                    cy="17.5"
+                    r="17.5"
+                    transform="translate(0.447)"
+                    fill="#dce0e4"
+                  />
+                  <line
+                    id="선"
+                    x2="12"
+                    transform="translate(11.947 12.5)"
+                    fill="none"
+                    stroke="#637381"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="선-2"
+                    data-name="선"
+                    x2="12"
+                    transform="translate(11.947 17.5)"
+                    fill="none"
+                    stroke="#637381"
+                    stroke-width="2"
+                  />
+                  <line
+                    id="선-3"
+                    data-name="선"
+                    x2="12"
+                    transform="translate(11.947 22.5)"
+                    fill="none"
+                    stroke="#637381"
+                    stroke-width="2"
+                  />
+                </g>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdown"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[83px] border-2"
+            >
+              <ul
+                class="text-sm text-gray-700"
+                aria-labelledby="dropdownDefaultButton"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >사용자 정보</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >로그아웃</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header>
+          <h1 class="font-bold text-xl my-4">디바이스관리</h1>
+          <div class="flex gap-3 items-center font-bold text-sm">
+            <h2 class="text-gray-400">디바이스관리</h2>
+            <span
+              class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+            >
+            </span>
+            <h3>디바이스관리</h3>
+          </div>
+        </header>
+
+        <main class="w-full h-[80%] space-y-4">
+          <nav class="buttons">
+            <button>디바이스 사용 여부</button>
+            <button>볼륨조절</button>
+            <button>종료</button>
+            <button>재시작</button>
+            <button>재부팅</button>
+            <button class="button_yellow button_with-icon">
+              <i class="fa-solid fa-plus"></i>
+              <span>디바이스등록</span>
+            </button>
+          </nav>
+
+          <div class="flex gap-3">
+            <div class="border-2 w-[340px] bg-white rounded-sm">
+              <ul
+                class="nav nav-tabs flex justify-center list-none border-b-0 pl-0 mb-4"
+                id="tabs-tab"
+                role="tablist"
+              >
+                <li
+                  class="nav-item w-full justify-center flex border-b-2"
+                  role="presentation"
+                >
+                  <a
+                    href="#tabs-store"
+                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent active"
+                    id="tabs-store-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tabs-store"
+                    role="tab"
+                    aria-controls="tabs-store"
+                    aria-selected="true"
+                    >점포별 (<span>90</span>)
+                  </a>
+                </li>
+                <li
+                  class="nav-item w-full justify-center flex border-b-2"
+                  role="presentation"
+                >
+                  <a
+                    href="#tabs-media"
+                    class="nav-link block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent"
+                    id="tabs-media-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tabs-media"
+                    role="tab"
+                    aria-controls="tabs-media"
+                    aria-selected="false"
+                    >매체별 (<span>600</span>)
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="tabs-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="tabs-store"
+                  role="tabpanel"
+                  aria-labelledby="tabs-store-tab"
+                >
+                  <!-- <div class="flex">
+                    <div class="mb-3 w-full px-2">
+                      <select
+                        class="form-select appearance-none block w-full px-2 py-1.5 text-base font-normal text-gray-700 border-grey-200"
+                        aria-label="search device by store"
+                      >
+                        <option selected>전체 검색</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div> -->
+                  <div class="flex">
+                    <div class="w-full px-2">
+                      <div class="dropdown relative">
+                        <a
+                          class="dropdown-toggle px-2 py-1 font-medium leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap border-2"
+                          href="#"
+                          type="button"
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span>전체검색</span>
+                          <svg
+                            aria-hidden="true"
+                            class="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </a>
+                        <ul
+                          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                          aria-labelledby="dropdownMenuButton2"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >서울</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >인천</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >경기</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tabs-media"
+                  role="tabpanel"
+                  aria-labelledby="tabs-media-tab"
+                >
+                  Tab 2 content
+                </div>
+              </div>
+            </div>
+
+            <div class="grow">
+              <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left text-gray-500">
+                  <thead
+                    class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700"
+                  >
+                    <tr>
+                      <th scope="col" class="px-6 py-3">Product name</th>
+                      <th scope="col" class="px-6 py-3">
+                        <div class="flex items-center">
+                          Color
+                          <a href="#"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-3 h-3 ml-1"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 0 320 512"
+                            >
+                              <path
+                                d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"
+                              /></svg
+                          ></a>
+                        </div>
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                        <div class="flex items-center">
+                          Category
+                          <a href="#"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-3 h-3 ml-1"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 0 320 512"
+                            >
+                              <path
+                                d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"
+                              /></svg
+                          ></a>
+                        </div>
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                        <div class="flex items-center">
+                          Price
+                          <a href="#"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="w-3 h-3 ml-1"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 0 320 512"
+                            >
+                              <path
+                                d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"
+                              /></svg
+                          ></a>
+                        </div>
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                        <span class="sr-only">Edit</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white border-b">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Apple MacBook Pro 17"
+                      </th>
+                      <td class="px-6 py-4">Sliver</td>
+                      <td class="px-6 py-4">Laptop</td>
+                      <td class="px-6 py-4">$2999</td>
+                      <td class="px-6 py-4 text-right">
+                        <a
+                          href="#"
+                          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                          >Edit</a
+                        >
+                      </td>
+                    </tr>
+                    <tr class="bg-white border-b">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Microsoft Surface Pro
+                      </th>
+                      <td class="px-6 py-4">White</td>
+                      <td class="px-6 py-4">Laptop PC</td>
+                      <td class="px-6 py-4">$1999</td>
+                      <td class="px-6 py-4 text-right">
+                        <a
+                          href="#"
+                          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                          >Edit</a
+                        >
+                      </td>
+                    </tr>
+                    <tr class="bg-white">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Magic Mouse 2
+                      </th>
+                      <td class="px-6 py-4">Black</td>
+                      <td class="px-6 py-4">Accessories</td>
+                      <td class="px-6 py-4">$99</td>
+                      <td class="px-6 py-4 text-right">
+                        <a
+                          href="#"
+                          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                          >Edit</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+@import 'variables.css';
+
+/* Components */
+@import 'components/buttons.css';
+
+/* Screens */
+@import 'screens/1-device.css';
