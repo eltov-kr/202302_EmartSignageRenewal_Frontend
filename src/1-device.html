@@ -228,7 +228,7 @@
           </div>
         </header>
 
-        <main class="w-full h-[80%] space-y-3">
+        <main class="w-full h-[80%] flex flex-col gap-3">
           <nav class="buttons">
             <button>디바이스 사용 여부</button>
             <button>볼륨조절</button>
@@ -241,7 +241,7 @@
             </button>
           </nav>
 
-          <div class="flex gap-3 h-full">
+          <div class="flex gap-3 h-[90%]">
             <!-- Tabs -->
             <div
               class="border-2 w-[340px] h-full bg-white rounded-sm overflow-hidden"
@@ -285,9 +285,9 @@
                 </li>
               </ul>
 
-              <div class="tab-content h-full" id="tabs-tabContent">
+              <div class="tab-content" id="tabs-tabContent">
                 <div
-                  class="tab-pane fade show active h-full"
+                  class="tab-pane fade show active h-[90%]"
                   id="tabs-store"
                   role="tabpanel"
                   aria-labelledby="tabs-store-tab"
@@ -305,7 +305,7 @@
                       </select>
                     </div>
                   </div> -->
-                  <div class="flex flex-col px-2 pb-1 space-y-1 h-full">
+                  <div class="flex flex-col px-2 pb-2 -mt-2 space-y-1 h-full">
                     <div class="dropdown relative">
                       <a
                         class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap border-2"
@@ -358,7 +358,9 @@
                       </ul>
                     </div>
 
-                    <div class="bg-white w-full text-gray-900 overflow-y-auto">
+                    <div
+                      class="bg-white w-full text-gray-900 overflow-y-auto h-full"
+                    >
                       <button
                         type="button"
                         class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
@@ -385,13 +387,15 @@
                 </div>
 
                 <div
-                  class="tab-pane fade"
+                  class="tab-pane fade show active h-[90%]"
                   id="tabs-media"
                   role="tabpanel"
                   aria-labelledby="tabs-media-tab"
                 >
                   <div class="flex flex-col px-2 pb-1 space-y-1 h-full">
-                    <div class="bg-white w-full text-gray-900 overflow-y-auto">
+                    <div
+                      class="bg-white w-full text-gray-900 overflow-y-auto h-full"
+                    >
                       <button
                         type="button"
                         class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
