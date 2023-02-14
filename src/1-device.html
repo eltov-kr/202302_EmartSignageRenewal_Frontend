@@ -263,7 +263,6 @@
                     data-bs-target="#tabs-store"
                     role="tab"
                     aria-controls="tabs-store"
-                    aria-selected="true"
                     >점포별 (<span>90</span>)
                   </a>
                 </li>
@@ -279,7 +278,6 @@
                     data-bs-target="#tabs-media"
                     role="tab"
                     aria-controls="tabs-media"
-                    aria-selected="false"
                     >매체별 (<span>600</span>)
                   </a>
                 </li>
@@ -392,7 +390,7 @@
                   role="tabpanel"
                   aria-labelledby="tabs-media-tab"
                 >
-                  <div class="flex flex-col px-2 pb-1 space-y-1 h-full">
+                  <div class="flex flex-col px-2 pb-2 -mt-2 space-y-1 h-full">
                     <div
                       class="bg-white w-full text-gray-900 overflow-y-auto h-full"
                     >
@@ -429,7 +427,11 @@
             <!-- Table -->
             <div class="grow">
               <div class="relative overflow-x-auto border-2 border-b-0">
-                <table class="w-full text-sm text-left text-gray-500">
+                <!-- 점포별 테이블 -->
+                <table
+                  id="table-store"
+                  class="w-full text-sm text-left text-gray-500"
+                >
                   <thead>
                     <tr
                       class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]"
@@ -664,6 +666,243 @@
                     </tr>
                   </tbody>
                 </table>
+                <!-- 매체별 테이블 -->
+                <table
+                  id="table-media"
+                  class="w-full text-sm text-left text-gray-500"
+                >
+                  <thead>
+                    <tr
+                      class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]"
+                    >
+                      <th class="text-center font-normal">
+                        <div class="flex justify-center items-center">
+                          <div class="w-[30px]">연결 상태</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i
+                              class="fa-solid fa-magnifying-glass mr-1.5"
+                              id="tableSearchButton_status"
+                              data-dropdown-toggle="tableSearch_status"
+                            ></i>
+                            <!-- table search dropdown -->
+                            <div
+                              id="tableSearch_status"
+                              class="z-10 hidden bg-white shadow rounded-md w-30 p-1"
+                            >
+                              <ul
+                                class="p-1 space-y-1 text-xs text-gray-700"
+                                aria-labelledby="tableSearchButton_status"
+                              >
+                                <li>
+                                  <div
+                                    class="flex p-2 rounded hover:bg-gray-100"
+                                  >
+                                    <div class="flex gap-2 items-center h-5">
+                                      <input
+                                        id="tableSearchInput_status"
+                                        name="tableSearchInput_status"
+                                        type="radio"
+                                        value=""
+                                        class="w-4 h-4 bg-gray-100 border-gray-300"
+                                      />
+                                      <label for="tableSearchInput_status">
+                                        on
+                                      </label>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div
+                                    class="flex p-2 rounded hover:bg-gray-100"
+                                  >
+                                    <div class="flex gap-2 items-center h-5">
+                                      <input
+                                        id="tableSearchInput_status"
+                                        name="tableSearchInput_status"
+                                        type="radio"
+                                        value=""
+                                        class="w-4 h-4 bg-gray-100 border-gray-300"
+                                      />
+                                      <label for="tableSearchInput_status">
+                                        off
+                                      </label>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </th>
+                      <th></th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[150px]"
+                        >
+                          <div class="">점포명</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i
+                              class="fa-solid fa-magnifying-glass mr-1.5"
+                              id="tableSearchButton_media"
+                              data-dropdown-toggle="tableSearch_media"
+                            ></i>
+                            <!-- table search dropdown -->
+                            <div
+                              id="tableSearch_media"
+                              class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
+                            >
+                              <div class="relative">
+                                <input
+                                  type="text"
+                                  class="block w-full text-xs text-gray-900 border border-gray-300 bg-gray-50 rounded-md"
+                                  placeholder="매체명"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[75px]"
+                        >
+                          <div class="w-[30px]">방향</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[90px]"
+                        >
+                          <div class="">해상도</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[80px]"
+                        >
+                          <div class="w-[45px]">설치위치</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[80px]"
+                        >
+                          <div class="w-[45px]">광고구분</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[80px]"
+                        >
+                          <div class="w-[45px]">전체구좌 정보(초)</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[80px]"
+                        >
+                          <div class="w-[45px]">상업구좌 정보(초)</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[80px]"
+                        >
+                          <div class="w-[45px]">자체구좌 정보(초)</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white hover:bg-gray-50 h-[40px]">
+                      <td>
+                        <div class="mx-auto status status_on"></div>
+                      </td>
+                      <td>
+                        <div>
+                          <input
+                            id="checkbox-tableSearch-1"
+                            type="checkbox"
+                            class="border-gray-300 rounded mr-1"
+                          />
+                          <label for="checkbox-tableSearch-1" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </td>
+                      <td class="px-1 py-2">가든5점</td>
+                      <td class="px-6 py-2 text-center">가로</td>
+                      <td class="px-6 py-2 text-center">3840 x 2160</td>
+                      <td class="px-6 py-2 text-center">포스1</td>
+                      <td class="px-6 py-2 text-center">상업 / 자체</td>
+                      <td class="px-6 py-2 text-center">240</td>
+                      <td class="px-6 py-2 text-center">160</td>
+                      <td class="px-6 py-2 text-center">80</td>
+                      <td class="px-6 py-2 text-center">
+                        <button class="button_tr">세부정보</button>
+                      </td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-50 h-[40px]">
+                      <td>
+                        <div class="mx-auto status"></div>
+                      </td>
+                      <td>
+                        <div>
+                          <input
+                            id="checkbox-tableSearch-1"
+                            type="checkbox"
+                            class="border-gray-300 rounded"
+                          />
+                          <label for="checkbox-tableSearch-1" class="sr-only"
+                            >checkbox</label
+                          >
+                        </div>
+                      </td>
+                      <td class="px-1 py-2">가양점</td>
+                      <td class="px-6 py-2 text-center">가로</td>
+                      <td class="px-6 py-2 text-center">3840 x 2160</td>
+                      <td class="px-6 py-2 text-center">포스1</td>
+                      <td class="px-6 py-2 text-center">상업 / 자체</td>
+                      <td class="px-6 py-2 text-center">240</td>
+                      <td class="px-6 py-2 text-center">160</td>
+                      <td class="px-6 py-2 text-center">80</td>
+                      <td class="px-6 py-2 text-center">
+                        <button class="button_tr">세부정보</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <nav
                 class="flex justify-between items-center p-3 h-[60px] border-2 bg-white"
@@ -749,6 +988,7 @@
         </main>
       </div>
     </section>
+    <script type="text/javascript" src="js/1-device.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </body>
