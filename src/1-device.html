@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMART SIGNING 2.0 | 디바이스관리</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -231,15 +231,15 @@
             <button
               type="button"
               class="button button_yellow_darkText"
-              data-modal-target="device-modal"
-              data-modal-toggle="device-modal"
+              data-modal-target="device-register-modal"
+              data-modal-toggle="device-register-modal"
             >
               <i class="fa-solid fa-plus"></i>
               <span>디바이스등록</span>
             </button>
             <!-- 디바이스 등록 모달 -->
             <div
-              id="device-modal"
+              id="device-register-modal"
               tabindex="-1"
               aria-hidden="true"
               class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
@@ -489,7 +489,7 @@
                             등록된 매체
                           </h3>
                           <button
-                            data-modal-toggle="register-modal"
+                            data-modal-toggle="media-add-modal"
                             class="button button_small"
                           >
                             <i class="fa-solid fa-plus"></i>
@@ -503,16 +503,12 @@
 
                       <nav class="flex gap-2 justify-center">
                         <button
-                          data-modal-toggle="register-modal"
+                          data-modal-toggle="device-register-modal"
                           class="button"
                         >
                           취소
                         </button>
-                        <button
-                          data-modal-target="registerConfirm-modal"
-                          data-modal-toggle="registerConfirm-modal"
-                          class="button button_yellow_lightText"
-                        >
+                        <button class="button button_yellow_lightText">
                           저장
                         </button>
                       </nav>
@@ -1231,7 +1227,7 @@
                           </div>
                         </div>
                       </th>
-                      <th></th>
+                      <th class="w-[85px]"></th>
                     </tr>
                   </thead>
                   <tbody>
