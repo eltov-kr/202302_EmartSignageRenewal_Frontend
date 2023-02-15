@@ -3,6 +3,7 @@
 /* Components */
 @import 'components/buttons.css';
 @import 'components/table.css';
+@import 'components/form.css';
 
 /* Screens */
 @import 'screens/1-device.css';
