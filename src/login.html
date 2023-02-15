@@ -14,12 +14,12 @@
       crossorigin="anonymous"
     ></script>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -188,7 +188,7 @@
             <div class="relative w-full max-w-xl h-auto">
               <div class="relative bg-white shadow">
                 <div class="px-8 py-6">
-                  <h3 class="mb-6 text-lg font-bold text-grey-500">
+                  <h3 class="mb-6 text-[22px] font-bold text-grey-500">
                     사용자 등록
                   </h3>
                   <form class="space-y-7 w-full" action="#">
@@ -314,21 +314,18 @@
                       />
                     </div>
 
-                    <div class="flex gap-2 justify-center">
-                      <button
-                        data-modal-toggle="register-modal"
-                        class="text-white bg-grey-400 rounded-sm focus:outline-none font-medium text-sm px-5 py-1.5 text-center"
-                      >
+                    <nav class="flex gap-2 justify-center">
+                      <button data-modal-toggle="register-modal" class="button">
                         취소
                       </button>
                       <button
                         data-modal-target="registerConfirm-modal"
                         data-modal-toggle="registerConfirm-modal"
-                        class="text-white bg-yellow-primary rounded-sm focus:outline-none font-medium text-sm px-5 py-1.5 text-center"
+                        class="button button_yellow_lightText"
                       >
                         저장
                       </button>
-                    </div>
+                    </nav>
                   </form>
                 </div>
               </div>
@@ -353,7 +350,7 @@
                   <button
                     data-modal-toggle="registerConfirm-modal"
                     data-modal-hide="register-modal"
-                    class="text-white bg-yellow-primary rounded-sm focus:outline-none font-medium text-sm px-5 py-1.5 text-center"
+                    class="button button_yellow_lightText"
                   >
                     확인
                   </button>

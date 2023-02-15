@@ -3,48 +3,40 @@
   justify-content: flex-end;
   gap: 10px;
 }
-.buttons > button {
-  background-color: var(--grey-500);
+.button {
+  background-color: var(--grey-300);
   color: white;
   border-radius: 2px;
-  padding: 8px 20px;
+  padding: 10px;
   font-size: 14px;
-}
-.buttons > button:disabled {
-  background-color: var(--grey-200);
-}
-.buttons > .button_yellow {
-  background-color: var(--yellow-primary);
-  color: var(--grey-500);
-}
-.buttons > .button_with-icon {
+  font-weight: 600;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+.button:disabled {
+  background-color: var(--grey-200);
+}
+.button_yellow_darkText {
+  background-color: var(--yellow-primary) !important;
+  color: var(--grey-500) !important;
+}
+.button_yellow_lightText {
+  background-color: var(--yellow-primary) !important;
+  color: #fff !important;
+}
+.button_small {
+  height: 25px;
+  font-size: 13px;
+  font-weight: 400;
+}
 
 /* 엑셀 다운받기 버튼 */
 .button_download {
-  background-color: var(--grey-300);
-  color: white;
-  border-radius: 2px;
-  padding: 6px 18px;
   font-size: 13px;
-}
-
-/* table row 버튼 */
-.button_tr {
-  background-color: var(--grey-300);
-  color: white;
-  border-radius: 2px;
-  padding: 4px 14px;
-  font-size: 13px;
-  width: 80px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 30px;
 }
 
 i {
