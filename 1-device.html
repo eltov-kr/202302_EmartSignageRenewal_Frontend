@@ -231,15 +231,15 @@
             <button
               type="button"
               class="button button_yellow_darkText"
-              data-modal-target="device-register-modal"
-              data-modal-toggle="device-register-modal"
+              data-modal-target="deviceRegisterModal"
+              data-modal-toggle="deviceRegisterModal"
             >
               <i class="fa-solid fa-plus"></i>
               <span>디바이스등록</span>
             </button>
             <!-- 디바이스 등록 모달 -->
             <div
-              id="device-register-modal"
+              id="deviceRegisterModal"
               tabindex="-1"
               aria-hidden="true"
               class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
@@ -457,16 +457,53 @@
 
                       <nav class="flex gap-2 justify-center h-full">
                         <button
-                          data-modal-toggle="device-register-modal"
+                          data-modal-toggle="deviceRegisterModal"
                           class="button"
                         >
                           취소
                         </button>
-                        <button class="button button_yellow_lightText">
+                        <button
+                          data-modal-toggle="deviceRegisterConfirmModal"
+                          class="button button_yellow_lightText"
+                        >
                           저장
                         </button>
                       </nav>
                     </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 디바이스 등록 확인 모달 -->
+            <div
+              id="deviceRegisterConfirmModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+            >
+              <div class="relative w-full max-w-lg h-auto">
+                <div class="relative bg-white shadow">
+                  <div
+                    class="px-8 py-6 flex flex-col justify-center items-center gap-4"
+                  >
+                    <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
+                      디바이스를 등록하시겠습니까?
+                    </h3>
+                    <nav class="flex gap-2 justify-center h-full">
+                      <button
+                        data-modal-toggle="deviceRegisterConfirmModal"
+                        class="button"
+                      >
+                        취소
+                      </button>
+                      <button
+                        data-modal-toggle="deviceRegisterConfirmModal"
+                        class="button button_yellow_lightText"
+                      >
+                        저장
+                      </button>
+                    </nav>
                   </div>
                 </div>
               </div>
