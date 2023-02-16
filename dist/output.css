@@ -757,6 +757,14 @@ video {
   height: 100%;
 }
 
+.h-\[28px\] {
+  height: 28px;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
 .max-h-\[400px\] {
   max-height: 400px;
 }
@@ -767,6 +775,10 @@ video {
 
 .min-h-\[300px\] {
   min-height: 300px;
+}
+
+.min-h-\[1040px\] {
+  min-height: 1040px;
 }
 
 .w-screen {
@@ -845,6 +857,10 @@ video {
   width: 400px;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .min-w-\[1620px\] {
   min-width: 1620px;
 }
@@ -900,6 +916,10 @@ video {
 
 .min-w-\[85px\] {
   min-width: 85px;
+}
+
+.min-w-\[1920px\] {
+  min-width: 1920px;
 }
 
 .max-w-4xl {
@@ -1002,6 +1022,14 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1417,6 +1445,14 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .font-normal {

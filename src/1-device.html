@@ -24,10 +24,10 @@
   </head>
   <body>
     <section
-      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1620px] min-h-[500px]"
+      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1920px] min-h-[1040px]"
     >
       <aside
-        class="w-64 shadow-md absolute top-0 left-0 py-5 h-screen bg-white border-r border-gray-200 flex flex-col justify-between"
+        class="w-64 shadow-md absolute top-0 left-0 py-5 h-full bg-white border-r border-gray-200 flex flex-col justify-between"
       >
         <ul class="space-y-2">
           <li>
@@ -132,11 +132,11 @@
             <strong>점포 관리자</strong>
           </div>
           <div
-            class="flex justify-center items-center gap-0.5 border-grey-200 border-2 py-1 px-2"
+            class="flex justify-center items-center gap-1 border-grey-200 border-2 h-[28px] px-2"
           >
-            <span class="text-red">신규 가입 요청자</span>
+            <span class="text-red text-[13px]">신규가입요청자</span>
             <span
-              class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-xs"
+              class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-[13px]"
               >5</span
             >
           </div>
@@ -497,7 +497,12 @@
                           </button>
                         </header>
                         <ul class="p-2">
-                          <button>매장입구 스크린(매장입구 스크린 1)</button>
+                          <button
+                            class="flex gap-5 items-center border-grey-200 border-2 h-[28px] px-2 text-[13px]"
+                          >
+                            <span> 매장입구 스크린(매장입구 스크린 1) </span>
+                            <span>100</span>
+                          </button>
                         </ul>
                       </div>
 
@@ -1227,7 +1232,7 @@
                           </div>
                         </div>
                       </th>
-                      <th class="min-w-[85px]"></th>
+                      <th class="w-[85px]"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1466,7 +1471,7 @@
                           </div>
                         </div>
                       </th>
-                      <th class="min-w-[85px]"></th>
+                      <th class="w-[85px]"></th>
                     </tr>
                   </thead>
                   <tbody>
