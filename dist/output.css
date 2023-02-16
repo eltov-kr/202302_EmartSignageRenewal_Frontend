@@ -765,6 +765,10 @@ video {
   min-height: 500px;
 }
 
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -837,6 +841,10 @@ video {
   width: 85px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .min-w-\[1620px\] {
   min-width: 1620px;
 }
@@ -884,6 +892,14 @@ video {
 
 .min-w-\[70px\] {
   min-width: 70px;
+}
+
+.min-w-\[1500px\] {
+  min-width: 1500px;
+}
+
+.min-w-\[85px\] {
+  min-width: 85px;
 }
 
 .max-w-4xl {
