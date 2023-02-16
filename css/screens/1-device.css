@@ -12,26 +12,26 @@
   flex-direction: column;
   gap: 30px;
 }
-.form-container_device {
+.form-container_detailEdit {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   justify-content: space-between;
   row-gap: 1em;
 }
-.form-container_device .field {
+.form-container_detailEdit .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 5em 180px;
   column-gap: 1em;
 }
-.form-container_device .field:nth-child(4),
-.form-container_device .field:nth-child(5),
-.form-container_device .field:nth-child(7) {
+.form-container_detailEdit .field:nth-child(4),
+.form-container_detailEdit .field:nth-child(5),
+.form-container_detailEdit .field:nth-child(7) {
   grid-column: span 2;
   grid-template-columns: 5em auto;
 }
-.form-container_device .label-text {
+.form-container_detailEdit .label-text {
   place-self: center end;
   color: var(--grey-400);
   font-size: 15px;
@@ -93,4 +93,68 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+/* 디바이스 세부정보 수정 Form */
+.form_detailEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-container_detailEdit {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+.form-container_detailEdit .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em 180px;
+  column-gap: 1em;
+}
+.form-container_detailEdit .field:nth-child(4),
+.form-container_detailEdit .field:nth-child(5),
+.form-container_detailEdit .field:nth-child(7) {
+  grid-column: span 2;
+  grid-template-columns: 5em auto;
+}
+.form-container_detailEdit .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 15px;
+}
+/* form - section */
+.form_detailEdit section {
+  border: 1px solid green;
+  height: 380px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  /* grid:
+    '볼륨조절' 80px
+    '휴점일' 220px
+    '꺼짐설정' 380px;
+  grid-template-areas:
+    '볼륨조절 꺼짐설정'
+    '휴점일 꺼짐설정'; */
+}
+.form_detailEdit section article {
+  border: 1px solid var(--grey-200);
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form_detailEdit section article:nth-child(1) {
+  height: 80px;
+}
+.form_detailEdit section article:nth-child(2) {
+  background: pink;
+  height: 80px;
+}
+.form_detailEdit section article:nth-child(3) {
+  height: 80px;
 }

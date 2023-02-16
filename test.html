@@ -48,10 +48,10 @@
         beatae.
       </p>
 
-      <div class="relative w-full max-w-2xl h-auto">
+      <div class="relative w-full max-w-4xl h-auto">
         <div class="relative bg-white shadow">
           <div class="px-8 py-6">
-            <header class="flex justify-between mb-6">
+            <!-- <header class="flex justify-between mb-6">
               <h3 class="text-[22px] font-bold text-grey-500">디바이스 등록</h3>
               <button
                 type="button"
@@ -62,22 +62,52 @@
                 <i class="fa-solid fa-plus"></i>
                 <span>디바이스추가</span>
               </button>
-            </header>
+            </header> -->
 
-            <form action="#" class="form_mediaAdd">
-              <div class="form-container_mediaAdd">
-                <label for="mediaAdd1" class="field">
+            <form action="#" class="form_detailEdit">
+              <div class="form-container_detailEdit">
+                <label for="detailEdit1" class="field">
                   <span class="label-text">점포</span>
-                  <input type="text" id="mediaAdd1" />
+                  <div class="dropdown relative">
+                    <a
+                      class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
+                      href="#"
+                      type="button"
+                      id="detailEdit1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                      aria-labelledby="detailEdit1"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >2</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </label>
-                <label for="mediaAdd2" class="field">
+                <label for="detailEdit2" class="field">
                   <span class="label-text">설치층</span>
                   <div class="dropdown relative">
                     <a
                       class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
                       href="#"
                       type="button"
-                      id="mediaAdd2"
+                      id="detailEdit2"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -85,7 +115,7 @@
                     </a>
                     <ul
                       class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                      aria-labelledby="mediaAdd2"
+                      aria-labelledby="detailEdit2"
                     >
                       <li>
                         <a
@@ -104,48 +134,34 @@
                     </ul>
                   </div>
                 </label>
-                <label for="mediaAdd3" class="field">
+                <label for="detailEdit3" class="field">
                   <span class="label-text">세부위치</span>
-                  <div class="dropdown relative">
-                    <a
-                      class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                      href="#"
-                      type="button"
-                      id="mediaAdd3"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                    <ul
-                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                      aria-labelledby="mediaAdd2"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                          href="#"
-                          >1</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                          href="#"
-                          >2</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+                  <input type="text" id="detailEdit3" />
                 </label>
-                <label for="mediaAdd4" class="field">
+                <label for="detailEdit4" class="field">
                   <span class="label-text">매체명</span>
+                  <input type="text" id="detailEdit4" />
+                </label>
+                <label for="detailEdit5" class="field">
+                  <span class="label-text">해상도</span>
+                  <input type="text" id="detailEdit5" />
+                </label>
+                <label for="detailEdit6" class="field">
+                  <span class="label-text">IP</span>
+                  <input type="text" id="detailEdit6" />
+                </label>
+                <label for="detailEdit7" class="field">
+                  <span class="label-text">디바이스명</span>
+                  <input type="text" id="detailEdit7" />
+                </label>
+                <label for="detailEdit8" class="field">
+                  <span class="label-text">사용여부</span>
                   <div class="dropdown relative">
                     <a
                       class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
                       href="#"
                       type="button"
-                      id="mediaAdd4"
+                      id="detailEdit8"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -153,7 +169,7 @@
                     </a>
                     <ul
                       class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                      aria-labelledby="mediaAdd2"
+                      aria-labelledby="detailEdit8"
                     >
                       <li>
                         <a
@@ -171,28 +187,146 @@
                       </li>
                     </ul>
                   </div>
-                </label>
-                <label for="mediaAdd5" class="field">
-                  <span class="label-text"
-                    ><input type="checkbox" id="mediaAdd5_checkbox" />자사광고
-                    시간설정</span
-                  >
-                  <input type="text" id="mediaAdd5" />
-                </label>
-                <label for="mediaAdd6" class="field">
-                  <span class="label-text"
-                    ><input type="checkbox" id="mediaAdd6_checkbox" />상업광고
-                    시간설정</span
-                  >
-                  <input type="text" id="mediaAdd6" />
                 </label>
               </div>
 
+              <section>
+                <!-- 볼륨조절 -->
+                <article>
+                  <header class="flex gap-2">
+                    <h3 class="text-base font-bold text-grey-500">볼륨조절</h3>
+                  </header>
+                  <ul class="media">
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                  </ul>
+                </article>
+                <!-- 휴점일 -->
+                <article>
+                  <header class="flex gap-2">
+                    <h3 class="text-base font-bold text-grey-500">휴점일</h3>
+                  </header>
+                  <ul class="media">
+                    <!-- <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li> -->
+                  </ul>
+                </article>
+                <!-- 꺼짐설정 -->
+                <article>
+                  <header class="flex gap-2">
+                    <h3 class="text-base font-bold text-grey-500">꺼짐설정</h3>
+                  </header>
+                  <ul class="media">
+                    <!-- <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>매장입구 스크린(매장입구 스크린 1)</span>
+                      <span>100</span>
+                    </li>
+                    <li class="media_item">
+                      <span>1x1_1F_매장입구</span>
+                      <span>1</span>
+                    </li> -->
+                  </ul>
+                </article>
+              </section>
+
               <nav class="flex gap-2 justify-center h-full">
-                <button data-modal-toggle="mediaAddModal" class="button">
+                <button data-modal-toggle="detailEditModal" class="button">
                   취소
                 </button>
-                <button class="button button_yellow_lightText">저장</button>
+                <button
+                  data-modal-toggle="detailEditConfirmModal"
+                  class="button button_yellow_lightText"
+                >
+                  저장
+                </button>
               </nav>
             </form>
           </div>
