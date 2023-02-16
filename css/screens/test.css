@@ -1,0 +1,74 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid:
+    'nav' 60px
+    'main' 1fr;
+  grid-template-areas:
+    'aside nav'
+    'aside main';
+}
+
+aside {
+  grid-area: aside;
+  border: 1px solid red;
+  width: 300px;
+}
+nav {
+  grid-area: nav;
+  border: 1px solid aqua;
+  height: 60px;
+}
+main {
+  grid-area: main;
+  border: 1px solid blue;
+}
+
+/* 디바이스 등록 Form */
+.form_device {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-container_device {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+.form-container_device .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em 180px;
+  column-gap: 1em;
+}
+.form-container_device .field:nth-child(4),
+.form-container_device .field:nth-child(5),
+.form-container_device .field:nth-child(7) {
+  grid-column: span 2;
+  grid-template-columns: 5em auto;
+}
+.form-container_device .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 15px;
+}
+
+/* 등록된 매체 */
+.media {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+  overflow-y: auto;
+}
+.media_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5px;
+  height: 28px;
+  font-size: 13px;
+  border: 1px solid var(--grey-200);
+}

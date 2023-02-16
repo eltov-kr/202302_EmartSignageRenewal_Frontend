@@ -1,7 +1,0 @@
-.nav-tabs .nav-link {
-  color: var(--grey-300) !important;
-}
-.nav-tabs .nav-link.active {
-  color: var(--grey-500) !important;
-  border-color: var(--yellow-primary) !important;
-}

@@ -261,229 +261,136 @@
                         <span>디바이스추가</span>
                       </button>
                     </header>
-                    <form class="space-y-7 w-full" action="#">
-                      <div class="grid grid-cols-6 gap-4">
-                        <div class="col-span-2">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-2"
-                          >
-                            <label
-                              for="deviceRegister1"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >점포</label
+                    <form action="#" class="form_device">
+                      <div class="form-container_device">
+                        <label for="deviceRegister1" class="field">
+                          <span class="label-text">점포</span>
+                          <div class="dropdown relative">
+                            <a
+                              class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
+                              href="#"
+                              type="button"
+                              id="deviceRegister1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
                             >
-                            <div class="dropdown relative col-span-4">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="deviceRegister1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="deviceRegister1"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-span-2">
-                          <div class="col-span-2">
-                            <div
-                              class="w-full grid grid-cols-5 items-center gap-3"
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul
+                              class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                              aria-labelledby="deviceRegister1"
                             >
-                              <label
-                                for="deviceRegister2"
-                                class="text-sm text-grey-400 flex justify-self-end"
-                                >설치층</label
-                              >
-                              <div class="dropdown relative col-span-4">
+                              <li>
                                 <a
-                                  class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
+                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
                                   href="#"
-                                  type="button"
-                                  id="deviceRegister2"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
+                                  >1</a
                                 >
-                                  <i class="fa-solid fa-chevron-down"></i>
-                                </a>
-                                <ul
-                                  class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                  aria-labelledby="deviceRegister2"
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                  href="#"
+                                  >2</a
                                 >
-                                  <li>
-                                    <a
-                                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                      href="#"
-                                      >1</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a
-                                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                      href="#"
-                                      >2</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
+                              </li>
+                            </ul>
                           </div>
-                        </div>
-                        <div class="col-span-2">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-3"
-                          >
-                            <label
-                              for="deviceRegister3"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >세부위치</label
+                        </label>
+                        <label for="deviceRegister2" class="field">
+                          <span class="label-text">설치층</span>
+                          <div class="dropdown relative">
+                            <a
+                              class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
+                              href="#"
+                              type="button"
+                              id="deviceRegister2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
                             >
-                            <input
-                              type="text"
-                              name="deviceRegister3"
-                              id="deviceRegister3"
-                              class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-span-4">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-3"
-                          >
-                            <label
-                              for="deviceRegister4"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >매체명</label
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul
+                              class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                              aria-labelledby="deviceRegister2"
                             >
-                            <input
-                              type="text"
-                              name="deviceRegister4"
-                              id="deviceRegister4"
-                              class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                              required
-                            />
+                              <li>
+                                <a
+                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                  href="#"
+                                  >1</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                  href="#"
+                                  >2</a
+                                >
+                              </li>
+                            </ul>
                           </div>
-                        </div>
-                        <div class="col-span-4">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-3"
-                          >
-                            <label
-                              for="deviceRegister5"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >해상도</label
+                        </label>
+                        <label for="deviceRegister3" class="field">
+                          <span class="label-text">세부위치</span>
+                          <input type="text" id="deviceRegister3" />
+                        </label>
+                        <label for="deviceRegister4" class="field">
+                          <span class="label-text">매체명</span>
+                          <input type="text" id="deviceRegister4" />
+                        </label>
+                        <label for="deviceRegister5" class="field">
+                          <span class="label-text">해상도</span>
+                          <input type="text" id="deviceRegister5" />
+                        </label>
+                        <label for="deviceRegister6" class="field">
+                          <span class="label-text">IP</span>
+                          <input type="text" id="deviceRegister6" />
+                        </label>
+                        <label for="deviceRegister7" class="field">
+                          <span class="label-text">디바이스명</span>
+                          <input type="text" id="deviceRegister7" />
+                        </label>
+                        <label for="deviceRegister8" class="field">
+                          <span class="label-text">사용여부</span>
+                          <div class="dropdown relative">
+                            <a
+                              class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
+                              href="#"
+                              type="button"
+                              id="deviceRegister8"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
                             >
-                            <input
-                              type="text"
-                              name="deviceRegister5"
-                              id="deviceRegister5"
-                              class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-span-2">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-3"
-                          >
-                            <label
-                              for="deviceRegister6"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >IP</label
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul
+                              class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                              aria-labelledby="deviceRegister8"
                             >
-                            <input
-                              type="text"
-                              name="deviceRegister6"
-                              id="deviceRegister6"
-                              class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                              required
-                            />
+                              <li>
+                                <a
+                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                  href="#"
+                                  >1</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                  href="#"
+                                  >2</a
+                                >
+                              </li>
+                            </ul>
                           </div>
-                        </div>
-                        <div class="col-span-4">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-3"
-                          >
-                            <label
-                              for="deviceRegister7"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >디바이스명</label
-                            >
-                            <input
-                              type="text"
-                              name="deviceRegister7"
-                              id="deviceRegister7"
-                              class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-span-2">
-                          <div
-                            class="w-full grid grid-cols-5 items-center gap-3"
-                          >
-                            <label
-                              for="deviceRegister8"
-                              class="text-sm text-grey-400 flex justify-self-end"
-                              >사용여부</label
-                            >
-                            <div class="dropdown relative col-span-4">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="deviceRegister8"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="deviceRegister8"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                        </label>
                       </div>
+
                       <!-- 등록된 매체 -->
-                      <div class="w-full flex flex-col border-2 p-4 gap-3">
+                      <div
+                        class="w-full h-[200px] flex flex-col border-2 rounded-[5px] p-4 gap-3"
+                      >
                         <header class="flex gap-2">
                           <h3 class="text-base font-bold text-grey-500">
                             등록된 매체
@@ -496,17 +403,59 @@
                             <span>매체추가</span>
                           </button>
                         </header>
-                        <ul class="p-2">
-                          <button
-                            class="flex gap-5 items-center border-grey-200 border-2 h-[28px] px-2 text-[13px]"
-                          >
-                            <span> 매장입구 스크린(매장입구 스크린 1) </span>
+                        <ul class="media">
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
                             <span>100</span>
-                          </button>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>1x1_1F_매장입구</span>
+                            <span>1</span>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>1x1_1F_매장입구</span>
+                            <span>1</span>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>1x1_1F_매장입구</span>
+                            <span>1</span>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>매장입구 스크린(매장입구 스크린 1)</span>
+                            <span>100</span>
+                          </li>
+                          <li class="media_item">
+                            <span>1x1_1F_매장입구</span>
+                            <span>1</span>
+                          </li>
                         </ul>
                       </div>
 
-                      <nav class="flex gap-2 justify-center">
+                      <nav class="flex gap-2 justify-center h-full">
                         <button
                           data-modal-toggle="device-register-modal"
                           class="button"
