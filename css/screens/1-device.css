@@ -54,3 +54,43 @@
   font-size: 13px;
   border: 1px solid var(--grey-200);
 }
+
+/* 매체 추가 Form */
+.form_mediaAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-container_mediaAdd {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+.form-container_mediaAdd .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em 180px;
+  column-gap: 1em;
+}
+.form-container_mediaAdd .field:nth-child(1),
+.form-container_mediaAdd .field:nth-child(5),
+.form-container_mediaAdd .field:nth-child(6) {
+  grid-column: span 2;
+}
+.form-container_mediaAdd .field:nth-child(1) {
+  grid-template-columns: 5em auto;
+}
+.form-container_mediaAdd .field:nth-child(5),
+.form-container_mediaAdd .field:nth-child(6) {
+  grid-template-columns: 10em auto;
+}
+.form-container_mediaAdd .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
