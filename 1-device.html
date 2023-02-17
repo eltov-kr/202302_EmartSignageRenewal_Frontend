@@ -457,7 +457,7 @@
 
                       <nav class="flex gap-2 justify-center h-full">
                         <button
-                          data-modal-toggle="deviceRegisterModal"
+                          data-modal-hide="deviceRegisterModal"
                           class="button"
                         >
                           취소
@@ -492,15 +492,12 @@
                     </h3>
                     <nav class="flex gap-2 justify-center h-full">
                       <button
-                        data-modal-toggle="deviceRegisterConfirmModal"
+                        data-modal-hide="deviceRegisterConfirmModal"
                         class="button"
                       >
                         취소
                       </button>
-                      <button
-                        data-modal-toggle="deviceRegisterConfirmModal"
-                        class="button button_yellow_lightText"
-                      >
+                      <button class="button button_yellow_lightText">
                         저장
                       </button>
                     </nav>
@@ -2229,7 +2226,7 @@
 
                           <nav class="flex gap-2 justify-center h-full">
                             <button
-                              data-modal-toggle="detailEditModal"
+                              data-modal-hide="detailEditModal"
                               class="button"
                             >
                               취소
@@ -2246,7 +2243,39 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- 디바이스 세부정보 수정 확인 모달 -->
+                <div
+                  id="detailEditConfirmModal"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+                >
+                  <div class="relative w-full max-w-lg h-auto">
+                    <div class="relative bg-white shadow">
+                      <div
+                        class="px-8 py-6 flex flex-col justify-center items-center gap-4"
+                      >
+                        <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
+                          디바이스 정보를 수정하시겠습니까?
+                        </h3>
+                        <nav class="flex gap-2 justify-center h-full">
+                          <button
+                            data-modal-hide="detailEditConfirmModal"
+                            class="button"
+                          >
+                            취소
+                          </button>
+                          <button class="button button_yellow_lightText">
+                            저장
+                          </button>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <nav
                 class="flex justify-between items-center p-3 h-[60px] border-2 bg-white"
                 aria-label="Table navigation"
