@@ -64,17 +64,16 @@
               </button>
             </header> -->
 
-            <form action="#" class="form_detailEdit">
-              >
-              <div class="form-container_detailEdit">
-                <label for="detailEdit1" class="field">
+            <form action="#" class="form_device">
+              <div class="form_device_container">
+                <label for="deviceRegister1" class="field">
                   <span class="label-text">점포</span>
                   <div class="dropdown relative">
                     <a
                       class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
                       href="#"
                       type="button"
-                      id="detailEdit1"
+                      id="deviceRegister1"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -82,7 +81,7 @@
                     </a>
                     <ul
                       class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                      aria-labelledby="detailEdit1"
+                      aria-labelledby="deviceRegister1"
                     >
                       <li>
                         <a
@@ -101,14 +100,14 @@
                     </ul>
                   </div>
                 </label>
-                <label for="detailEdit2" class="field">
+                <label for="deviceRegister2" class="field">
                   <span class="label-text">설치층</span>
                   <div class="dropdown relative">
                     <a
                       class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
                       href="#"
                       type="button"
-                      id="detailEdit2"
+                      id="deviceRegister2"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -116,7 +115,7 @@
                     </a>
                     <ul
                       class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                      aria-labelledby="detailEdit2"
+                      aria-labelledby="deviceRegister2"
                     >
                       <li>
                         <a
@@ -135,417 +134,134 @@
                     </ul>
                   </div>
                 </label>
-                <label for="detailEdit3" class="field">
+                <label for="deviceRegister3" class="field">
                   <span class="label-text">세부위치</span>
-                  <input type="text" id="detailEdit3" />
+                  <input type="text" id="deviceRegister3" />
                 </label>
-                <label for="detailEdit4" class="field">
+                <label for="deviceRegister4" class="field">
                   <span class="label-text">매체명</span>
-                  <input type="text" id="detailEdit4" />
+                  <input type="text" id="deviceRegister4" />
                 </label>
-                <label for="detailEdit5" class="field">
+                <label for="deviceRegister5" class="field">
                   <span class="label-text">해상도</span>
-                  <input type="text" id="detailEdit5" />
+                  <input type="text" id="deviceRegister5" />
                 </label>
-                <label for="detailEdit6" class="field">
+                <label for="deviceRegister6" class="field">
                   <span class="label-text">IP</span>
-                  <input type="text" id="detailEdit6" />
+                  <input type="text" id="deviceRegister6" />
                 </label>
-                <label for="detailEdit7" class="field">
+                <label for="deviceRegister7" class="field">
                   <span class="label-text">디바이스명</span>
-                  <input type="text" id="detailEdit7" />
+                  <input type="text" id="deviceRegister7" />
                 </label>
-                <div class="field">
+                <label for="deviceRegister8" class="field">
                   <span class="label-text">사용여부</span>
-                  <input type="checkbox" id="detailEdit8_switch" />
-                  <label for="detailEdit8_switch" class="switch_label">
-                    <span class="switch_button"></span>
-                  </label>
-                </div>
-              </div>
-
-              <section>
-                <!-- 볼륨조절 -->
-                <article>
-                  <header class="flex gap-2">
-                    <h3 class="text-base font-bold text-grey-500">볼륨조절</h3>
-                  </header>
-                  <div class="volume-container">
-                    <input
-                      type="range"
-                      id="detailEdit_volume-range"
-                      name="detailEdit_volume-range"
-                      min="0"
-                      max="100"
-                      value="25"
-                    />
-                    <input
-                      type="number"
-                      name="detailEdit_volume-result"
-                      id="detailEdit_volume-result"
-                      value="25"
-                    />
-                  </div>
-                </article>
-                <!-- 휴점일 -->
-                <article>
-                  <div class="flex flex-col">
-                    <h3 class="text-base font-bold text-grey-500">
-                      휴점일설정
-                    </h3>
-                    <ul class="flex justify-between items-center pt-2">
-                      <li class="flex items-center gap-1">
-                        <input type="checkbox" />
-                        <span class="text-grey-400">휴점일 연동 미적용</span>
+                  <div class="dropdown relative">
+                    <a
+                      class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
+                      href="#"
+                      type="button"
+                      id="deviceRegister8"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                      aria-labelledby="deviceRegister8"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >1</a
+                        >
                       </li>
                       <li>
-                        <input type="text" />
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >2</a
+                        >
                       </li>
                     </ul>
                   </div>
-                  <div class="flex flex-col">
-                    <h3 class="text-base font-bold text-grey-500">휴점일</h3>
-                    <ul class="flex flex-wrap pt-2 text-red text-sm">
-                      <li>2023-02-12(일),</li>
-                      <li>2023-02-12(일),</li>
-                      <li>2023-02-12(일),</li>
-                      <li>2023-02-12(일)</li>
-                    </ul>
-                  </div>
-                </article>
-                <!-- 꺼짐설정 -->
-                <article>
-                  <h3 class="text-base font-bold text-grey-500">꺼짐설정</h3>
-                  <div class="offContainer">
-                    <ul class="offList">
-                      <label class="offListItem">
-                        <input type="checkbox" />
-                        <span class="text-grey-400">일괄꺼짐</span>
-                      </label>
-                      <li class="offListItem">
-                        <div class="offListItem_container">
-                          <span class="offListItem_box">
-                            <label class="offListItem"></label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                    <ul class="offList">
-                      <label class="offListItem">
-                        <input type="checkbox" />
-                        <span class="text-grey-400">요일별꺼짐</span>
-                      </label>
-                      <li class="offListItem">
-                        <div class="offListItem_container">
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">월</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
+                </label>
+              </div>
 
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">화</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">수</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">목</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">금</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">토</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-
-                          <span class="offListItem_box">
-                            <label class="offListItem">
-                              <input type="checkbox" />
-                              <span class="text-grey-400">일</span>
-                            </label>
-                            <div class="dropdown relative">
-                              <a
-                                class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                                href="#"
-                                type="button"
-                                id="detailEdit2"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
-                                <i class="fa-solid fa-chevron-down"></i>
-                              </a>
-                              <ul
-                                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                                aria-labelledby="detailEdit2"
-                              >
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >1</a
-                                  >
-                                </li>
-                                <li>
-                                  <a
-                                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                    href="#"
-                                    >2</a
-                                  >
-                                </li>
-                              </ul>
-                            </div>
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </article>
-              </section>
+              <!-- 등록된 매체 -->
+              <div
+                class="w-full h-[200px] flex flex-col border-2 rounded-[5px] p-4 gap-3"
+              >
+                <header class="flex gap-2">
+                  <h3 class="text-base font-bold text-grey-500">등록된 매체</h3>
+                  <button
+                    data-modal-toggle="mediaAddModal"
+                    class="button button_small"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                    <span>매체추가</span>
+                  </button>
+                </header>
+                <ul class="media">
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>1x1_1F_매장입구</span>
+                    <span>1</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>1x1_1F_매장입구</span>
+                    <span>1</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>1x1_1F_매장입구</span>
+                    <span>1</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>매장입구 스크린(매장입구 스크린 1)</span>
+                    <span>100</span>
+                  </li>
+                  <li class="media_item">
+                    <span>1x1_1F_매장입구</span>
+                    <span>1</span>
+                  </li>
+                </ul>
+              </div>
 
               <nav class="flex gap-2 justify-center h-full">
-                <button data-modal-toggle="detailEditModal" class="button">
+                <button data-modal-toggle="deviceRegisterModal" class="button">
                   취소
                 </button>
                 <button
-                  data-modal-toggle="detailEditConfirmModal"
+                  data-modal-toggle="deviceRegisterConfirmModal"
                   class="button button_yellow_lightText"
                 >
                   저장
