@@ -21,3 +21,12 @@ input:focus {
   outline: none !important;
   border-color: var(--grey-500) !important;
 }
+
+input:disabled {
+  background-color: var(--grey-disabled);
+}
+
+input,
+.dropdown > a {
+  border-radius: 2px !important;
+}
