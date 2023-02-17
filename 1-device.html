@@ -223,11 +223,17 @@
 
         <main class="w-full h-[80%] flex flex-col gap-3">
           <nav class="buttons">
-            <button class="button">디바이스 사용 여부</button>
             <button
               class="button"
-              data-modal-target="volumeModal"
-              data-modal-toggle="volumeModal"
+              data-modal-target="main_nav_onOffModal"
+              data-modal-toggle="main_nav_onOffModal"
+            >
+              디바이스 사용 여부
+            </button>
+            <button
+              class="button"
+              data-modal-target="main_nav_volumeModal"
+              data-modal-toggle="main_nav_volumeModal"
             >
               볼륨조절
             </button>
@@ -347,7 +353,7 @@
                         </label>
                         <label for="deviceRegister5" class="field">
                           <span class="label-text">해상도</span>
-                          <input type="text" id="deviceRegister5" />
+                          <input type="text" id="deviceRegister5" disabled />
                         </label>
                         <label for="deviceRegister6" class="field">
                           <span class="label-text">IP</span>
@@ -357,40 +363,13 @@
                           <span class="label-text">디바이스명</span>
                           <input type="text" id="deviceRegister7" />
                         </label>
-                        <label for="deviceRegister8" class="field">
+                        <div class="field">
                           <span class="label-text">사용여부</span>
-                          <div class="dropdown relative">
-                            <a
-                              class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-end whitespace-nowrap w-full border"
-                              href="#"
-                              type="button"
-                              id="deviceRegister8"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-chevron-down"></i>
-                            </a>
-                            <ul
-                              class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                              aria-labelledby="deviceRegister8"
-                            >
-                              <li>
-                                <a
-                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                  href="#"
-                                  >1</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                  href="#"
-                                  >2</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </label>
+                          <input type="checkbox" id="switch_checkbox" />
+                          <label for="switch_checkbox" class="switch_label">
+                            <span class="switch_button"></span>
+                          </label>
+                        </div>
                       </div>
 
                       <!-- 등록된 매체 -->
@@ -671,48 +650,87 @@
                 </div>
               </div>
             </div>
-          </nav>
-
-          <!-- 볼륨조절 모달 -->
-          <div
-            id="volumeModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-lg h-auto">
-              <div class="relative bg-white shadow">
-                <form class="px-8 py-6 flex flex-col gap-6">
-                  <h3 class="text-lg font-bold text-grey-500">볼륨조절</h3>
-                  <div class="volume-container">
-                    <input
-                      type="range"
-                      id="volume-range"
-                      name="volume-range"
-                      min="0"
-                      max="100"
-                      value="25"
-                    />
-                    <input
-                      type="number"
-                      name="volume-result"
-                      id="volume-result"
-                      value="25"
-                    />
-                  </div>
-                  <nav class="flex gap-2 justify-center h-full">
-                    <button
-                      data-modal-hide="deviceRegisterConfirmModal"
-                      class="button"
-                    >
-                      취소
-                    </button>
-                    <button class="button button_yellow_lightText">저장</button>
-                  </nav>
-                </form>
+            <!-- 메인 > 버튼 그룹 > 디바이스 사용 여부 모달 -->
+            <div
+              id="main_nav_onOffModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+            >
+              <div class="relative w-full max-w-lg h-auto">
+                <div class="relative bg-white shadow">
+                  <form class="px-8 py-6 flex flex-col gap-6">
+                    <div class="flex">
+                      <div class="relative">
+                        <h3 class="text-lg font-bold text-grey-500 mr-4">
+                          디바이스 사용 여부
+                        </h3>
+                        <div class="absolute top-0 right-0">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <nav class="flex gap-2 justify-center h-full">
+                      <button
+                        data-modal-hide="main_nav_onOffModal"
+                        class="button"
+                      >
+                        취소
+                      </button>
+                      <button class="button button_yellow_lightText">
+                        저장
+                      </button>
+                    </nav>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
+            <!-- 메인 > 버튼 그룹 > 볼륨조절 모달 -->
+            <div
+              id="main_nav_volumeModal"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+            >
+              <div class="relative w-full max-w-lg h-auto">
+                <div class="relative bg-white shadow">
+                  <form class="px-8 py-6 flex flex-col gap-6">
+                    <h3 class="text-lg font-bold text-grey-500">볼륨조절</h3>
+                    <div class="volume-container">
+                      <input
+                        type="range"
+                        id="volume-range"
+                        name="volume-range"
+                        min="0"
+                        max="100"
+                        value="25"
+                      />
+                      <input
+                        type="number"
+                        name="volume-result"
+                        id="volume-result"
+                        value="25"
+                      />
+                    </div>
+                    <nav class="flex gap-2 justify-center h-full">
+                      <button
+                        data-modal-hide="deviceRegisterConfirmModal"
+                        class="button"
+                      >
+                        취소
+                      </button>
+                      <button class="button button_yellow_lightText">
+                        저장
+                      </button>
+                    </nav>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
 
           <div class="flex gap-3 h-[90%]">
             <!-- Tabs -->
@@ -1843,7 +1861,7 @@
                             </label>
                             <label for="detailEdit5" class="field">
                               <span class="label-text">해상도</span>
-                              <input type="text" id="detailEdit5" />
+                              <input type="text" id="detailEdit5" disabled />
                             </label>
                             <label for="detailEdit6" class="field">
                               <span class="label-text">IP</span>
@@ -1855,11 +1873,8 @@
                             </label>
                             <div class="field">
                               <span class="label-text">사용여부</span>
-                              <input type="checkbox" id="detailEdit8_switch" />
-                              <label
-                                for="detailEdit8_switch"
-                                class="switch_label"
-                              >
+                              <input type="checkbox" id="switch_checkbox" />
+                              <label for="switch_checkbox" class="switch_label">
                                 <span class="switch_button"></span>
                               </label>
                             </div>

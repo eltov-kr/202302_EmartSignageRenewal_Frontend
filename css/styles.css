@@ -31,3 +31,7 @@ input,
 .dropdown > a {
   border-radius: 2px !important;
 }
+
+input:disabled {
+  background-color: var(--grey-disabled);
+}
