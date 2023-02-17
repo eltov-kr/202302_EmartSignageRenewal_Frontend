@@ -637,10 +637,7 @@
                       </div>
 
                       <nav class="flex gap-2 justify-center h-full">
-                        <button
-                          data-modal-toggle="mediaAddModal"
-                          class="button"
-                        >
+                        <button data-modal-hide="mediaAddModal" class="button">
                           취소
                         </button>
                         <button class="button button_yellow_lightText">
@@ -1925,7 +1922,9 @@
                                     >
                                   </li>
                                   <li>
-                                    <input type="text" />
+                                    <div class="datepicker relative">
+                                      <input type="text" class="form-control" />
+                                    </div>
                                   </li>
                                 </ul>
                               </div>
