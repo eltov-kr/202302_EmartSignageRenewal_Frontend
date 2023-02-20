@@ -11,7 +11,7 @@
   font-size: 14px;
   font-weight: 600;
   height: 35px;
-  min-width: 70px;
+  min-width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
