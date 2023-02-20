@@ -1,0 +1,118 @@
+.branch_card-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(365px, auto));
+  grid-template-rows: repeat(auto-fill, 200px);
+  justify-content: space-between;
+  gap: 20px;
+}
+.branch_card-container .card {
+  border: 1px solid #dce0e4;
+  width: 370px;
+  height: 200px;
+  background-color: #fff;
+  padding: 15px 20px;
+}
+.branch_card-container .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.branch_card-container .contents {
+  padding: 10px 0;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+.branch_card-container .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em auto;
+  column-gap: 1em;
+  font-size: 14px;
+  font-weight: 600;
+}
+.branch_card-container .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* 점포 그룹 추가 Form */
+.form_groupAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form_groupAdd .fieldContainer {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 1em;
+}
+.form_groupAdd .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em auto;
+  column-gap: 1em;
+}
+.form_groupAdd .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 15px;
+}
+.form_groupAdd section {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.form_groupAdd article {
+  /* height: 100%; */
+}
+.form_groupAdd article:nth-child(1) {
+  width: 100px;
+}
+.form_groupAdd article:nth-child(2) {
+  width: 400px;
+}
+.form_groupAdd article:last-child {
+  width: 250px;
+}
+.form_groupAdd .branchContainer {
+  height: 100%;
+  border: 1px solid #dce0e4;
+  font-size: 13px;
+  padding: 5px;
+  overflow-y: auto;
+}
+.form_groupAdd article .branchContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form_groupAdd article:nth-child(2) .branchContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(90px, auto));
+  grid-template-rows: repeat(auto-fill, 20px);
+}
+.form_groupAdd article:last-child .branchContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(90px, auto));
+  grid-template-rows: repeat(auto-fill, 20px);
+}
+.form_groupAdd .branchContainer .field {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--grey-400);
+}
+.form_groupAdd .branchContainer .field:focus {
+  color: var(--yellow-primary);
+}
+.form_groupAdd .branchContainer .field:first-child {
+  cursor: pointer;
+}

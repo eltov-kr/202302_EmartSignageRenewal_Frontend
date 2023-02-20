@@ -33,6 +33,10 @@
   font-size: 13px;
   font-weight: 400;
 }
+/* 취소, 저장 버튼 */
+.button_save {
+  width: 90px;
+}
 
 /* 엑셀 다운받기 버튼 */
 .button_download {

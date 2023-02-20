@@ -8,6 +8,7 @@
 
 /* Screens */
 @import 'screens/1-device.css';
+@import 'screens/2-branch.css';
 
 /* 스크롤바 */
 /* Works on Firefox */
