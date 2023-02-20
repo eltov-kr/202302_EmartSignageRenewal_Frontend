@@ -98,8 +98,7 @@
   gap: 5px;
 }
 
-/* 디바이스 세부정보 수정 Form */
-/* 볼륨조절, 휴점일, 꺼짐설정 */
+/* 디바이스 세부정보 수정 Form > 볼륨조절, 휴점일, 꺼짐설정 */
 .form_device section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
