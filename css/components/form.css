@@ -31,3 +31,33 @@ input,
   border: 1px solid var(--grey-200) !important;
   border-radius: 2px !important;
 }
+
+progress {
+  appearance: none;
+  width: 100%;
+  height: 5px;
+}
+.progress-done::-webkit-progress-bar {
+  background: var(--grey-400);
+  border-radius: 10px;
+}
+.progress-done::-webkit-progress-value {
+  border-radius: 10px;
+  background: var(--grey-400);
+}
+.progress-ing::-webkit-progress-bar {
+  background: var(--grey-400);
+  border-radius: 10px;
+}
+.progress-ing::-webkit-progress-value {
+  border-radius: 10px;
+  background: var(--yellow-primary);
+}
+.progress-red::-webkit-progress-bar {
+  background: var(--red);
+  border-radius: 10px;
+}
+.progress-red::-webkit-progress-value {
+  border-radius: 10px;
+  background: var(--red);
+}

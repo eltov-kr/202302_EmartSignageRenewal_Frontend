@@ -48,7 +48,7 @@
         beatae.
       </p>
 
-      <div class="relative w-full max-w-[600px] h-auto">
+      <div class="relative w-full max-w-4xl h-auto">
         <div class="relative bg-white shadow">
           <div class="px-8 py-6">
             <!-- <header class="flex justify-between mb-6">
@@ -64,20 +64,128 @@
               </button>
             </header> -->
 
-            <form action="#" class="form_contents">
-              <div class="form-container_contents">
-                <video controls width="540">
-                  <source src="movie.mp4" type="video/mp4" />
-                  <source src="movie.ogg" type="video/ogg" />
-                  Your browser does not support the video tag.
-                </video>
+            <form action="#" class="form_contentsRegister">
+              <div class="fieldContainer">
+                <label
+                  for="contentsRegister_uploader"
+                  class="flex flex-col items-center justify-center w-full h-[100px] border-grey-200 border rounded-md cursor-pointer bg-[#EDEFF1] hover:bg-grey-100"
+                >
+                  <div class="flex items-center justify-center p-5 gap-2">
+                    <svg
+                      aria-hidden="true"
+                      class="w-10 h-10 text-grey-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                      ></path>
+                    </svg>
+                    <div class="flex flex-col gap-2 justify-center">
+                      <p class="text-sm text-grey-500 font-semibold">
+                        파일 업로드
+                      </p>
+                      <p class="text-xs text-grey-500">
+                        여기에 파일을 드롭하거나 클릭하십시오.
+                      </p>
+                    </div>
+                  </div>
+                  <input
+                    id="contentsRegister_uploader"
+                    type="file"
+                    class="hidden"
+                  />
+                </label>
               </div>
 
-              <nav class="flex gap-2 justify-center">
-                <button data-modal-hide="contentsModal" class="button">
-                  닫기
+              <ul>
+                <li>
+                  <label for="contentsRegister1_file" class="progressContainer">
+                    <div class="fileStatus fileStatus_hidden">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span class="fileName"
+                      >전점-전매체-10월모니모-221017-221031-30s.mp4
+                    </span>
+                    <progress
+                      id="contentsRegister1_file"
+                      max="100"
+                      value="70"
+                      class="progress-ing"
+                    ></progress>
+                    <div class="fileSize">
+                      <span>618KB</span> /
+                      <span>618KB</span>
+                    </div>
+                  </label>
+                  <label for="contentsRegister1_time" class="timeContainer">
+                    <span class="label-text">시간설정</span>
+                    <input type="text" id="contentsRegister1_time" />
+                    <button><i class="fa-solid fa-xmark"></i></button>
+                  </label>
+                </li>
+                <li>
+                  <label for="contentsRegister1_file" class="progressContainer">
+                    <div class="fileStatus">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span class="fileName"
+                      >전점-전매체-10월모니모-221017-221031-30s.mp4
+                    </span>
+                    <progress
+                      id="contentsRegister1_file"
+                      max="100"
+                      value="100"
+                      class="progress-done"
+                    ></progress>
+                    <div class="fileSize">
+                      <span>618KB</span> /
+                      <span>618KB</span>
+                    </div>
+                  </label>
+                  <label for="contentsRegister1_time" class="timeContainer">
+                    <span class="label-text">시간설정</span>
+                    <input type="text" id="contentsRegister1_time" />
+                    <button><i class="fa-solid fa-xmark"></i></button>
+                  </label>
+                </li>
+                <li>
+                  <label for="contentsRegister1_file" class="progressContainer">
+                    <div class="fileStatus fileStatus_red">
+                      <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <span class="fileName"
+                      >전점-전매체-10월모니모-221017-221031-30s.mp4
+                    </span>
+                    <progress
+                      id="contentsRegister1_file"
+                      max="100"
+                      value="100"
+                      class="progress-red"
+                    ></progress>
+                    <div class="fileSize">
+                      <span>618KB</span> /
+                      <span>618KB</span>
+                    </div>
+                  </label>
+                  <label for="contentsRegister1_time" class="timeContainer">
+                    <span class="label-text">시간설정</span>
+                    <input type="text" id="contentsRegister1_time" />
+                    <button><i class="fa-solid fa-xmark"></i></button>
+                  </label>
+                </li>
+              </ul>
+
+              <nav class="flex gap-2 justify-center h-full">
+                <button class="button button_save">모두삭제</button>
+                <button class="button button_yellow_lightText button_save">
+                  올리기
                 </button>
-                <button class="button button_yellow_lightText">확인</button>
               </nav>
             </form>
           </div>
