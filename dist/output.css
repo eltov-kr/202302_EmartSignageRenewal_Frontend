@@ -1122,6 +1122,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2475,6 +2479,18 @@ video {
 
 .pr-6 {
   padding-right: 1.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
