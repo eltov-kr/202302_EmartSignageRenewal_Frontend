@@ -1,0 +1,47 @@
+#table-advertiser .unregistered {
+  color: var(--red);
+}
+
+/* 광고주 계약 등록 Form */
+.form_adRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.formContainer_adRegister {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+.formContainer_adRegister .field {
+  background: ivory;
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 7em 130px;
+  column-gap: 1em;
+}
+.formContainer_adRegister .field:nth-child(1),
+.formContainer_adRegister .field:nth-child(4) {
+  grid-column: span 2;
+}
+.formContainer_adRegister .field:nth-child(1),
+.formContainer_adRegister .field:nth-child(4) {
+  grid-template-columns: 7em auto;
+  border: 1px solid blue;
+}
+/* .formContainer_adRegister .field:nth-child(1) {
+  grid-template-columns: 7em auto;
+}
+.formContainer_adRegister .field:nth-child(5),
+.formContainer_adRegister .field:nth-child(6) {
+  grid-template-columns: 7em auto;
+} */
+.formContainer_adRegister .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

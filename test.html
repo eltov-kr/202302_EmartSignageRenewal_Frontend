@@ -48,8 +48,8 @@
         beatae.
       </p>
 
-      <div class="relative w-full max-w-4xl h-auto">
-        <div class="relative bg-white shadow">
+      <div class="relative w-full max-w-xl h-auto">
+        <div class="relative bg-white border-4 shadow">
           <div class="px-8 py-6">
             <!-- <header class="flex justify-between mb-6">
               <h3 class="text-[22px] font-bold text-grey-500">디바이스 등록</h3>
@@ -64,127 +64,73 @@
               </button>
             </header> -->
 
-            <form action="#" class="form_contentsRegister">
-              <div class="fieldContainer">
-                <label
-                  for="contentsRegister_uploader"
-                  class="flex flex-col items-center justify-center w-full h-[100px] border-grey-200 border rounded-md cursor-pointer bg-[#EDEFF1] hover:bg-grey-100"
-                >
-                  <div class="flex items-center justify-center p-5 gap-2">
-                    <svg
-                      aria-hidden="true"
-                      class="w-10 h-10 text-grey-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+            <form action="#" class="form_adRegister">
+              <div class="formContainer_adRegister">
+                <label for="adRegister1" class="field">
+                  <span class="label-text">콘텐츠 그룹명</span>
+                  <input type="text" id="adRegister1" />
+                </label>
+                <label for="adRegister2" class="field">
+                  <span class="label-text">광고주</span>
+                  <input type="text" id="adRegister2" />
+                </label>
+                <label for="adRegister3" class="field">
+                  <span class="label-text">광고구분</span>
+                  <div class="dropdown relative">
+                    <a
+                      class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
+                      href="#"
+                      type="button"
+                      id="adRegister3"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      ><span></span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                      aria-labelledby="adRegister2"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                      ></path>
-                    </svg>
-                    <div class="flex flex-col gap-2 justify-center">
-                      <p class="text-sm text-grey-500 font-semibold">
-                        파일 업로드
-                      </p>
-                      <p class="text-xs text-grey-500">
-                        여기에 파일을 드롭하거나 클릭하십시오.
-                      </p>
-                    </div>
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >2</a
+                        >
+                      </li>
+                    </ul>
                   </div>
-                  <input
-                    id="contentsRegister_uploader"
-                    type="file"
-                    class="hidden"
-                  />
+                </label>
+                <label for="adRegister4" class="field">
+                  <span class="label-text">집행금액(광고비)</span>
+                  <input type="text" id="adRegister4" />
+                </label>
+                <label for="adRegister5" class="field">
+                  <span class="label-text"
+                    ><input type="checkbox" id="adRegister5_checkbox" />자사광고
+                    시간설정</span
+                  >
+                  <input type="text" id="adRegister5" />
+                  <input type="text" id="adRegister5" />
                 </label>
               </div>
 
-              <ul>
-                <li>
-                  <label for="contentsRegister1_file" class="progressContainer">
-                    <div class="fileStatus fileStatus_hidden">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <span class="fileName"
-                      >전점-전매체-10월모니모-221017-221031-30s.mp4
-                    </span>
-                    <progress
-                      id="contentsRegister1_file"
-                      max="100"
-                      value="70"
-                      class="progress-ing"
-                    ></progress>
-                    <div class="fileSize">
-                      <span>618KB</span> /
-                      <span>618KB</span>
-                    </div>
-                  </label>
-                  <label for="contentsRegister1_time" class="timeContainer">
-                    <span class="label-text">시간설정</span>
-                    <input type="text" id="contentsRegister1_time" />
-                    <button><i class="fa-solid fa-xmark"></i></button>
-                  </label>
-                </li>
-                <li>
-                  <label for="contentsRegister1_file" class="progressContainer">
-                    <div class="fileStatus">
-                      <i class="fa-solid fa-check"></i>
-                    </div>
-                    <span class="fileName"
-                      >전점-전매체-10월모니모-221017-221031-30s.mp4
-                    </span>
-                    <progress
-                      id="contentsRegister1_file"
-                      max="100"
-                      value="100"
-                      class="progress-done"
-                    ></progress>
-                    <div class="fileSize">
-                      <span>618KB</span> /
-                      <span>618KB</span>
-                    </div>
-                  </label>
-                  <label for="contentsRegister1_time" class="timeContainer">
-                    <span class="label-text">시간설정</span>
-                    <input type="text" id="contentsRegister1_time" />
-                    <button><i class="fa-solid fa-xmark"></i></button>
-                  </label>
-                </li>
-                <li>
-                  <label for="contentsRegister1_file" class="progressContainer">
-                    <div class="fileStatus fileStatus_red">
-                      <i class="fa-solid fa-rotate-left"></i>
-                    </div>
-                    <span class="fileName"
-                      >전점-전매체-10월모니모-221017-221031-30s.mp4
-                    </span>
-                    <progress
-                      id="contentsRegister1_file"
-                      max="100"
-                      value="100"
-                      class="progress-red"
-                    ></progress>
-                    <div class="fileSize">
-                      <span>618KB</span> /
-                      <span>618KB</span>
-                    </div>
-                  </label>
-                  <label for="contentsRegister1_time" class="timeContainer">
-                    <span class="label-text">시간설정</span>
-                    <input type="text" id="contentsRegister1_time" />
-                    <button><i class="fa-solid fa-xmark"></i></button>
-                  </label>
-                </li>
-              </ul>
-
               <nav class="flex gap-2 justify-center h-full">
-                <button class="button button_save">모두삭제</button>
+                <button
+                  data-modal-hide="adRegisterModal"
+                  class="button button_save"
+                >
+                  취소
+                </button>
                 <button class="button button_yellow_lightText button_save">
-                  올리기
+                  저장
                 </button>
               </nav>
             </form>

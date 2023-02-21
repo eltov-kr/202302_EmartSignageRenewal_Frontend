@@ -1,0 +1,57 @@
+/* 등록된 매체 */
+.media {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+  overflow-y: auto;
+}
+.media_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5px;
+  height: 28px;
+  font-size: 13px;
+  border: 1px solid var(--grey-200);
+}
+
+/* 매체 추가 Form */
+.form_mediaAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.formContainer_mediaAdd {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+.formContainer_mediaAdd .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em 180px;
+  column-gap: 1em;
+}
+.formContainer_mediaAdd .field:nth-child(1),
+.formContainer_mediaAdd .field:nth-child(5),
+.formContainer_mediaAdd .field:nth-child(6) {
+  grid-column: span 2;
+}
+.formContainer_mediaAdd .field:nth-child(1) {
+  grid-template-columns: 5em auto;
+}
+.formContainer_mediaAdd .field:nth-child(5),
+.formContainer_mediaAdd .field:nth-child(6) {
+  grid-template-columns: 10em auto;
+}
+.formContainer_mediaAdd .label-text {
+  place-self: center end;
+  color: var(--grey-400);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
