@@ -12,29 +12,29 @@
   flex-direction: column;
   gap: 30px;
 }
-.form_device_container {
+.form_device .form_deviceContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   justify-content: space-between;
   row-gap: 1em;
 }
-.form_device_container .field {
+.form_device .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 5em 180px;
   column-gap: 1em;
 }
-.form_device_container .field:nth-child(4),
-.form_device_container .field:nth-child(5),
-.form_device_container .field:nth-child(7) {
+.form_device .field:nth-child(4),
+.form_device .field:nth-child(5),
+.form_device .field:nth-child(7) {
   grid-column: span 2;
   grid-template-columns: 5em auto;
 }
-.form_device_container .field:nth-child(8) {
+.form_device .field:nth-child(8) {
   padding-top: 9px;
 }
-.form_device_container .label-text {
+.form_device .labelText {
   place-self: center end;
   color: var(--grey-400);
   font-size: 15px;

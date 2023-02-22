@@ -47,7 +47,7 @@
 .formContainer_mediaAdd .field:nth-child(6) {
   grid-template-columns: 10em auto;
 }
-.formContainer_mediaAdd .label-text {
+.formContainer_mediaAdd .labelText {
   place-self: center end;
   color: var(--grey-400);
   font-size: 15px;

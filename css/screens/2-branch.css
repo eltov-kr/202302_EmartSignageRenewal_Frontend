@@ -32,7 +32,7 @@
   font-size: 14px;
   font-weight: 600;
 }
-.branch_card-container .label-text {
+.branch_card-container .labelText {
   place-self: start;
   color: var(--grey-400);
   font-size: 13px;
@@ -56,7 +56,7 @@
   grid-template-columns: 5em auto;
   column-gap: 1em;
 }
-.form_groupAdd .label-text {
+.form_groupAdd .labelText {
   place-self: center end;
   color: var(--grey-400);
   font-size: 15px;
@@ -136,7 +136,7 @@
   font-size: 14px;
   font-weight: 600;
 }
-.form_groupEdit .label-text {
+.form_groupEdit .labelText {
   place-self: start;
   color: var(--grey-400);
   font-size: 13px;

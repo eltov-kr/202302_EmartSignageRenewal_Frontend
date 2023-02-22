@@ -48,7 +48,7 @@
         beatae.
       </p>
 
-      <div class="relative w-full max-w-xl h-auto">
+      <div class="relative w-full max-w-2xl h-auto">
         <div class="relative bg-white border-4 shadow">
           <div class="px-8 py-6">
             <!-- <header class="flex justify-between mb-6">
@@ -65,17 +65,17 @@
             </header> -->
 
             <form action="#" class="form_adRegister">
-              <div class="formContainer_adRegister">
+              <div class="formContainer">
                 <label for="adRegister1" class="field">
-                  <span class="label-text">콘텐츠 그룹명</span>
+                  <span class="labelText">콘텐츠 그룹명</span>
                   <input type="text" id="adRegister1" />
                 </label>
                 <label for="adRegister2" class="field">
-                  <span class="label-text">광고주</span>
+                  <span class="labelText">광고주</span>
                   <input type="text" id="adRegister2" />
                 </label>
                 <label for="adRegister3" class="field">
-                  <span class="label-text">광고구분</span>
+                  <span class="labelText">광고구분</span>
                   <div class="dropdown relative">
                     <a
                       class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
@@ -109,16 +109,22 @@
                   </div>
                 </label>
                 <label for="adRegister4" class="field">
-                  <span class="label-text">집행금액(광고비)</span>
+                  <span class="labelText">집행금액(광고비)</span>
                   <input type="text" id="adRegister4" />
                 </label>
-                <label for="adRegister5" class="field">
-                  <span class="label-text"
-                    ><input type="checkbox" id="adRegister5_checkbox" />자사광고
-                    시간설정</span
+                <label class="field">
+                  <span class="labelText"
+                    ><input type="checkbox" />전체 계약기간</span
                   >
-                  <input type="text" id="adRegister5" />
-                  <input type="text" id="adRegister5" />
+                  <div class="flex justify-between items-center text-gray-400">
+                    <div class="datepicker relative">
+                      <input type="text" class="form-control" />
+                    </div>
+                    ~
+                    <div class="datepicker relative">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
                 </label>
               </div>
 
