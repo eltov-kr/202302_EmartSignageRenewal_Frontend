@@ -18,6 +18,9 @@ module.exports = {
           500: '#45515B',
           disabled: '#EDEFF1',
         },
+        border: {
+          grey: '#DCE0E4',
+        },
       },
     },
     fontFamily: {

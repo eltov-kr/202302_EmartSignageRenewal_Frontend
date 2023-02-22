@@ -1,4 +1,5 @@
 :root {
+  --red: #ff4842;
   --yellow-primary: #ffab00;
   --yellow-light: #ffeecc;
   --grey-100: #f9fafb;
@@ -7,5 +8,5 @@
   --grey-400: #637381;
   --grey-500: #45515b;
   --grey-disabled: #edeff1;
-  --red: #ff4842;
+  --border-grey: #dce0e4;
 }

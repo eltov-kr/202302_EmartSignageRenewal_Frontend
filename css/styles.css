@@ -12,7 +12,11 @@
 @import 'screens/2-branch.css';
 @import 'screens/3-contents.css';
 @import 'screens/3-advertiser.css';
+@import 'screens/3-advertiser_detail.css';
 
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
 /* 스크롤바 */
 /* Works on Firefox */
 * {

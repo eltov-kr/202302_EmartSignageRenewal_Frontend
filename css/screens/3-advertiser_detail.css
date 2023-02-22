@@ -1,0 +1,82 @@
+#adDetailMain .cardContainer {
+  border: 1px solid var(--border-grey);
+  display: grid;
+  grid-template-columns: 302px 349px auto;
+}
+#adDetailMain .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-right: 1px solid var(--border-grey);
+}
+#adDetailMain .card .contentsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+  margin-top: -8px;
+  border: 1px solid red;
+}
+#adDetailMain .card .contentsContainer ul {
+  overflow-y: auto;
+}
+#adDetailMain .card:nth-child(2) {
+  background-color: var(--grey-100);
+}
+#adDetailMain .card:nth-child(2) {
+  background-color: var(--grey-100);
+}
+#adDetailMain .card:last-child {
+  border-right: 0;
+}
+#adDetailMain .card header {
+  display: flex;
+  justify-content: space-between;
+}
+#adDetailMain .card h5 {
+  font-weight: bold;
+}
+#adDetailMain .card .field {
+  display: grid;
+  gap: 10px;
+}
+#adDetailMain .card:nth-child(2) .field {
+  grid-template-columns: 110px 207px;
+}
+#adDetailMain .card:nth-child(3) .field {
+  grid-template-columns: 1fr 1fr;
+}
+#adDetailMain .contentsContainer ul {
+  margin-top: 10px;
+}
+#adDetailMain .contentsItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+#adDetailMain .contentsItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--grey-500);
+  margin-bottom: 20px;
+}
+#adDetailMain .screenboxContainer {
+  display: flex;
+  height: 25px;
+  margin-bottom: 5px;
+}
+#adDetailMain .screenboxContainer li {
+  border: 1px solid var(--grey-400);
+  border-right: 0;
+  height: 100%;
+  width: 42px;
+}
+#adDetailMain .screenboxContainer li:last-child {
+  border-right: 1px solid var(--grey-400);
+}

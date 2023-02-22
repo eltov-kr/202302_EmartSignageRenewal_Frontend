@@ -1,0 +1,983 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMART SIGNING 2.0 | 광고주등록 상세설정</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section
+      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1920px] min-h-[1040px]"
+    >
+      <aside
+        class="w-64 shadow-md absolute top-0 left-0 py-5 h-full bg-white border-r border-gray-200 flex flex-col justify-between"
+      >
+        <ul class="space-y-2">
+          <li>
+            <a href="index.html" class="flex items-center px-4 py-2 mb-10">
+              <img src="images/logo_emart.png" alt="Emart Logo" />
+            </a>
+          </li>
+
+          <li>
+            <a href="1-device.html">
+              <button
+                type="button"
+                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+              >
+                <img src="./images/menu_icon_device.png" />
+                <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                  >디바이스관리</span
+                >
+              </button>
+            </a>
+          </li>
+          <li>
+            <a
+              href="2-branch.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="images/menu_icon_group.png" />
+              <span class="ml-3">점포그룹관리</span>
+            </a>
+          </li>
+          <li class="bg-grey-100">
+            <a href="3-contents.html">
+              <button
+                type="button"
+                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
+                aria-controls="dropdown-pages_device"
+                data-collapse-toggle="dropdown-pages_device"
+              >
+                <img src="images/menu_icon_contents_o.png" />
+                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
+                  >광고주계약관리</span
+                >
+              </button>
+            </a>
+            <ul id="dropdown-pages_device" class="py-2 space-y-2">
+              <li>
+                <a
+                  href="3-contents.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span
+                  >콘텐츠등록</a
+                >
+              </li>
+              <li>
+                <a
+                  href="3-advertiser.html"
+                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                  ></span>
+
+                  광고주등록</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="4-schedule.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="./images/menu_icon_schedule-1.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >스케줄관리</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="5-sales.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="./images/menu_icon_schedule.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >영업관리</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="6-report.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="./images/menu_icon_report.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >리포트</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="3-settings.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="./images/menu_icon_setting.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="pl-5 pt-5">
+          <img src="images/logo.png" />
+        </div>
+      </aside>
+
+      <div class="pl-72 pr-8 h-screen">
+        <nav class="flex justify-end items-center space-x-3 h-[60px]">
+          <div class="flex items-center gap-2">
+            <strong>강변점</strong>/
+            <strong>점포 관리자</strong>
+          </div>
+          <div
+            class="flex justify-center items-center gap-1 border-grey-200 border-2 h-[28px] px-2"
+          >
+            <span class="text-red text-[13px]">신규가입요청자</span>
+            <span
+              class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-[13px]"
+              >5</span
+            >
+          </div>
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            data-dropdown-placement="bottom-end"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+            >
+              <g id="top_menu_btn" transform="translate(-0.447)">
+                <circle
+                  id="타원"
+                  cx="17.5"
+                  cy="17.5"
+                  r="17.5"
+                  transform="translate(0.447)"
+                  fill="#dce0e4"
+                />
+                <line
+                  id="선"
+                  x2="12"
+                  transform="translate(11.947 12.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+                <line
+                  id="선-2"
+                  data-name="선"
+                  x2="12"
+                  transform="translate(11.947 17.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+                <line
+                  id="선-3"
+                  data-name="선"
+                  x2="12"
+                  transform="translate(11.947 22.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
+          >
+            <ul
+              class="text-xs text-gray-700"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
+              </li>
+              <li>
+                <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <header>
+          <h1 class="font-bold text-xl my-4">광고주등록</h1>
+          <div class="flex gap-3 items-center font-bold text-sm">
+            <h2 class="text-gray-400">광고주계약관리</h2>
+            <span
+              class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+            >
+            </span>
+            <h3 class="text-gray-400">광고주등록</h3>
+            <span
+              class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+            >
+            </span>
+            <h4>광고주등록 상세설정</h4>
+          </div>
+        </header>
+
+        <main class="w-full h-[80%] flex" id="adDetailMain">
+          <div class="flex flex-col gap-6 h-[90%] w-full mt-10">
+            <div class="grow">
+              <nav
+                class="flex items-center gap-2 p-3 h-[60px] border border-b-0 rounded-t-md bg-white"
+                aria-label="Top navigation"
+              >
+                <!-- 전체 검색 Dropdown -->
+                <div class="dropdown relative">
+                  <a
+                    class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[200px]"
+                    href="#"
+                    type="button"
+                    id="dropdownMenuButton_device"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span>전체검색</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
+                    aria-labelledby="dropdownMenuButton_device"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                        href="#"
+                        >1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                        href="#"
+                        >2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                        href="#"
+                        >3</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <input
+                  type="text"
+                  placeholder="검색어를 입력하세요"
+                  class="h-[40px] w-[450px]"
+                />
+              </nav>
+              <section class="cardContainer">
+                <!-- 1. 매체 선택 -->
+                <article class="card">
+                  <header>
+                    <h5>1. 매체 선택 ></h5>
+                    <button class="button button_small">
+                      <i class="fa-solid fa-plus"></i>
+                      매체추가
+                    </button>
+                  </header>
+                  <div class="contentsContainer">
+                    <ul>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">포스 스크린-1</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">포스 스크린-2</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">대형 스크린</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">멀티 스크린</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">멀티 스크린-2</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <!-- 2. 콘텐츠 선택  -->
+                <article class="card">
+                  <header>
+                    <h5>2. 콘텐츠 선택 ></h5>
+                    <button class="button button_small">
+                      <i class="fa-solid fa-plus"></i>
+                      <span>콘텐츠 업로드</span>
+                    </button>
+                  </header>
+                  <div class="contentsContainer">
+                    <nav class="field" aria-label="Top navigation">
+                      <div class="dropdown relative">
+                        <a
+                          class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-full bg-white"
+                          href="#"
+                          type="button"
+                          id="dropdownMenuButton_device"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span>전체검색</span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
+                          aria-labelledby="dropdownMenuButton_device"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >1</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >2</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >3</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <input type="text" placeholder="검색어를 입력하세요" />
+                    </nav>
+                    <ul>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">포스 스크린-1</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">포스 스크린-2</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">대형 스크린</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">멀티 스크린</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">멀티 스크린-2</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <!-- 3. 광고 상세설정 -->
+                <article class="card">
+                  <header>
+                    <h5>3. 광고 상세설정 ></h5>
+                  </header>
+                  <div class="contentsContainer">
+                    <nav class="field" aria-label="Top navigation">
+                      <div class="dropdown relative">
+                        <a
+                          class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-full bg-white"
+                          href="#"
+                          type="button"
+                          id="dropdownMenuButton_device"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span>전체검색</span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul
+                          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
+                          aria-labelledby="dropdownMenuButton_device"
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >1</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >2</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              href="#"
+                              >3</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <input type="text" placeholder="검색어를 입력하세요" />
+                    </nav>
+                    <ul>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox1"
+                          name="screenbox1"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                          </ul>
+                          <label for="screenbox1"
+                            >매장입구 스크린(매장입구 스크린 1)</label
+                          >
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">포스 스크린-1</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">포스 스크린-2</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">대형 스크린</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">멀티 스크린</label>
+                        </div>
+                      </li>
+                      <li class="contentsItem">
+                        <input
+                          type="checkbox"
+                          id="screenbox2"
+                          name="screenbox2"
+                        />
+                        <div>
+                          <ul class="screenboxContainer">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                          <label for="screenbox2">멀티 스크린-2</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </section>
+            </div>
+
+            <nav class="self-end flex gap-2 justify-center h-full">
+              <button
+                data-modal-hide="adRegisterModal"
+                class="button button_save"
+              >
+                취소
+              </button>
+              <button class="button button_yellow_lightText button_save">
+                저장
+              </button>
+            </nav>
+          </div>
+
+          <!-- 광고주 계약 등록 모달 -->
+          <!-- <div
+            id="adRegisterModal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+          >
+            <div class="relative w-full max-w-2xl h-auto">
+              <div class="relative bg-white shadow">
+                <div class="px-8 py-6">
+                  <header class="flex justify-between mb-6">
+                    <h3 class="text-[22px] font-bold text-grey-500">
+                      광고주 계약 등록
+                    </h3>
+                  </header>
+
+                  <form action="#" class="form_adRegister">
+                    <div class="formContainer">
+                      <label for="adRegister1" class="field">
+                        <span class="labelText">콘텐츠 그룹명</span>
+                        <input type="text" id="adRegister1" />
+                      </label>
+                      <label for="adRegister2" class="field">
+                        <span class="labelText">광고주</span>
+                        <input type="text" id="adRegister2" />
+                      </label>
+                      <label for="adRegister3" class="field">
+                        <span class="labelText">광고구분</span>
+                        <div class="dropdown relative">
+                          <a
+                            class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
+                            href="#"
+                            type="button"
+                            id="adRegister3"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><span></span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </a>
+                          <ul
+                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                            aria-labelledby="adRegister2"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >1</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >2</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </label>
+                      <label for="adRegister4" class="field">
+                        <span class="labelText">집행금액(광고비)</span>
+                        <input type="text" id="adRegister4" />
+                      </label>
+                      <label class="field">
+                        <span class="labelText"
+                          ><input type="checkbox" />전체 계약기간</span
+                        >
+                        <div
+                          class="flex justify-between items-center text-gray-400"
+                        >
+                          <div class="datepicker relative">
+                            <input type="text" class="form-control" />
+                          </div>
+                          ~
+                          <div class="datepicker relative">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+
+                    <nav class="flex gap-2 justify-center h-full">
+                      <button
+                        data-modal-hide="adRegisterModal"
+                        class="button button_save"
+                      >
+                        취소
+                      </button>
+                      <button
+                        class="button button_yellow_lightText button_save"
+                      >
+                        저장
+                      </button>
+                    </nav>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </main>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  </body>
+</html>
