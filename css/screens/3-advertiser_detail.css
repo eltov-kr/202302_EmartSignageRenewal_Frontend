@@ -1,7 +1,8 @@
 #adDetailMain .cardContainer {
+  height: 630px;
   border: 1px solid var(--border-grey);
   display: grid;
-  grid-template-columns: 302px 349px auto;
+  grid-template-columns: 322px 349px auto;
 }
 #adDetailMain .card {
   display: flex;
@@ -11,24 +12,26 @@
   background-color: #fff;
   border-right: 1px solid var(--border-grey);
 }
+#adDetailMain #topNav {
+  background-color: #fff;
+  height: 60px;
+  padding: 0 5px;
+  border: 1px solid var(--border-grey);
+  border-bottom: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
 #adDetailMain .card .contentsContainer {
+  height: 570px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 8px;
   margin-top: -8px;
-  border: 1px solid red;
 }
 #adDetailMain .card .contentsContainer ul {
+  margin-top: 10px;
   overflow-y: auto;
-}
-#adDetailMain .card:nth-child(2) {
-  background-color: var(--grey-100);
-}
-#adDetailMain .card:nth-child(2) {
-  background-color: var(--grey-100);
-}
-#adDetailMain .card:last-child {
-  border-right: 0;
 }
 #adDetailMain .card header {
   display: flex;
@@ -36,19 +39,6 @@
 }
 #adDetailMain .card h5 {
   font-weight: bold;
-}
-#adDetailMain .card .field {
-  display: grid;
-  gap: 10px;
-}
-#adDetailMain .card:nth-child(2) .field {
-  grid-template-columns: 110px 207px;
-}
-#adDetailMain .card:nth-child(3) .field {
-  grid-template-columns: 1fr 1fr;
-}
-#adDetailMain .contentsContainer ul {
-  margin-top: 10px;
 }
 #adDetailMain .contentsItem {
   display: flex;
@@ -79,4 +69,41 @@
 }
 #adDetailMain .screenboxContainer li:last-child {
   border-right: 1px solid var(--grey-400);
+}
+
+/* 2. 콘텐츠 선택 */
+#adDetailMain .card:nth-child(2) {
+  background-color: var(--grey-100);
+}
+#adDetailMain .card:nth-child(2) .contentsItem {
+  display: flex;
+  gap: 10px;
+  padding-right: 10px;
+}
+#adDetailMain .card:nth-child(2) img,
+#adDetailMain .card:nth-child(2) video {
+  width: 50px;
+  height: 30px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* 3. 광고 상세설정 */
+#adDetailMain .card:last-child {
+  border-right: 0;
+}
+#adDetailMain .card:last-child a,
+#adDetailMain .card:last-child input:last-child {
+  background-color: var(--grey-100);
+}
+#adDetailMain .card:last-child .screenboxContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#adDetailMain .card:last-child .screenboxContainer li {
+  width: 300px;
+  height: 200px;
 }

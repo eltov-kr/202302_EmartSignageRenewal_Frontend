@@ -5,6 +5,7 @@
 @import 'components/table.css';
 @import 'components/form.css';
 @import 'components/switch.css';
+@import 'components/cardNavbar.css';
 
 /* Screens */
 @import 'screens/1-device.css';
@@ -16,6 +17,7 @@
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
 }
 /* 스크롤바 */
 /* Works on Firefox */

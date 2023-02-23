@@ -250,55 +250,76 @@
         <main class="w-full h-[80%] flex" id="adDetailMain">
           <div class="flex flex-col gap-6 h-[90%] w-full mt-10">
             <div class="grow">
-              <nav
-                class="flex items-center gap-2 p-3 h-[60px] border border-b-0 rounded-t-md bg-white"
-                aria-label="Top navigation"
-              >
-                <!-- 전체 검색 Dropdown -->
-                <div class="dropdown relative">
-                  <a
-                    class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[200px]"
-                    href="#"
-                    type="button"
-                    id="dropdownMenuButton_device"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+              <nav class="cardNavbar" aria-label="Top navigation" id="topNav">
+                <span>
+                  <label class="labelText">광고<br />계약명</label>
+                  <input type="text" class="h-[40px]" />
+                </span>
+                <span>
+                  <label class="labelText">광고주</label>
+                  <input type="text" class="h-[40px]" />
+                </span>
+                <span>
+                  <label class="labelText">광고구분</label>
+                  <!--  Dropdown -->
+                  <div class="dropdown relative">
+                    <a
+                      class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[110px]"
+                      href="#"
+                      type="button"
+                      id="dropdownMenuButton_device"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span></span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
+                      aria-labelledby="dropdownMenuButton_device"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >3</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+                <span>
+                  <label class="labelText">전체<br />계약기간</label>
+                  <div
+                    class="flex justify-between items-center gap-2 text-gray-400"
                   >
-                    <span>전체검색</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </a>
-                  <ul
-                    class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                    aria-labelledby="dropdownMenuButton_device"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                        href="#"
-                        >1</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                        href="#"
-                        >2</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                        href="#"
-                        >3</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <input
-                  type="text"
-                  placeholder="검색어를 입력하세요"
-                  class="h-[40px] w-[450px]"
-                />
+                    <div class="datepicker relative">
+                      <input type="text" class="form-control" />
+                    </div>
+                    ~
+                    <div class="datepicker relative">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </span>
+                <span>
+                  <label class="labelText">집행금액<br />(광고비)</label>
+                  <input type="text" class="h-[40px]" />
+                </span>
               </nav>
               <section class="cardContainer">
                 <!-- 1. 매체 선택 -->
@@ -313,55 +334,37 @@
                   <div class="contentsContainer">
                     <ul>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
+                        <input type="checkbox" />
                         <div>
                           <ul class="screenboxContainer">
                             <li></li>
                           </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
+                          <label>매장입구 스크린(매장입구 스크린 1)</label>
                         </div>
                       </li>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
+                        <input type="checkbox" />
                         <div>
                           <ul class="screenboxContainer">
                             <li></li>
                             <li></li>
                           </ul>
-                          <label for="screenbox2">포스 스크린-1</label>
+                          <label>포스 스크린-1</label>
                         </div>
                       </li>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
+                        <input type="checkbox" />
                         <div>
                           <ul class="screenboxContainer">
                             <li></li>
                             <li></li>
                             <li></li>
                           </ul>
-                          <label for="screenbox2">포스 스크린-2</label>
+                          <label>포스 스크린-2</label>
                         </div>
                       </li>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
+                        <input type="checkbox" />
                         <div>
                           <ul class="screenboxContainer">
                             <li></li>
@@ -369,15 +372,11 @@
                             <li></li>
                             <li></li>
                           </ul>
-                          <label for="screenbox2">대형 스크린</label>
+                          <label>대형 스크린</label>
                         </div>
                       </li>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
+                        <input type="checkbox" />
                         <div>
                           <ul class="screenboxContainer">
                             <li></li>
@@ -386,15 +385,11 @@
                             <li></li>
                             <li></li>
                           </ul>
-                          <label for="screenbox2">멀티 스크린</label>
+                          <label>멀티 스크린</label>
                         </div>
                       </li>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
+                        <input type="checkbox" />
                         <div>
                           <ul class="screenboxContainer">
                             <li></li>
@@ -404,7 +399,7 @@
                             <li></li>
                             <li></li>
                           </ul>
-                          <label for="screenbox2">멀티 스크린-2</label>
+                          <label>멀티 스크린-2</label>
                         </div>
                       </li>
                     </ul>
@@ -420,10 +415,10 @@
                     </button>
                   </header>
                   <div class="contentsContainer">
-                    <nav class="field" aria-label="Top navigation">
+                    <nav class="cardNavbar" aria-label="Contents navigation">
                       <div class="dropdown relative">
                         <a
-                          class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-full bg-white"
+                          class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-full w-[120px] bg-white"
                           href="#"
                           type="button"
                           id="dropdownMenuButton_device"
@@ -464,249 +459,25 @@
                     </nav>
                     <ul>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
+                        <input type="checkbox" />
+                        <video>
+                          <source
+                            src="videos/dogvideoplayback.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                        <label
+                          >전점-전매체-10월모니모-221017-221031-30s.mp4</label
+                        >
                       </li>
                       <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
+                        <input type="checkbox" />
+                        <img
+                          src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
                         />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
-                          >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">포스 스크린-1</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">포스 스크린-2</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">대형 스크린</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">멀티 스크린</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">멀티 스크린-2</label>
-                        </div>
+                        <label
+                          >전점-전매체-10월모니모-221017-221031-30s.jpg</label
+                        >
                       </li>
                     </ul>
                   </div>
@@ -717,144 +488,79 @@
                     <h5>3. 광고 상세설정 ></h5>
                   </header>
                   <div class="contentsContainer">
-                    <nav class="field" aria-label="Top navigation">
-                      <div class="dropdown relative">
-                        <a
-                          class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-full bg-white"
-                          href="#"
-                          type="button"
-                          id="dropdownMenuButton_device"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
+                    <nav
+                      class="cardNavbar"
+                      aria-label="Detail setting navigation"
+                    >
+                      <span>
+                        <label class="labelText"
+                          >편성기간<br />(콘텐츠별)</label
                         >
-                          <span>전체검색</span>
-                          <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul
-                          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                          aria-labelledby="dropdownMenuButton_device"
+                        <div
+                          class="flex justify-between items-center gap-2 text-gray-400"
                         >
-                          <li>
-                            <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                              href="#"
-                              >1</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                              href="#"
-                              >2</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                              href="#"
-                              >3</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <input type="text" placeholder="검색어를 입력하세요" />
-                    </nav>
-                    <ul>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox1"
-                          name="screenbox1"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                          </ul>
-                          <label for="screenbox1"
-                            >매장입구 스크린(매장입구 스크린 1)</label
+                          <div class="datepicker relative">
+                            <input type="text" class="form-control" />
+                          </div>
+                          ~
+                          <div class="datepicker relative">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </span>
+                      <span>
+                        <label class="labelText">송출<br />총횟수</label>
+                        <!--  Dropdown -->
+                        <div class="dropdown relative">
+                          <a
+                            class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[110px]"
+                            href="#"
+                            type="button"
+                            id="dropdownMenuButton_device"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
                           >
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
+                            <span></span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </a>
+                          <ul
+                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
+                            aria-labelledby="dropdownMenuButton_device"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >1</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >2</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >3</a
+                              >
+                            </li>
                           </ul>
-                          <label for="screenbox2">포스 스크린-1</label>
                         </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">포스 스크린-2</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">대형 스크린</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">멀티 스크린</label>
-                        </div>
-                      </li>
-                      <li class="contentsItem">
-                        <input
-                          type="checkbox"
-                          id="screenbox2"
-                          name="screenbox2"
-                        />
-                        <div>
-                          <ul class="screenboxContainer">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                          <label for="screenbox2">멀티 스크린-2</label>
-                        </div>
-                      </li>
+                      </span>
+                      <span>
+                        <label class="labelText">일 송출<br />횟수</label>
+                        <input type="text" class="h-[40px] w-[110px]" />
+                      </span>
+                      <span>
+                        <button class="button button_small">수정</button>
+                      </span>
+                    </nav>
+                    <ul class="screenboxContainer">
+                      <li></li>
                     </ul>
                   </div>
                 </article>
@@ -874,106 +580,7 @@
             </nav>
           </div>
 
-          <!-- 광고주 계약 등록 모달 -->
-          <!-- <div
-            id="adRegisterModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-2xl h-auto">
-              <div class="relative bg-white shadow">
-                <div class="px-8 py-6">
-                  <header class="flex justify-between mb-6">
-                    <h3 class="text-[22px] font-bold text-grey-500">
-                      광고주 계약 등록
-                    </h3>
-                  </header>
-
-                  <form action="#" class="form_adRegister">
-                    <div class="formContainer">
-                      <label for="adRegister1" class="field">
-                        <span class="labelText">콘텐츠 그룹명</span>
-                        <input type="text" id="adRegister1" />
-                      </label>
-                      <label for="adRegister2" class="field">
-                        <span class="labelText">광고주</span>
-                        <input type="text" id="adRegister2" />
-                      </label>
-                      <label for="adRegister3" class="field">
-                        <span class="labelText">광고구분</span>
-                        <div class="dropdown relative">
-                          <a
-                            class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
-                            href="#"
-                            type="button"
-                            id="adRegister3"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                            ><span></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </a>
-                          <ul
-                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                            aria-labelledby="adRegister2"
-                          >
-                            <li>
-                              <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                href="#"
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                href="#"
-                                >2</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </label>
-                      <label for="adRegister4" class="field">
-                        <span class="labelText">집행금액(광고비)</span>
-                        <input type="text" id="adRegister4" />
-                      </label>
-                      <label class="field">
-                        <span class="labelText"
-                          ><input type="checkbox" />전체 계약기간</span
-                        >
-                        <div
-                          class="flex justify-between items-center text-gray-400"
-                        >
-                          <div class="datepicker relative">
-                            <input type="text" class="form-control" />
-                          </div>
-                          ~
-                          <div class="datepicker relative">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </label>
-                    </div>
-
-                    <nav class="flex gap-2 justify-center h-full">
-                      <button
-                        data-modal-hide="adRegisterModal"
-                        class="button button_save"
-                      >
-                        취소
-                      </button>
-                      <button
-                        class="button button_yellow_lightText button_save"
-                      >
-                        저장
-                      </button>
-                    </nav>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> -->
+          <!--  모달 -->
         </main>
       </div>
     </section>
