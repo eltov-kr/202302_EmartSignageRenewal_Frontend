@@ -178,7 +178,7 @@
             가입신청
           </button>
 
-          <!-- 가입신청 모달 -->
+          <!-- 사용자 등록 모달 -->
           <div
             id="register-modal"
             tabindex="-1"
@@ -191,139 +191,197 @@
                   <h3 class="mb-6 text-[22px] font-bold text-grey-500">
                     사용자 등록
                   </h3>
-                  <form class="space-y-7 w-full" action="#">
-                    <div class="w-full grid grid-cols-5 items-center gap-3">
-                      <label
-                        for="author"
-                        class="text-sm text-grey-400 flex justify-self-end"
-                        >권한</label
-                      >
-                      <div class="dropdown relative col-span-4">
-                        <a
-                          class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
-                          href="#"
-                          type="button"
-                          id="author"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                          ><span></span>
-                          <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul
-                          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                          aria-labelledby="author"
-                        >
-                          <li>
-                            <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                              href="#"
-                              >1</a
+                  <form action="#" id="form_userRegister">
+                    <fieldset>
+                      <span class="field required">
+                        <label class="labelText">사용자 그룹</label>
+                        <div class="dropdown relative">
+                          <a
+                            class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
+                            href="#"
+                            type="button"
+                            id="groupAdd2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><span class="text-gray-400"
+                              >사용자 그룹을 선택하세요.</span
                             >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                              href="#"
-                              >2</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="w-full grid grid-cols-5 items-center gap-3">
-                      <label
-                        for="branch"
-                        class="text-sm text-grey-400 flex justify-self-end"
-                        >지점</label
-                      >
-                      <input
-                        type="text"
-                        name="branch"
-                        id="branch"
-                        class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                        required
-                      />
-                    </div>
-
-                    <div class="w-full grid grid-cols-5 items-center gap-3">
-                      <label
-                        for=""
-                        class="text-sm text-grey-400 flex justify-self-end"
-                        >아이디</label
-                      >
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                        required
-                      />
-                    </div>
-
-                    <div class="w-full grid grid-cols-5 items-center gap-3">
-                      <label
-                        for="password"
-                        class="text-sm text-grey-400 flex justify-self-end"
-                        >비밀번호</label
-                      >
-                      <div class="relative col-span-4">
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </a>
+                          <ul
+                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                            aria-labelledby="groupAdd2"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >운영관리자</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >점포 관리자</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >시스템 관리자</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >운영지원</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >광고대행사</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </span>
+                      <span class="field required">
+                        <label class="labelText">점포</label>
                         <input
-                          type="password"
-                          name="password"
-                          id="password"
-                          class="border rounded-sm text-grey-500 text-sm w-full"
+                          type="text"
+                          placeholder="사번을 입력하세요"
                           required
                         />
-                        <p class="text-xs text-grey-300 absolute top-10">
-                          <i class="fa-solid fa-circle-exclamation"></i>
+                        <button class="button button_small">점포검색</button>
+                      </span>
+                      <span class="field required">
+                        <label class="labelText">사번</label>
+                        <input
+                          type="text"
+                          placeholder="사번을 입력하세요"
+                          required
+                        />
+                        <button class="button button_small">사번검색</button>
+                        <button class="button button_small" disabled>
+                          중복체크
+                        </button>
+                      </span>
+                      <span class="field required">
+                        <label class="labelText">사용자명</label>
+                        <input type="text" required />
+                      </span>
+                      <span class="field required">
+                        <label class="labelText">비밀번호</label>
+                        <div class="flex flex-col">
+                          <input type="text" required />
+                          <p class="text-xs text-grey-300">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            영문 대•소문자, 특수문자, 숫자 중 2가지를 포함하여
+                            10자리 이상 입력해주세요.
+                          </p>
+                        </div>
+                      </span>
+                      <span class="field required">
+                        <label class="labelText">비밀번호 확인</label>
+                        <input
+                          type="text"
+                          placeholder="사번을 입력하세요"
+                          required
+                        />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">비밀번호<br />확인 질문</label>
+                        <div class="dropdown relative">
+                          <a
+                            class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
+                            href="#"
+                            type="button"
+                            id="groupAdd2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            ><span class="text-gray-400"
+                              >비밀번호 확인 질문을 선택하세요.</span
+                            >
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </a>
+                          <ul
+                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
+                            aria-labelledby="groupAdd2"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >기억에 남는 추억의 장소는?</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >나의 좌우명은?</a
+                              >
+                            </li>
 
-                          영문 대•소문자, 특수문자, 숫자 중 2가지를 포함하여
-                          10자리 이상 입력해주세요.
-                        </p>
-                      </div>
-                    </div>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >나의 보물 제1호는?</a
+                              >
+                            </li>
 
-                    <div class="w-full grid grid-cols-5 items-center gap-3">
-                      <label
-                        for=""
-                        class="text-sm text-grey-400 flex justify-self-end"
-                        >비밀번호 확인</label
-                      >
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                        required
-                      />
-                    </div>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >가장 기억에 남는 선생님 이름은?</a
+                              >
+                            </li>
 
-                    <div class="w-full grid grid-cols-5 items-center gap-3">
-                      <label
-                        for=""
-                        class="text-sm text-grey-400 flex justify-self-end"
-                        >사용자 명</label
-                      >
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="border rounded-sm border-grey-200 text-grey-500 text-sm w-full col-span-4"
-                        required
-                      />
-                    </div>
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >오래도록 기억하고 싶은 날짜는?</a
+                              >
+                            </li>
+
+                            <li>
+                              <a
+                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                href="#"
+                                >가장 생각나는 친구 이름은?</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </span>
+                      <span class="field">
+                        <label class="labelText">비밀번호<br />확인 답변</label>
+                        <input
+                          type="text"
+                          placeholder="비밀번호 확인 답변을 입력하세요"
+                        />
+                      </span>
+                    </fieldset>
 
                     <nav class="flex gap-2 justify-center">
-                      <button data-modal-toggle="register-modal" class="button">
+                      <button
+                        data-modal-hide="groupEditModal"
+                        class="button button_save"
+                      >
                         취소
                       </button>
                       <button
-                        data-modal-target="registerConfirm-modal"
-                        data-modal-toggle="registerConfirm-modal"
-                        class="button button_yellow_lightText"
+                        class="button button_yellow_lightText button_save"
                       >
-                        저장
+                        신청
                       </button>
                     </nav>
                   </form>

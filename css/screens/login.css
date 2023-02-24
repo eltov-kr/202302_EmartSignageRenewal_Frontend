@@ -1,0 +1,31 @@
+#form_userRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#form_userRegister fieldset {
+  display: grid;
+}
+#form_userRegister .field {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+/* 점포 */
+#form_userRegister .field:nth-child(2) {
+  grid-template-columns: 100px auto 70px;
+}
+/* 사번 */
+#form_userRegister .field:nth-child(3) {
+  grid-template-columns: 100px auto 70px 70px;
+}
+/* 비밀번호 */
+#form_userRegister .field:nth-child(5) {
+  grid-template-columns: 100px auto;
+  margin-bottom: 10px;
+}
+#form_userRegister .field:nth-child(5) .labelText {
+  margin-bottom: 30px;
+}

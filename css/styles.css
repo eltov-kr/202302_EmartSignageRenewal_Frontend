@@ -8,6 +8,7 @@
 @import 'components/cardNavbar.css';
 
 /* Screens */
+@import 'screens/login.css';
 @import 'screens/1-device.css';
 @import 'screens/1-media.css';
 @import 'screens/2-branch.css';

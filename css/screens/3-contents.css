@@ -27,8 +27,6 @@
 }
 .form_contentsRegister .timeContainer .labelText {
   place-self: center;
-  color: var(--grey-400);
-  font-size: 15px;
 }
 .form_contentsRegister .fileStatus {
   position: absolute;

@@ -36,8 +36,6 @@
 }
 .form_device .labelText {
   place-self: center end;
-  color: var(--grey-400);
-  font-size: 15px;
 }
 
 /* 디바이스 세부정보 수정 Form > 볼륨조절, 휴점일, 꺼짐설정 */

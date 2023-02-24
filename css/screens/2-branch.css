@@ -34,9 +34,7 @@
 }
 .branch_card-container .labelText {
   place-self: start;
-  color: var(--grey-400);
   font-size: 13px;
-  font-weight: normal;
 }
 
 /* 점포 그룹 추가 Form */
@@ -58,8 +56,6 @@
 }
 .form_groupAdd .labelText {
   place-self: center end;
-  color: var(--grey-400);
-  font-size: 15px;
 }
 .form_groupAdd section {
   width: 100%;

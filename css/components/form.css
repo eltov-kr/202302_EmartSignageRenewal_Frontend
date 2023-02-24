@@ -1,13 +1,7 @@
-/* input,
-.form_dropdown {
-  outline: none !important;
-  border-color: var(--grey-200) !important;
+.required label:before {
+  content: ' *';
+  color: var(--red);
 }
-
-input:focus {
-  outline: none !important;
-  border-color: var(--grey-500) !important;
-} */
 
 input,
 .form_dropdown {
@@ -30,6 +24,13 @@ input,
 .dropdown > a {
   border: 1px solid var(--grey-200) !important;
   border-radius: 2px !important;
+}
+
+.labelText {
+  color: var(--grey-400);
+  font-size: 15px;
+  font-weight: normal;
+  text-align: end;
 }
 
 progress {

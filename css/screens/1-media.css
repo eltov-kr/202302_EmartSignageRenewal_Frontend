@@ -49,8 +49,6 @@
 }
 .formContainer_mediaAdd .labelText {
   place-self: center end;
-  color: var(--grey-400);
-  font-size: 15px;
   display: flex;
   align-items: center;
   gap: 5px;
