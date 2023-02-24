@@ -3,7 +3,10 @@
   color: var(--red);
 }
 
-input,
+input[type='text'] {
+  height: 40px;
+}
+
 .form_dropdown {
   height: 40px;
   outline: none !important;
