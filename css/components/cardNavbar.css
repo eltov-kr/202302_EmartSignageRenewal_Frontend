@@ -1,4 +1,4 @@
-.cardNavbar {
+/* .cardNavbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,4 +11,20 @@
 }
 .cardNavbar .labelText {
   width: max-content;
+} */
+.cardNavbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.cardNavbar span {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  gap: 10px;
+}
+.cardNavbar .labelText {
+  /* width: max-content; */
 }

@@ -14,8 +14,7 @@
 }
 #adDetailMain #topNav {
   background-color: #fff;
-  height: 60px;
-  padding: 0 5px;
+  padding: 10px 20px;
   border: 1px solid var(--border-grey);
   border-bottom: 0;
   border-top-right-radius: 6px;
