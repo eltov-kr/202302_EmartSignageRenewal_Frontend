@@ -1,6 +1,7 @@
 /* 사용자 등록 form */
 #form_userRegister,
-#form_branchSearch {
+#form_branchSearch,
+#form_idSearch {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -32,23 +33,26 @@
   margin-bottom: 30px;
 }
 
-/* 점포 검색 form */
-#form_branchSearch .field:first-child {
+/* 검색 form */
+#form_branchSearch .field:first-child,
+#form_idSearch .field:first-child {
   display: grid;
-  grid-template-columns: 41px auto 80px;
+  grid-template-columns: max-content auto 80px;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
-#form_branchSearch .field:first-child .button {
+#form_branchSearch .field:first-child .button,
+#form_idSearch .field:first-child .button {
   height: 40px;
 }
-#form_branchSearch .labelText {
+#form_branchSearch .labelText,
+#form_idSearch .labelText {
   width: max-content;
 }
-
-/* 점포 검색 form > 테이블 */
-#form_branchSearch table.scrolldown {
+/* 검색 form > 테이블 */
+#form_branchSearch table.scrolldown,
+#form_idSearch table.scrolldown {
   width: 100%;
   border-spacing: 0;
   border: 1px solid var(--border-grey);
@@ -56,31 +60,54 @@
   color: var(--grey-500);
 }
 #form_branchSearch table.scrolldown tbody,
-#form_branchSearch table.scrolldown thead {
+#form_branchSearch table.scrolldown thead,
+#form_idSearch table.scrolldown tbody,
+#form_idSearch table.scrolldown thead {
   display: block;
 }
-#form_branchSearch thead tr th {
+#form_branchSearch thead tr th,
+#form_idSearch thead tr th {
   height: 40px;
   background-color: var(--border-grey);
 }
-#form_branchSearch table.scrolldown tbody {
+#form_branchSearch table.scrolldown tbody,
+#form_idSearch table.scrolldown tbody {
   height: 280px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 #form_branchSearch tbody td,
+#form_branchSearch thead th,
+#form_idSearch tbody td,
+#form_idSearch thead th {
+  line-height: 30px;
+}
+#form_branchSearch tbody td,
 #form_branchSearch thead th {
   width: 400px;
-  line-height: 30px;
 }
 #form_branchSearch tbody td:first-child,
 #form_branchSearch thead th:first-child {
   width: 200px;
 }
-#form_branchSearch td {
+#form_branchSearch td,
+#form_idSearch td {
   text-align: center;
 }
-#form_branchSearch tbody tr:hover {
+#form_branchSearch tbody tr:hover,
+#form_idSearch tbody tr:hover {
   background-color: var(--yellow-light);
   cursor: pointer;
+}
+
+/* 사번검색 */
+#form_idSearch tbody td,
+#form_idSearch thead th {
+  width: 120px;
+}
+#form_idSearch tbody td:nth-child(1),
+#form_idSearch thead th:nth-child(1),
+#form_idSearch tbody td:nth-child(2),
+#form_idSearch thead th:nth-child(2) {
+  width: 90px;
 }

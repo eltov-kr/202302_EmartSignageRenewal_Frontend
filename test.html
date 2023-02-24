@@ -64,28 +64,37 @@
               </button> -->
             </header>
 
-            <form action="#" id="form_branchSearch">
+            <form action="#" id="form_idSearch">
               <fieldset>
                 <span class="field">
-                  <label class="labelText">점포명</label>
-                  <input type="text" placeholder="점포명을 입력하세요" />
+                  <label class="labelText">사번</label>
+                  <input type="text" placeholder="사번을 입력하세요" />
                   <button class="button">검색</button>
                 </span>
                 <table class="scrolldown">
                   <thead>
                     <tr>
-                      <th>점포번호</th>
-                      <th>점포명</th>
+                      <th>사원번호</th>
+                      <th>사원명</th>
+                      <th>부서</th>
+                      <th>직책</th>
+                      <th>직무</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>최상위 조직</td>
-                      <td>이마트</td>
+                      <td>053*36</td>
+                      <td>김*현</td>
+                      <td>연수점인사총무</td>
+                      <td>파트장(E점포)</td>
+                      <td>인사업무관리</td>
                     </tr>
                     <tr>
-                      <td>1060</td>
-                      <td>평촌점</td>
+                      <td>053*36</td>
+                      <td>김*현</td>
+                      <td>연수점인사총무</td>
+                      <td>파트장(E점포)</td>
+                      <td>인사업무관리</td>
                     </tr>
                   </tbody>
                 </table>
@@ -93,7 +102,7 @@
 
               <nav class="flex gap-2 justify-center">
                 <button
-                  data-modal-hide="groupEditModal"
+                  data-modal-hide="idSearchModal"
                   class="button button_save"
                 >
                   취소
