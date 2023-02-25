@@ -46,10 +46,7 @@
 #form_idSearch .field:first-child .button {
   height: 40px;
 }
-#form_branchSearch .labelText,
-#form_idSearch .labelText {
-  width: max-content;
-}
+
 /* 검색 form > 테이블 */
 #form_branchSearch table.scrolldown,
 #form_idSearch table.scrolldown {

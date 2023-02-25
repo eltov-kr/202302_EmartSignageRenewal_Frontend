@@ -5,7 +5,6 @@
 @import 'components/table.css';
 @import 'components/form.css';
 @import 'components/switch.css';
-@import 'components/cardNavbar.css';
 
 /* Screens */
 @import 'screens/login.css';

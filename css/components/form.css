@@ -34,6 +34,7 @@ input,
   font-size: 15px;
   font-weight: normal;
   text-align: end;
+  width: max-content;
 }
 
 progress {

@@ -1,3 +1,22 @@
+#adDetailMain {
+  min-width: 1500px;
+  border: 1px solid red;
+}
+#adDetailMain .mainTopNavbar {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+#adDetailMain .mainTopNavbar span {
+  flex-basis: 50px;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 #adDetailMain .cardContainer {
   height: 630px;
   border: 1px solid var(--border-grey);
@@ -11,14 +30,6 @@
   padding: 10px;
   background-color: #fff;
   border-right: 1px solid var(--border-grey);
-}
-#adDetailMain #topNav {
-  background-color: #fff;
-  padding: 10px 20px;
-  border: 1px solid var(--border-grey);
-  border-bottom: 0;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
 }
 #adDetailMain .card .contentsContainer {
   height: 570px;
@@ -74,6 +85,9 @@
 #adDetailMain .card:nth-child(2) {
   background-color: var(--grey-100);
 }
+#adDetailMain .card:nth-child(2) .mainTopNavbar {
+  gap: 10px;
+}
 #adDetailMain .card:nth-child(2) .contentsItem {
   display: flex;
   gap: 10px;
@@ -91,10 +105,7 @@
 #adDetailMain .card:last-child {
   border-right: 0;
 }
-#adDetailMain .card:last-child a,
-#adDetailMain .card:last-child input:last-child {
-  background-color: var(--grey-100);
-}
+
 #adDetailMain .card:last-child .screenboxContainer {
   width: 100%;
   height: 100%;
