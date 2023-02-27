@@ -13,14 +13,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <section
@@ -250,7 +242,10 @@
         <main class="w-full h-[80%] flexs" id="adDetailMain">
           <div class="flex flex-col gap-6 h-[90%] w-full mt-10">
             <div class="mainContainer">
-              <nav class="mainTopNavbar" aria-label="Top navigation">
+              <nav
+                class="mainTopNavbar border border-border-grey border-b-0 bg-white"
+                aria-label="Top navigation"
+              >
                 <span>
                   <label class="labelText">광고<br />계약명</label>
                   <input type="text" />
@@ -261,7 +256,6 @@
                 </span>
                 <span>
                   <label class="labelText">광고구분</label>
-                  <!--  Dropdown -->
                   <div class="dropdown relative">
                     <a
                       class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[110px]"
@@ -305,13 +299,9 @@
                 <span>
                   <label class="labelText">전체<br />계약기간</label>
                   <div class="flex items-center gap-2 text-gray-400">
-                    <div class="datepicker relative">
-                      <input type="text" class="form-control" />
-                    </div>
+                    <input type="text" class="datepicker" />
                     ~
-                    <div class="datepicker relative">
-                      <input type="text" class="form-control" />
-                    </div>
+                    <input type="text" class="datepicker" />
                   </div>
                 </span>
                 <span>
@@ -502,18 +492,13 @@
                         <div
                           class="flex justify-between items-center gap-2 text-gray-400"
                         >
-                          <div class="datepicker relative">
-                            <input type="text" class="form-control" />
-                          </div>
+                          <input type="text" class="datepicker" />
                           ~
-                          <div class="datepicker relative">
-                            <input type="text" class="form-control" />
-                          </div>
+                          <input type="text" class="datepicker" />
                         </div>
                       </span>
                       <span>
                         <label class="labelText">송출<br />총횟수</label>
-                        <!--  Dropdown -->
                         <div class="dropdown relative">
                           <a
                             class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[110px]"
@@ -571,12 +556,7 @@
             </div>
 
             <nav class="self-end flex gap-2 justify-center h-full">
-              <button
-                data-modal-hide="adRegisterModal"
-                class="button button_save"
-              >
-                취소
-              </button>
+              <button class="button button_save">취소</button>
               <button class="button button_yellow_lightText button_save">
                 저장
               </button>
@@ -587,7 +567,7 @@
         </main>
       </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
 </html>

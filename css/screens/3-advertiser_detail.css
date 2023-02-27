@@ -1,14 +1,11 @@
 #adDetailMain {
   min-width: 1500px;
-  border: 1px solid red;
 }
 #adDetailMain .mainTopNavbar {
-  background-color: #fff;
   padding: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 100%;
 }
 #adDetailMain .mainTopNavbar span {
   flex-basis: 50px;
@@ -16,6 +13,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+#adDetailMain .mainTopNavbar .datepicker {
+  width: 152px;
 }
 #adDetailMain .cardContainer {
   height: 630px;
@@ -87,6 +87,7 @@
 }
 #adDetailMain .card:nth-child(2) .mainTopNavbar {
   gap: 10px;
+  padding: 10px 0;
 }
 #adDetailMain .card:nth-child(2) .contentsItem {
   display: flex;
