@@ -55,13 +55,6 @@
   align-items: center;
   gap: 10px;
   font-size: 12px;
-  margin-bottom: 20px;
-}
-#adDetailMain .contentsItem {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
   font-weight: 500;
   color: var(--grey-500);
   margin-bottom: 20px;
@@ -106,7 +99,6 @@
 #adDetailMain .card:last-child {
   border-right: 0;
 }
-
 #adDetailMain .card:last-child .screenboxContainer {
   width: 100%;
   height: 100%;
@@ -117,4 +109,15 @@
 #adDetailMain .card:last-child .screenboxContainer li {
   width: 300px;
   height: 200px;
+}
+#adDetailMain .card:last-child .selectedContainer {
+  height: 170px;
+}
+#adDetailMain .card:last-child .selectedContainer .contentsItem {
+  background-color: var(--grey-100);
+  border: 1px solid var(--border-grey);
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 5px;
 }
