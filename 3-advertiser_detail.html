@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMART SIGNING 2.0 | 광고주등록 상세설정</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
@@ -12,6 +13,10 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
     />
   </head>
   <body>
@@ -256,41 +261,43 @@
                 </span>
                 <span>
                   <label class="labelText">광고구분</label>
-                  <div class="dropdown relative">
-                    <a
-                      class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[110px]"
-                      href="#"
+                  <!-- tailwind element dropdown -->
+                  <div class="relative" data-te-dropdown-ref>
+                    <button
+                      class="form_dropdown w-[110px]"
                       type="button"
-                      id="dropdownMenuButton_device"
-                      data-bs-toggle="dropdown"
+                      data-te-dropdown-toggle-ref
                       aria-expanded="false"
                     >
-                      <span>상업</span>
+                      <span class="form_dropdown_label"></span>
                       <i class="fa-solid fa-chevron-down"></i>
-                    </a>
+                    </button>
                     <ul
-                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                      aria-labelledby="dropdownMenuButton_device"
+                      class="w-[110px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                      data-te-dropdown-menu-ref
                     >
                       <li>
                         <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                           href="#"
-                          >1</a
+                          data-te-dropdown-item-ref
+                          >상업</a
                         >
                       </li>
                       <li>
                         <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                           href="#"
-                          >2</a
+                          data-te-dropdown-item-ref
+                          >자사</a
                         >
                       </li>
                       <li>
                         <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                           href="#"
-                          >3</a
+                          data-te-dropdown-item-ref
+                          >잔여</a
                         >
                       </li>
                     </ul>
@@ -408,41 +415,35 @@
                   </header>
                   <div class="contentsContainer">
                     <nav class="mainTopNavbar" aria-label="Contents navigation">
-                      <div class="dropdown relative">
-                        <a
-                          class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-full w-[120px] bg-white"
-                          href="#"
+                      <!-- tailwind element dropdown -->
+                      <div class="relative" data-te-dropdown-ref>
+                        <button
+                          class="form_dropdown w-[120px]"
                           type="button"
-                          id="dropdownMenuButton_device"
-                          data-bs-toggle="dropdown"
+                          data-te-dropdown-toggle-ref
                           aria-expanded="false"
                         >
-                          <span>전체검색</span>
+                          <span class="form_dropdown_label">전체검색</span>
                           <i class="fa-solid fa-chevron-down"></i>
-                        </a>
+                        </button>
                         <ul
-                          class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                          aria-labelledby="dropdownMenuButton_device"
+                          class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                          data-te-dropdown-menu-ref
                         >
                           <li>
                             <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                               href="#"
+                              data-te-dropdown-item-ref
                               >1</a
                             >
                           </li>
                           <li>
                             <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                              class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                               href="#"
+                              data-te-dropdown-item-ref
                               >2</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                              href="#"
-                              >3</a
                             >
                           </li>
                         </ul>
@@ -502,41 +503,36 @@
                       </span>
                       <span>
                         <label class="labelText">송출<br />총횟수</label>
-                        <div class="dropdown relative">
-                          <a
-                            class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[110px]"
-                            href="#"
+                        <!-- tailwind element dropdown -->
+                        <div class="relative" data-te-dropdown-ref>
+                          <button
+                            disabled
+                            class="form_dropdown w-[110px]"
                             type="button"
-                            id="dropdownMenuButton_contents"
-                            data-bs-toggle="dropdown"
+                            data-te-dropdown-toggle-ref
                             aria-expanded="false"
                           >
-                            <span></span>
+                            <span class="form_dropdown_label"></span>
                             <i class="fa-solid fa-chevron-down"></i>
-                          </a>
+                          </button>
                           <ul
-                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                            aria-labelledby="dropdownMenuButton_contents"
+                            class="w-[110px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                            data-te-dropdown-menu-ref
                           >
                             <li>
                               <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                                 href="#"
+                                data-te-dropdown-item-ref
                                 >1</a
                               >
                             </li>
                             <li>
                               <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                                 href="#"
+                                data-te-dropdown-item-ref
                                 >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                                href="#"
-                                >3</a
                               >
                             </li>
                           </ul>
@@ -544,7 +540,11 @@
                       </span>
                       <span>
                         <label class="labelText">일 송출<br />횟수</label>
-                        <input type="text" class="h-[40px] w-[110px]" />
+                        <input
+                          type="text"
+                          class="h-[40px] w-[110px]"
+                          disabled
+                        />
                       </span>
                       <span>
                         <button class="button button_small">수정</button>
@@ -563,7 +563,7 @@
                         </div>
                         <div>
                           <span>Image</span>
-                          <span>00:30</span>
+                          <input type="text" class="time" />
                           <span>618KB</span>
                           <button class="button button_small">이동</button>
                         </div>
@@ -577,7 +577,7 @@
                         </div>
                         <div>
                           <span>Image</span>
-                          <span>00:30</span>
+                          <input type="text" class="time" />
                           <span>618KB</span>
                           <button class="button button_small">이동</button>
                         </div>
@@ -591,7 +591,7 @@
                         </div>
                         <div>
                           <span>Image</span>
-                          <span>00:30</span>
+                          <input type="text" class="time" />
                           <span>618KB</span>
                           <button class="button button_small">이동</button>
                         </div>
@@ -630,33 +630,34 @@
                 </span>
                 <span class="field">
                   <label class="labelText">방향</label>
-                  <div class="dropdown relative">
-                    <a
-                      class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[150px]"
-                      href="#"
+                  <!-- tailwind element dropdown -->
+                  <div class="relative" data-te-dropdown-ref>
+                    <button
+                      class="form_dropdown w-full"
                       type="button"
-                      id="dropdownMenuButton_device"
-                      data-bs-toggle="dropdown"
+                      data-te-dropdown-toggle-ref
                       aria-expanded="false"
                     >
-                      <span></span>
+                      <span class="form_dropdown_label"></span>
                       <i class="fa-solid fa-chevron-down"></i>
-                    </a>
+                    </button>
                     <ul
-                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                      aria-labelledby="dropdownMenuButton_device"
+                      class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                      data-te-dropdown-menu-ref
                     >
                       <li>
                         <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                           href="#"
+                          data-te-dropdown-item-ref
                           >가로</a
                         >
                       </li>
                       <li>
                         <a
-                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                           href="#"
+                          data-te-dropdown-item-ref
                           >세로</a
                         >
                       </li>
@@ -680,7 +681,6 @@
         </main>
       </div>
     </section>
-
     <script type="text/javascript" src="js/3-advertiser_detail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </body>

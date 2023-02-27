@@ -82,6 +82,9 @@
   gap: 10px;
   padding: 10px 0;
 }
+#adDetailMain .card:nth-child(2) .mainTopNavbar .form_dropdown_label {
+  min-width: 80px;
+}
 #adDetailMain .card:nth-child(2) .contentsItem {
   display: flex;
   gap: 10px;
@@ -132,6 +135,10 @@
 }
 #adDetailMain .card:last-child .selectedContainer .contentsItem div:last-child {
   gap: 40px;
+}
+#adDetailMain .card:last-child .selectedContainer .time {
+  height: 22px;
+  width: 60px;
 }
 #adDetailMain
   .card:last-child

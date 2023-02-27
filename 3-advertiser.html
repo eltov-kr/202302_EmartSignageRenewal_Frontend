@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMART SIGNING 2.0 | 광고주등록</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
@@ -262,46 +263,40 @@
                 class="flex items-center gap-2 p-3 h-[60px] border border-b-0 rounded-t-md bg-white"
                 aria-label="Table top navigation"
               >
-                <!-- 전체 검색 Dropdown -->
-                <div class="dropdown relative">
-                  <a
-                    class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[200px]"
-                    href="#"
+                <!-- tailwind element dropdown -->
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="form_dropdown w-[200px]"
                     type="button"
-                    id="dropdownMenuButton_device"
-                    data-bs-toggle="dropdown"
+                    data-te-dropdown-toggle-ref
                     aria-expanded="false"
                   >
-                    <span>전체검색</span>
+                    <span class="form_dropdown_label">전체검색</span>
                     <i class="fa-solid fa-chevron-down"></i>
-                  </a>
+                  </button>
                   <ul
-                    class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
-                    aria-labelledby="dropdownMenuButton_device"
+                    class="w-[200px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                    data-te-dropdown-menu-ref
                   >
                     <li>
                       <a
-                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                        class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                         href="#"
+                        data-te-dropdown-item-ref
                         >1</a
                       >
                     </li>
                     <li>
                       <a
-                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                        class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                         href="#"
+                        data-te-dropdown-item-ref
                         >2</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
-                        href="#"
-                        >3</a
                       >
                     </li>
                   </ul>
                 </div>
+
                 <input
                   type="text"
                   placeholder="검색어를 입력하세요"
@@ -557,33 +552,43 @@
                       </label>
                       <label for="adRegister3" class="field">
                         <span class="labelText">광고구분</span>
-                        <div class="dropdown relative">
-                          <a
-                            class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
-                            href="#"
+                        <!-- tailwind element dropdown -->
+                        <div class="relative" data-te-dropdown-ref>
+                          <button
+                            class="form_dropdown w-full"
                             type="button"
-                            id="adRegister3"
-                            data-bs-toggle="dropdown"
+                            data-te-dropdown-toggle-ref
                             aria-expanded="false"
-                            ><span></span>
+                          >
+                            <span class="form_dropdown_label"></span>
                             <i class="fa-solid fa-chevron-down"></i>
-                          </a>
+                          </button>
                           <ul
-                            class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                            aria-labelledby="adRegister2"
+                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                            data-te-dropdown-menu-ref
                           >
                             <li>
                               <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                                 href="#"
-                                >1</a
+                                data-te-dropdown-item-ref
+                                >상업</a
                               >
                             </li>
                             <li>
                               <a
-                                class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                                 href="#"
-                                >2</a
+                                data-te-dropdown-item-ref
+                                >자사</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >잔여</a
                               >
                             </li>
                           </ul>

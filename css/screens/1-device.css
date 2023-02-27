@@ -107,6 +107,9 @@
   flex-direction: column;
   gap: 10px;
 }
+.offListItem_container .form_dropdown {
+  height: 30px;
+}
 .offListItem_box {
   display: grid;
   grid-template-columns: 3em auto;

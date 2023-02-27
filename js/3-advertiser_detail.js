@@ -1,3 +1,4 @@
+// 매체 추가 모달
 const mediaAddShowDialogButton = document.getElementById(
   'adDetailMediaAddShowDialogButton',
 );
