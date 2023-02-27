@@ -826,6 +826,7 @@
                   placeholder="검색어를 입력하세요"
                   class="h-[40px] w-[450px]"
                 />
+                <button class="button button_big">조회</button>
               </nav>
 
               <div class="relative overflow-x-auto border-l border-r">
@@ -1950,10 +1951,13 @@
                     <h3 class="text-[22px] font-bold text-grey-500">
                       디바이스 세부정보 수정
                     </h3>
+                    <button class="button button_delete">
+                      <span>삭제</span>
+                    </button>
                   </header>
                   <form action="#" class="form_device">
                     <div class="form_deviceContainer">
-                      <label for="detailEdit1" class="field">
+                      <label class="field">
                         <span class="labelText">점포</span>
                         <!-- tailwind element dropdown -->
                         <div class="relative w-full" data-te-dropdown-ref>
@@ -1997,7 +2001,7 @@
                           </ul>
                         </div>
                       </label>
-                      <label for="detailEdit2" class="field">
+                      <label class="field">
                         <span class="labelText">설치층</span>
                         <!-- tailwind element dropdown -->
                         <div class="relative w-full" data-te-dropdown-ref>
@@ -2041,25 +2045,34 @@
                           </ul>
                         </div>
                       </label>
-                      <label for="detailEdit3" class="field">
+                      <label class="field">
                         <span class="labelText">세부위치</span>
-                        <input type="text" id="detailEdit3" />
+                        <input type="text" />
                       </label>
-                      <label for="detailEdit4" class="field">
+                      <label class="field">
                         <span class="labelText">매체명</span>
-                        <input type="text" id="detailEdit4" />
+                        <input type="text" />
                       </label>
-                      <label for="detailEdit5" class="field">
+                      <div class="field">
+                        <span class="labelText">PUSH<br />알림 송신</span>
+                        <div class="relative">
+                          <label class="switch">
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <label class="field">
                         <span class="labelText">해상도</span>
-                        <input type="text" id="detailEdit5" disabled />
+                        <input type="text" disabled />
                       </label>
-                      <label for="detailEdit6" class="field">
+                      <label class="field">
                         <span class="labelText">IP</span>
-                        <input type="text" id="detailEdit6" />
+                        <input type="text" />
                       </label>
-                      <label for="detailEdit7" class="field">
+                      <label class="field">
                         <span class="labelText">디바이스명</span>
-                        <input type="text" id="detailEdit7" />
+                        <input type="text" />
                       </label>
                       <div class="field">
                         <span class="labelText">사용여부</span>

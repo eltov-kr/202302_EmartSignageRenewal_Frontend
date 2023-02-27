@@ -53,3 +53,13 @@
   align-items: center;
   gap: 5px;
 }
+
+#table-media .switch .slider {
+  top: 8px;
+  height: 25px;
+}
+#table-media .switch .slider:before {
+  height: 19px;
+  width: 19px;
+  bottom: 3px;
+}
