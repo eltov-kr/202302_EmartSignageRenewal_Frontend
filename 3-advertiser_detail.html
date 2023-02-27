@@ -315,7 +315,10 @@
                 <article class="card">
                   <header>
                     <h5>1. 매체 선택 ></h5>
-                    <button class="button button_small">
+                    <button
+                      id="adDetailMediaAddShowDialogButton"
+                      class="button button_small"
+                    >
                       <i class="fa-solid fa-plus"></i>
                       매체추가
                     </button>
@@ -583,11 +586,78 @@
             </nav>
           </div>
 
-          <!--  모달 -->
+          <!-- 매체 추가 모달 -->
+          <dialog id="adDetailMediaAddDialog">
+            <header class="flex justify-between mb-6">
+              <h3 class="text-[22px] font-bold text-grey-500">매체 추가</h3>
+            </header>
+            <form method="dialog" action="#" class="form_mediaAdd">
+              <div class="formContainer_mediaAdd">
+                <span class="field">
+                  <label class="labelText">매체명</label>
+                  <input type="text" placeholder="매체명을 입력하세요" />
+                </span>
+                <span class="field">
+                  <label class="labelText">해상도</label>
+                  <div class="flex w-full justify-between items-center gap-2">
+                    <input type="text" />x
+                    <input type="text" />
+                  </div>
+                </span>
+                <span class="field">
+                  <label class="labelText">방향</label>
+                  <div class="dropdown relative">
+                    <a
+                      class="dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap h-[40px] w-[150px]"
+                      href="#"
+                      type="button"
+                      id="dropdownMenuButton_device"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span></span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul
+                      class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border w-full max-h-[400px] overflow-y-auto"
+                      aria-labelledby="dropdownMenuButton_device"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >가로</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-yellow-light"
+                          href="#"
+                          >세로</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+                <span class="field">
+                  <label class="labelText">수량</label>
+                  <input type="text" class="w-[150px]" />
+                </span>
+              </div>
+
+              <nav class="flex gap-2 justify-center h-full">
+                <button class="button button_save">취소</button>
+                <button class="button button_yellow_lightText button_save">
+                  추가
+                </button>
+              </nav>
+            </form>
+          </dialog>
         </main>
       </div>
     </section>
 
+    <script type="text/javascript" src="js/3-advertiser_detail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   </body>
 </html>

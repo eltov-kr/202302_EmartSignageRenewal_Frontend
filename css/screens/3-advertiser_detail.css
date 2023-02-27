@@ -121,3 +121,22 @@
   padding: 0 10px;
   margin-bottom: 5px;
 }
+
+/* 매체 추가 form */
+#adDetailMain .formContainer_mediaAdd {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: space-between;
+}
+#adDetailMain .formContainer_mediaAdd .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 3em auto;
+}
+#adDetailMain .formContainer_mediaAdd .field:nth-child(1),
+#adDetailMain .formContainer_mediaAdd .field:nth-child(2) {
+  grid-column: span 2;
+}
+#adDetailMain .formContainer_mediaAdd .field:last-child {
+  place-self: end;
+}

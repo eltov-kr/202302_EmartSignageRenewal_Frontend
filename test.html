@@ -64,51 +64,33 @@
               </button> -->
             </header>
 
-            <form action="#" id="form_idSearch">
-              <fieldset>
+            <form method="dialog" action="#" class="form_mediaAdd">
+              <div class="formContainer_mediaAdd">
                 <span class="field">
-                  <label class="labelText">사번</label>
-                  <input type="text" placeholder="사번을 입력하세요" />
-                  <button class="button">검색</button>
+                  <label class="labelText">매체명</label>
+                  <input type="text" />
                 </span>
-                <table class="scrolldown">
-                  <thead>
-                    <tr>
-                      <th>사원번호</th>
-                      <th>사원명</th>
-                      <th>부서</th>
-                      <th>직책</th>
-                      <th>직무</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>053*36</td>
-                      <td>김*현</td>
-                      <td>연수점인사총무</td>
-                      <td>파트장(E점포)</td>
-                      <td>인사업무관리</td>
-                    </tr>
-                    <tr>
-                      <td>053*36</td>
-                      <td>김*현</td>
-                      <td>연수점인사총무</td>
-                      <td>파트장(E점포)</td>
-                      <td>인사업무관리</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </fieldset>
+                <span class="field">
+                  <label class="labelText">해상도</label>
+                  <div>
+                    <input type="text" />x
+                    <input type="text" />
+                  </div>
+                </span>
+                <span class="field">
+                  <label class="labelText">방향</label>
+                  <input type="text" />
+                </span>
+                <span class="field">
+                  <label class="labelText">수량</label>
+                  <input type="text" />
+                </span>
+              </div>
 
-              <nav class="flex gap-2 justify-center">
-                <button
-                  data-modal-hide="idSearchModal"
-                  class="button button_save"
-                >
-                  취소
-                </button>
+              <nav class="flex gap-2 justify-center h-full">
+                <button class="button button_save">취소</button>
                 <button class="button button_yellow_lightText button_save">
-                  신청
+                  추가
                 </button>
               </nav>
             </form>
