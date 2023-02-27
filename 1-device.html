@@ -1629,7 +1629,7 @@
                         취소
                       </button>
                       <button
-                        data-modal-toggle="deviceRegisterConfirmModal"
+                        id="deviceRegisterConfirmShowDialogButton"
                         class="button button_yellow_lightText button_save"
                       >
                         저장
@@ -1642,35 +1642,25 @@
           </div>
 
           <!-- 디바이스 등록 확인 모달 -->
-          <div
-            id="deviceRegisterConfirmModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-lg h-auto">
-              <div class="relative bg-white shadow">
-                <div
-                  class="px-8 py-6 flex flex-col justify-center items-center gap-4"
+          <dialog id="deviceRegisterConfirmDialog">
+            <form
+              method="dialog"
+              class="w-[460px] py-6 flex flex-col justify-center items-center gap-6"
+            >
+              <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
+                디바이스를 등록하시겠습니까?
+              </h3>
+              <nav class="flex gap-2 justify-center h-full">
+                <button class="button button_save">취소</button>
+                <button
+                  data-modal-hide="deviceRegisterModal"
+                  class="button button_yellow_lightText button_save"
                 >
-                  <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
-                    디바이스를 등록하시겠습니까?
-                  </h3>
-                  <nav class="flex gap-2 justify-center h-full">
-                    <button
-                      data-modal-hide="deviceRegisterConfirmModal"
-                      class="button button_save"
-                    >
-                      취소
-                    </button>
-                    <button class="button button_yellow_lightText button_save">
-                      저장
-                    </button>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
+                  저장
+                </button>
+              </nav>
+            </form>
+          </dialog>
 
           <!-- 매체 추가 모달 -->
           <div
@@ -2580,7 +2570,7 @@
                         취소
                       </button>
                       <button
-                        data-modal-toggle="detailEditConfirmModal"
+                        id="detailEditConfirmShowDialogButton"
                         class="button button_yellow_lightText button_save"
                       >
                         저장
@@ -2593,35 +2583,25 @@
           </div>
 
           <!-- 디바이스 세부정보 수정 확인 모달 -->
-          <div
-            id="detailEditConfirmModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-lg h-auto">
-              <div class="relative bg-white shadow">
-                <div
-                  class="px-8 py-6 flex flex-col justify-center items-center gap-4"
+          <dialog id="detailEditConfirmDialog">
+            <form
+              method="dialog"
+              class="w-[460px] py-6 flex flex-col justify-center items-center gap-6"
+            >
+              <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
+                디바이스 정보를 수정하시겠습니까?
+              </h3>
+              <nav class="flex gap-2 justify-center h-full">
+                <button class="button button_save">취소</button>
+                <button
+                  data-modal-hide="detailEditModal"
+                  class="button button_yellow_lightText button_save"
                 >
-                  <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
-                    디바이스 정보를 수정하시겠습니까?
-                  </h3>
-                  <nav class="flex gap-2 justify-center h-full">
-                    <button
-                      data-modal-hide="detailEditConfirmModal"
-                      class="button button_save"
-                    >
-                      취소
-                    </button>
-                    <button class="button button_yellow_lightText button_save">
-                      저장
-                    </button>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
+                  저장
+                </button>
+              </nav>
+            </form>
+          </dialog>
         </main>
       </div>
     </section>

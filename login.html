@@ -395,7 +395,10 @@
                     >
                       취소
                     </button>
-                    <button class="button button_yellow_lightText button_save">
+                    <button
+                      id="registerConFirmShowDialogButton"
+                      class="button button_yellow_lightText button_save"
+                    >
                       신청
                     </button>
                   </nav>
@@ -529,33 +532,26 @@
         </div>
 
         <!-- 사용자 등록 확인 모달 -->
-        <div
-          id="registerConfirmModal"
-          tabindex="-1"
-          aria-hidden="true"
-          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-        >
-          <div class="relative w-full max-w-lg h-auto">
-            <div class="relative bg-white shadow">
-              <div
-                class="px-8 py-6 flex flex-col justify-center items-center gap-4"
-              >
-                <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
-                  신청이 완료되었습니다
-                </h3>
-                <button
-                  data-modal-toggle="registerConfirmModal"
-                  data-modal-hide="userRegisterModal"
-                  class="button button_yellow_lightText"
-                >
-                  확인
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <dialog id="registerConfirmDialog">
+          <form
+            method="dialog"
+            class="w-[460px] py-6 flex flex-col justify-center items-center gap-6"
+          >
+            <h3 class="mt-4 mb-6 text-lg font-bold text-grey-500">
+              신청이 완료되었습니다
+            </h3>
+            <button
+              id="registerConfirmOkButton"
+              class="button button_save button_yellow_lightText"
+              data-modal-hide="userRegisterModal"
+            >
+              확인
+            </button>
+          </form>
+        </dialog>
       </main>
     </section>
+    <script type="text/javascript" src="js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
