@@ -111,15 +111,35 @@
   height: 200px;
 }
 #adDetailMain .card:last-child .selectedContainer {
-  height: 170px;
+  max-height: 170px;
+  min-height: 35px;
 }
 #adDetailMain .card:last-child .selectedContainer .contentsItem {
   background-color: var(--grey-100);
   border: 1px solid var(--border-grey);
   border-radius: 5px;
   height: 30px;
+  width: 100%;
   padding: 0 10px;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#adDetailMain .card:last-child .selectedContainer .contentsItem div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#adDetailMain .card:last-child .selectedContainer .contentsItem div:last-child {
+  gap: 40px;
+}
+#adDetailMain
+  .card:last-child
+  .selectedContainer
+  .contentsItem
+  div:last-child
+  button {
+  height: 22px;
 }
 
 /* 매체 추가 form */
