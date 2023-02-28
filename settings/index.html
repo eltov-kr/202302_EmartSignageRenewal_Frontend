@@ -2,9 +2,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMART SIGNING 2.0 | 콘텐츠등록</title>
+    <title>EMART SIGNING 2.0 | 점포 관리</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -33,17 +33,16 @@
         <ul class="space-y-2">
           <li>
             <a href="index.html" class="flex items-center px-4 py-2 mb-10">
-              <img src="images/logo_emart.png" alt="Emart Logo" />
+              <img src="/images/logo_emart.png" alt="Emart Logo" />
             </a>
           </li>
-
           <li>
-            <a href="1-device.html">
+            <a href="/devices/index.html">
               <button
                 type="button"
                 class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
               >
-                <img src="./images/menu_icon_device.png" />
+                <img src="/images/menu_icon_device.png" />
                 <span class="flex-1 ml-3 text-left whitespace-nowrap"
                   >디바이스관리</span
                 >
@@ -52,57 +51,30 @@
           </li>
           <li>
             <a
-              href="2-branch.html"
+              href="/stores/index.html"
               class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
             >
-              <img src="images/menu_icon_group.png" />
+              <img src="/images/menu_icon_group.png" />
               <span class="ml-3">점포그룹관리</span>
             </a>
           </li>
-          <li class="bg-grey-100">
-            <a href="3-contents.html">
-              <button
-                type="button"
-                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
-                aria-controls="dropdown-pages_device"
-                data-collapse-toggle="dropdown-pages_device"
+          <li>
+            <a
+              href="/ads/detail.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="/images/menu_icon_contents.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >광고주계약관리</span
               >
-                <img src="images/menu_icon_contents_o.png" />
-                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
-                  >광고주계약관리</span
-                >
-              </button>
             </a>
-            <ul id="dropdown-pages_device" class="py-2 space-y-2">
-              <li>
-                <a
-                  href="3-contents.html"
-                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-                  ></span
-                  >콘텐츠등록</a
-                >
-              </li>
-              <li>
-                <a
-                  href="3-advertiser.html"
-                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  광고주등록</a
-                >
-              </li>
-            </ul>
           </li>
           <li>
             <a
-              href="4-schedule.html"
+              href="/schedules/index.html"
               class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
             >
-              <img src="./images/menu_icon_schedule-1.png" />
+              <img src="/images/menu_icon_schedule-1.png" />
               <span class="flex-1 ml-3 text-left whitespace-nowrap"
                 >스케줄관리</span
               >
@@ -110,10 +82,10 @@
           </li>
           <li>
             <a
-              href="5-sales.html"
+              href="/sales/index.html"
               class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
             >
-              <img src="./images/menu_icon_schedule.png" />
+              <img src="/images/menu_icon_schedule.png" />
               <span class="flex-1 ml-3 text-left whitespace-nowrap"
                 >영업관리</span
               >
@@ -121,28 +93,91 @@
           </li>
           <li>
             <a
-              href="6-report.html"
+              href="/reports/index.html"
               class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
             >
-              <img src="./images/menu_icon_report.png" />
+              <img src="/images/menu_icon_report.png" />
               <span class="flex-1 ml-3 text-left whitespace-nowrap"
                 >리포트</span
               >
             </a>
           </li>
-          <li>
-            <a
-              href="3-settings.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-gray-900 rounded-lg hover:bg-grey-100 group"
-            >
-              <img src="./images/menu_icon_setting.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
+
+          <li class="bg-grey-100">
+            <a href="/settings/index.html">
+              <button
+                type="button"
+                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
+                aria-controls="dropdown-pages_device"
+                data-collapse-toggle="dropdown-pages_device"
+              >
+                <img src="/images/menu_icon_setting_o.png" />
+                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
+                  >설정</span
+                >
+              </button>
             </a>
+            <ul class="py-2 space-y-2">
+              <li>
+                <a
+                  href="/settings/index.html"
+                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                  ></span>
+                  점포 관리</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/settings/users.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  사용자 관리</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/settings/authors.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  사용자 권한 관리</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/settings/functions.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  기능 권한 관리</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/settings/codes.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-gray-900 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  코드 관리</a
+                >
+              </li>
+            </ul>
           </li>
         </ul>
 
         <div class="pl-5 pt-5">
-          <img src="images/logo.png" />
+          <img src="/images/logo.png" />
         </div>
       </aside>
 
@@ -231,14 +266,14 @@
         </nav>
 
         <header>
-          <h1 class="font-bold text-xl my-4">콘텐츠등록</h1>
+          <h1 class="font-bold text-xl my-4">점포 관리</h1>
           <div class="flex gap-3 items-center font-bold text-sm">
-            <h2 class="text-gray-400">광고주계약관리</h2>
+            <h2 class="text-gray-400">설정</h2>
             <span
               class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
             >
             </span>
-            <h3>콘텐츠등록</h3>
+            <h3>점포 관리</h3>
           </div>
         </header>
 

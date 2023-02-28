@@ -6,14 +6,14 @@
 @import 'components/form.css';
 @import 'components/switch.css';
 
-/* Screens */
-@import 'screens/login.css';
-@import 'screens/1-device.css';
-@import 'screens/1-media.css';
-@import 'screens/2-branch.css';
-@import 'screens/3-contents.css';
-@import 'screens/3-advertiser.css';
-@import 'screens/3-advertiser_detail.css';
+/* Pages */
+@import 'pages/login.css';
+@import 'pages/devices/index.css';
+@import 'pages//devices/media.css';
+@import 'pages/stores/index.css';
+@import 'pages/ads/index.css';
+@import 'pages/ads/contract.css';
+@import 'pages/ads/detail.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
