@@ -1,6 +1,6 @@
-const storeTab = document.getElementById('tabs-store-tab');
+const storeTab = document.querySelector('a[data-te-target="#tabs-store"]');
 const storeTable = document.getElementById('table-store');
-const mediaTab = document.getElementById('tabs-media-tab');
+const mediaTab = document.querySelector('a[data-te-target="#tabs-media"]');
 const mediaTable = document.getElementById('table-media');
 
 mediaTable.classList.add('hidden');

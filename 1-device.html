@@ -271,57 +271,53 @@
           </nav>
 
           <div class="flex gap-3 h-[90%]">
-            <!-- Tabs -->
             <div
-              class="border min-w-[340px] h-full bg-white rounded-sm overflow-hidden"
+              class="border w-[340px] h-full bg-white rounded-sm overflow-hidden"
             >
+              <!-- Tabs -->
               <ul
-                class="nav nav-tabs flex justify-center list-none border-b-0 pl-0 mb-4"
-                id="tabs-tab"
+                class="h-[45px] flex justify-evenly list-none border-b mb-3"
                 role="tablist"
+                data-te-nav-ref
               >
-                <li
-                  class="nav-item w-full justify-center flex border-b"
-                  role="presentation"
-                >
+                <li role="presentation">
                   <a
                     href="#tabs-store"
-                    class="nav-link block font-medium text-sm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent active"
-                    id="tabs-store-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#tabs-store"
+                    class="border-x-0 border-t-0 border-b-2 border-transparent border-yellow-primary h-full flex items-center text-sm font-medium uppercase leading-tight text-grey-300 hover:isolate focus:border-yellow-primary data-[te-nav-active]:border-yellow-primary data-[te-nav-active]:text-grey-500"
+                    data-te-toggle="pill"
+                    data-te-target="#tabs-store"
+                    data-te-nav-active
                     role="tab"
                     aria-controls="tabs-store"
-                    >점포별 (<span>90</span>)
-                  </a>
+                    aria-selected="true"
+                    >점포별 (<span>90</span>)</a
+                  >
                 </li>
-                <li
-                  class="nav-item w-full justify-center flex border-b"
-                  role="presentation"
-                >
+                <li role="presentation">
                   <a
                     href="#tabs-media"
-                    class="nav-link block font-medium text-sm leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent py-3 focus:border-transparent"
-                    id="tabs-media-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#tabs-media"
+                    class="border-x-0 border-t-0 border-b-2 border-transparent border-yellow-primary h-full flex items-center text-sm font-medium uppercase leading-tight text-grey-300 hover:isolate focus:border-yellow-primary data-[te-nav-active]:border-yellow-primary data-[te-nav-active]:text-grey-500"
+                    data-te-toggle="pill"
+                    data-te-target="#tabs-media"
                     role="tab"
                     aria-controls="tabs-media"
-                    >매체별 (<span>600</span>)
-                  </a>
+                    aria-selected="false"
+                    >매체별 (<span>600</span>)</a
+                  >
                 </li>
               </ul>
-
-              <div class="tab-content" id="tabs-tabContent">
+              <section class="">
+                <!-- 점포별 tab contents -->
                 <div
-                  class="tab-pane fade show active h-[95%] pb-[20px]"
+                  class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block h-[81%]"
                   id="tabs-store"
                   role="tabpanel"
                   aria-labelledby="tabs-store-tab"
+                  data-te-tab-active
                 >
-                  <div class="flex flex-col px-2 pb-2 -mt-2 space-y-1 h-full">
-                    <!-- 점포별 전체 검색 Dropdown -->
-                    <!-- tailwind element dropdown -->
+                  <!-- 점포별 전체 검색 Dropdown -->
+                  <!-- tailwind element dropdown -->
+                  <div class="px-3 mb-2">
                     <div class="relative" data-te-dropdown-ref>
                       <button
                         class="form_dropdown w-full"
@@ -354,431 +350,438 @@
                         </li>
                       </ul>
                     </div>
+                  </div>
 
-                    <div
-                      class="bg-white w-full text-gray-900 overflow-y-auto h-full"
+                  <div
+                    class="bg-white w-full text-gray-900 overflow-y-auto h-full"
+                  >
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
                     >
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
 
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>1. 가든5점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>2. 강릉점</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>3. 검단점</span>
-                        <span>5 </span>
-                      </button>
-                    </div>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>1. 가든5점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>2. 강릉점</span>
+                      <span>5</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                    >
+                      <span>3. 검단점</span>
+                      <span>5 </span>
+                    </button>
                   </div>
                 </div>
-
+                <!-- 매체별 tab contents -->
                 <div
-                  class="tab-pane fade show active h-[95%] pb-[20px]"
+                  class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                   id="tabs-media"
                   role="tabpanel"
                   aria-labelledby="tabs-media-tab"
                 >
-                  <div class="flex flex-col px-2 pb-2 -mt-2 space-y-1 h-full">
-                    <div
-                      class="bg-white w-full text-gray-900 overflow-y-auto h-full"
-                    >
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                  <div
+                    class="tab-pane fade show active h-[89%]"
+                    id="tabs-media"
+                    role="tabpanel"
+                    aria-labelledby="tabs-media-tab"
+                  >
+                    <div class="flex flex-col space-y-1 h-full">
+                      <div
+                        class="bg-white w-full text-gray-900 overflow-y-auto h-full"
                       >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>매장입구 스크린</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-1</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
-                      <button
-                        type="button"
-                        class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
-                      >
-                        <span>포스 스크린-2</span>
-                        <span>3840 x 2160</span>
-                        <span>5</span>
-                      </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>매장입구 스크린</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-1</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                        <button
+                          type="button"
+                          class="flex justify-between text-sm text-left px-3 py-1 w-full hover:bg-yellow-light text-grey-400 hover:text-grey-500 focus:outline-none focus:ring-0 focus:bg-yellow-primary focus:text-white transition duration-200 cursor-pointer"
+                        >
+                          <span>포스 스크린-2</span>
+                          <span>3840 x 2160</span>
+                          <span>5</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
 
             <!-- Table -->
@@ -1923,7 +1926,7 @@
                   </div>
                   <nav class="flex gap-2 justify-center h-full">
                     <button
-                      data-modal-hide="deviceRegisterConfirmModal"
+                      data-modal-hide="main_nav_volumeModal"
                       class="button button_save"
                     >
                       취소
