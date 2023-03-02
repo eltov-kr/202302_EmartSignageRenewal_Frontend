@@ -1,0 +1,19 @@
+/* 사용자 권한 등록 form */
+#form_authorRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#form_authorRegister fieldset {
+  display: grid;
+}
+#form_authorRegister .field {
+  display: grid;
+  grid-template-columns: 100px 420px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#form_authorRegister .labelText {
+  place-self: center end;
+}

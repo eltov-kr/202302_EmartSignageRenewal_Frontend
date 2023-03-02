@@ -9,7 +9,7 @@
   border-radius: 2px;
   padding: 10px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: normal;
   height: 35px;
   min-width: max-content;
   display: flex;
@@ -17,8 +17,11 @@
   align-items: center;
   gap: 10px;
 }
+.button_dark {
+  background-color: var(--grey-500);
+}
 .button:disabled {
-  background-color: var(--grey-200);
+  background-color: var(--grey-200) !important;
 }
 .button_yellow_darkText {
   background-color: var(--yellow-primary) !important;

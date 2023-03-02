@@ -24,7 +24,6 @@ input[type='password'] {
 
 .form_dropdown_label {
   font-size: 15px;
-  color: var(--grey-200);
 }
 
 input:focus {
