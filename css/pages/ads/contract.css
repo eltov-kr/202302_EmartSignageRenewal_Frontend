@@ -3,29 +3,29 @@
 }
 
 /* 광고주 계약 등록 Form */
-.form_adRegister {
+#form_adRegister {
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.form_adRegister .formContainer {
+#form_adRegister .formContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 1em;
 }
-.form_adRegister .field {
+#form_adRegister .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 8em 160px;
   column-gap: 10px;
 }
-.form_adRegister .field:nth-child(1),
-.form_adRegister .field:nth-child(4),
-.form_adRegister .field:nth-child(5) {
+#form_adRegister .field:nth-child(1),
+#form_adRegister .field:nth-child(4),
+#form_adRegister .field:nth-child(5) {
   grid-column: span 2;
   grid-template-columns: 8em auto;
 }
-.form_adRegister .labelText {
+#form_adRegister .labelText {
   place-self: center end;
   display: flex;
   align-items: center;

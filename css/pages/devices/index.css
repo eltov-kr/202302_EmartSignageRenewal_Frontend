@@ -7,54 +7,54 @@
 }
 
 /* 디바이스 등록 Form & 디바이스 세부정보 수정 Form */
-.form_device,
-.form_detailEdit {
+#form_device,
+#form_detailEdit {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.form_device .form_deviceContainer,
-.form_detailEdit .form_detailEditContainer {
+#form_device .form_deviceContainer,
+#form_detailEdit .form_detailEditContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
   row-gap: 1em;
 }
-.form_device .field,
-.form_detailEdit .field {
+#form_device .field,
+#form_detailEdit .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 5em 180px;
   align-items: center;
   column-gap: 1em;
 }
-.form_device .field:nth-child(4),
-.form_device .field:nth-child(6),
-.form_device .field:nth-child(8),
-.form_detailEdit .field:nth-child(4),
-.form_detailEdit .field:nth-child(6),
-.form_detailEdit .field:nth-child(8) {
+#form_device .field:nth-child(4),
+#form_device .field:nth-child(6),
+#form_device .field:nth-child(8),
+#form_detailEdit .field:nth-child(4),
+#form_detailEdit .field:nth-child(6),
+#form_detailEdit .field:nth-child(8) {
   grid-column: span 2;
   grid-template-columns: 5em auto;
 }
-.form_device .field .switch,
-.form_detailEdit .field .switch {
+#form_device .field .switch,
+#form_detailEdit .field .switch {
   border: 1px solid transparent;
 }
-.form_device .labelText,
-.form_detailEdit .labelText {
+#form_device .labelText,
+#form_detailEdit .labelText {
   place-self: center end;
 }
 
 /* 디바이스 세부정보 수정 Form > 볼륨조절, 휴점일, 꺼짐설정 */
-.form_detailEdit section {
+#form_detailEdit section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 110px 250px 390px;
   gap: 10px;
   height: 390px;
 }
-.form_detailEdit section article {
+#form_detailEdit section article {
   border: 1px solid var(--grey-200);
   border-radius: 5px;
   padding: 1rem;
@@ -62,63 +62,63 @@
   flex-direction: column;
   gap: 10px;
 }
-.form_detailEdit section article:nth-child(3) {
+#form_detailEdit section article:nth-child(3) {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   height: 390px;
 }
 /* 볼륨조절*/
-.form_detailEdit .volume-container {
+#form_detailEdit .volume-container {
   display: grid;
   grid-template-columns: auto 100px;
   gap: 20px;
   align-items: center;
 }
-.form_detailEdit #volume-result {
+#form_detailEdit #volume-result {
   height: 30px !important;
   border: 1px solid red;
 }
 /* 휴점일 */
-.form_detailEdit section article:nth-child(2) {
+#form_detailEdit section article:nth-child(2) {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-.form_detailEdit section article:nth-child(2) > div:nth-child(1) {
+#form_detailEdit section article:nth-child(2) > div:nth-child(1) {
   padding-bottom: 20px;
   border-bottom: 1px dashed var(--grey-200);
 }
-.form_detailEdit section article:nth-child(2) .datepicker input {
+#form_detailEdit section article:nth-child(2) .datepicker input {
   height: 30px;
 }
 /* 꺼짐설정 */
-.form_detailEdit .offContainer {
+#form_detailEdit .offContainer {
   display: grid;
   row-gap: 10px;
 }
-.form_detailEdit .offList {
+#form_detailEdit .offList {
   display: grid;
   grid-template-columns: 7em 200px;
   justify-content: space-between;
   align-items: start;
 }
-.form_detailEdit .offList a {
+#form_detailEdit .offList a {
   height: 30px;
 }
-.form_detailEdit .offListItem {
+#form_detailEdit .offListItem {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.form_detailEdit .offListItem_container {
+#form_detailEdit .offListItem_container {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 10px;
 }
-.form_detailEdit .offListItem_container .form_dropdown {
+#form_detailEdit .offListItem_container .form_dropdown {
   height: 30px;
 }
-.form_detailEdit .offListItem_box {
+#form_detailEdit .offListItem_box {
   display: grid;
   grid-template-columns: 3em auto;
   align-items: center;

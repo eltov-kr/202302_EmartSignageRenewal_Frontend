@@ -16,48 +16,48 @@
   border: 1px solid var(--grey-200);
 }
 
-/* 매체 추가 Form */
-.form_mediaAdd,
-.form_mediaEdit {
+/* 매체 추가 Form & 매체 유형 수정 Form */
+#form_mediaAdd,
+#form_mediaEdit {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.formContainer_mediaAdd,
-.formContainer_mediaEdit {
+#form_mediaAdd .formContainer,
+#form_mediaEdit .formContainer {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(5, auto);
   justify-content: space-between;
   row-gap: 1em;
 }
-.formContainer_mediaAdd .field,
-.formContainer_mediaEdit .field {
+#form_mediaAdd .formContainer .field,
+#form_mediaEdit .formContainer .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 5em 180px;
   column-gap: 1em;
 }
-.formContainer_mediaAdd .field:nth-child(1),
-.formContainer_mediaAdd .field:nth-child(5),
-.formContainer_mediaAdd .field:nth-child(6),
-.formContainer_mediaEdit .field:nth-child(1),
-.formContainer_mediaEdit .field:nth-child(5),
-.formContainer_mediaEdit .field:nth-child(6) {
+#form_mediaAdd .formContainer .field:nth-child(1),
+#form_mediaAdd .formContainer .field:nth-child(5),
+#form_mediaAdd .formContainer .field:nth-child(6),
+#form_mediaEdit .formContainer .field:nth-child(1),
+#form_mediaEdit .formContainer .field:nth-child(5),
+#form_mediaEdit .formContainer .field:nth-child(6) {
   grid-column: span 2;
 }
-.formContainer_mediaAdd .field:nth-child(1),
-.formContainer_mediaEdit .field:nth-child(1) {
+#form_mediaAdd .formContainer .field:nth-child(1),
+#form_mediaEdit .formContainer .field:nth-child(1) {
   grid-template-columns: 5em auto;
 }
-.formContainer_mediaAdd .field:nth-child(5),
-.formContainer_mediaAdd .field:nth-child(6),
-.formContainer_mediaEdit .field:nth-child(5),
-.formContainer_mediaEdit .field:nth-child(6) {
+#form_mediaAdd .formContainer .field:nth-child(5),
+#form_mediaAdd .formContainer .field:nth-child(6),
+#form_mediaEdit .formContainer .field:nth-child(5),
+#form_mediaEdit .formContainer .field:nth-child(6) {
   grid-template-columns: 10em auto;
 }
-.formContainer_mediaAdd .labelText,
-.formContainer_mediaEdit .labelText {
+#form_mediaAdd .formContainer .labelText,
+#form_mediaEdit .formContainer .labelText {
   place-self: center end;
   display: flex;
   align-items: center;

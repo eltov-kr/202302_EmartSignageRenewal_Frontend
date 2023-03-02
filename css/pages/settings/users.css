@@ -1,0 +1,30 @@
+/* 사용자 계정 수정 form */
+#form_userEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#form_userEdit fieldset {
+  display: grid;
+}
+#form_userEdit .field {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#form_userEdit .labelText {
+  place-self: center end;
+}
+/* 사용자 계정 수정 form > 비밀번호 */
+#form_userEdit .field:nth-child(5) {
+  grid-template-columns: 100px auto;
+  margin-bottom: 10px;
+}
+#form_userEdit .field:nth-child(5) .labelText {
+  margin-bottom: 30px;
+}
+#form_userEdit .field .switch {
+  border: 1px solid transparent;
+}

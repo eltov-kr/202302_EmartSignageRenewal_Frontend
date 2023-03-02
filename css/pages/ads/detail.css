@@ -150,20 +150,30 @@
 }
 
 /* 매체 추가 form */
-#adDetailMain .formContainer_mediaAdd {
+#form_adMediaAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#form_adMediaAdd .formContainer {
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-items: space-between;
+  row-gap: 10px;
 }
-#adDetailMain .formContainer_mediaAdd .field {
+#form_adMediaAdd .formContainer .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 3em auto;
+  column-gap: 10px;
 }
-#adDetailMain .formContainer_mediaAdd .field:nth-child(1),
-#adDetailMain .formContainer_mediaAdd .field:nth-child(2) {
+#form_adMediaAdd .formContainer .field:nth-child(1),
+#form_adMediaAdd .formContainer .field:nth-child(2) {
   grid-column: span 2;
 }
-#adDetailMain .formContainer_mediaAdd .field:last-child {
+#form_adMediaAdd .formContainer .field:last-child {
   place-self: end;
+}
+#form_adMediaAdd .labelText {
+  place-self: center end;
 }

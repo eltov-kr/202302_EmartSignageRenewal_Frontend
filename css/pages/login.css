@@ -16,6 +16,9 @@
   gap: 10px;
   margin-bottom: 20px;
 }
+#form_userRegister .labelText {
+  place-self: center end;
+}
 /* 점포 */
 #form_userRegister .field:nth-child(2) {
   grid-template-columns: 100px auto 70px;
