@@ -472,20 +472,19 @@
                       매체 유형 수정
                     </h3>
                   </header>
-                  <form action="#" class="form_mediaAdd">
-                    <div class="formContainer_mediaAdd">
-                      <label for="mediaAdd1" class="field">
+                  <form action="#" class="form_mediaEdit">
+                    <div class="formContainer_mediaEdit">
+                      <label class="field">
                         <span class="labelText">매체명</span>
-                        <input type="text" id="mediaAdd1" />
+                        <input type="text" />
                       </label>
-                      <label for="mediaAdd2" class="field">
+                      <label class="field">
                         <span class="labelText">유형</span>
                         <div class="dropdown relative">
                           <a
                             class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
                             href="#"
                             type="button"
-                            id="mediaAdd2"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                             ><span></span>
@@ -493,7 +492,6 @@
                           </a>
                           <ul
                             class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                            aria-labelledby="mediaAdd2"
                           >
                             <li>
                               <a
@@ -512,14 +510,13 @@
                           </ul>
                         </div>
                       </label>
-                      <label for="mediaAdd3" class="field">
+                      <label class="field">
                         <span class="labelText">해상도</span>
                         <div class="dropdown relative">
                           <a
                             class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
                             href="#"
                             type="button"
-                            id="mediaAdd3"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                             ><span></span>
@@ -527,7 +524,6 @@
                           </a>
                           <ul
                             class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                            aria-labelledby="mediaAdd2"
                           >
                             <li>
                               <a
@@ -546,14 +542,13 @@
                           </ul>
                         </div>
                       </label>
-                      <label for="mediaAdd4" class="field">
+                      <label class="field">
                         <span class="labelText">방향</span>
                         <div class="dropdown relative">
                           <a
                             class="form_dropdown dropdown-toggle px-2 py-1 leading-tight transition duration-150 ease-in-out flex items-center justify-between whitespace-nowrap w-full border"
                             href="#"
                             type="button"
-                            id="mediaAdd4"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                             ><span></span>
@@ -561,7 +556,6 @@
                           </a>
                           <ul
                             class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left list-none text-left shadow-md m-0 bg-clip-padding border-2 w-full"
-                            aria-labelledby="mediaAdd2"
                           >
                             <li>
                               <a
@@ -580,29 +574,23 @@
                           </ul>
                         </div>
                       </label>
-                      <label for="mediaAdd5" class="field">
+                      <label class="field">
                         <span class="labelText"
-                          ><input
-                            type="checkbox"
-                            id="mediaAdd5_checkbox"
-                          />자사광고 시간설정</span
+                          ><input type="checkbox" />자사광고 시간설정</span
                         >
-                        <input type="text" id="mediaAdd5" />
+                        <input type="text" />
                       </label>
-                      <label for="mediaAdd6" class="field">
+                      <label class="field">
                         <span class="labelText"
-                          ><input
-                            type="checkbox"
-                            id="mediaAdd6_checkbox"
-                          />상업광고 시간설정</span
+                          ><input type="checkbox" />상업광고 시간설정</span
                         >
-                        <input type="text" id="mediaAdd6" />
+                        <input type="text" />
                       </label>
                     </div>
 
                     <nav class="flex gap-2 justify-center h-full">
                       <button
-                        data-modal-hide="mediaAddModal"
+                        data-modal-hide="mediaEditModal"
                         class="button button_save"
                       >
                         취소
