@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section
@@ -469,7 +473,8 @@
                       <td class="px-6 py-2 text-center">운영</td>
                       <td class="text-center">
                         <button
-                          id="storeInfoShowDialogButton"
+                          data-modal-target="storeInfoModal"
+                          data-modal-toggle="storeInfoModal"
                           class="button button_small"
                         >
                           상세보기
@@ -558,126 +563,143 @@
           </div>
 
           <!-- 점포 정보 확인 모달 -->
-          <dialog id="storeInfoDialog">
-            <div class="p-2">
-              <header class="flex justify-between mb-6">
-                <h3 class="text-[22px] font-bold text-grey-500">
-                  점포 정보 확인
-                </h3>
-              </header>
-              <form method="dialog" action="#" class="form_storeInfo">
-                <div class="form_storeInfoContainer">
-                  <span class="field">
-                    <label class="labelText">점포코드</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">점포명</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">대표번호</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">권역정보</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">상세주소</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">층 정보</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">운영시간</label>
-                    <input type="text" />
-                  </span>
-                  <span class="field">
-                    <label class="labelText">운영여부</label>
-                    <!-- tailwind element dropdown -->
-                    <div class="relative w-full" data-te-dropdown-ref>
-                      <button
-                        class="form_dropdown w-full"
-                        type="button"
-                        data-te-dropdown-toggle-ref
-                        aria-expanded="false"
-                      >
-                        <span class="form_dropdown_label"></span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </button>
-                      <ul
-                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                        data-te-dropdown-menu-ref
-                      >
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >운영</a
+          <div
+            id="storeInfoModal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+          >
+            <div class="relative w-full max-w-4xl h-auto">
+              <div class="relative bg-white shadow">
+                <div class="px-8 py-6">
+                  <header class="flex justify-between mb-6">
+                    <h3 class="text-[22px] font-bold text-grey-500">
+                      점포 정보 확인
+                    </h3>
+                  </header>
+                  <form method="dialog" action="#" class="form_storeInfo">
+                    <div class="form_storeInfoContainer">
+                      <span class="field">
+                        <label class="labelText">점포코드</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">점포명</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">대표번호</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">권역정보</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">상세주소</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">층 정보</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">운영시간</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">운영여부</label>
+                        <!-- tailwind element dropdown -->
+                        <div class="relative w-full" data-te-dropdown-ref>
+                          <button
+                            class="form_dropdown w-full"
+                            type="button"
+                            data-te-dropdown-toggle-ref
+                            aria-expanded="false"
                           >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >미운영</a
+                            <span class="form_dropdown_label"></span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </button>
+                          <ul
+                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                            data-te-dropdown-menu-ref
                           >
-                        </li>
-                      </ul>
-                    </div>
-                  </span>
-                </div>
-
-                <section>
-                  <article>
-                    <!-- 휴점일 추가 등록 -->
-                    <div class="flex flex-col">
-                      <h3 class="text-base font-bold text-grey-500">
-                        휴점일 추가 등록
-                      </h3>
-                      <div class="flex items-center gap-3 pt-2">
-                        <input type="checkbox" />
-                        <div class="relative" data-te-datepicker-init>
-                          <input
-                            type="text"
-                            class="peer block w-full rounded border-0 bg-transparent leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          />
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >운영</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >미운영</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                      </div>
+                      </span>
                     </div>
-                    <!--점포 휴점일 -->
-                    <div class="flex flex-col">
-                      <h3 class="text-base font-bold text-grey-500">
-                        점포 휴점일
-                      </h3>
-                      <ul class="flex flex-wrap pt-2 text-red text-sm">
-                        <li>2023-02-12(일),</li>
-                        <li>2023-02-12(일),</li>
-                        <li>2023-02-12(일),</li>
-                        <li>2023-02-12(일)</li>
-                      </ul>
-                    </div>
-                  </article>
-                </section>
 
-                <nav class="flex gap-2 justify-center h-full">
-                  <button class="button button_save">취소</button>
-                  <button class="button button_yellow_lightText button_save">
-                    저장
-                  </button>
-                </nav>
-              </form>
+                    <section>
+                      <article>
+                        <!-- 휴점일 추가 등록 -->
+                        <div class="flex flex-col">
+                          <h3 class="text-base font-bold text-grey-500">
+                            휴점일 추가 등록
+                          </h3>
+                          <div class="flex items-center gap-3 pt-2">
+                            <input type="checkbox" />
+                            <div class="relative" data-te-datepicker-init>
+                              <input
+                                type="text"
+                                class="datepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <!--점포 휴점일 -->
+                        <div class="flex flex-col">
+                          <h3 class="text-base font-bold text-grey-500">
+                            점포 휴점일
+                          </h3>
+                          <ul class="flex flex-wrap pt-2 text-red text-sm">
+                            <li>2023-02-12(일),</li>
+                            <li>2023-02-12(일),</li>
+                            <li>2023-02-12(일),</li>
+                            <li>2023-02-12(일)</li>
+                          </ul>
+                        </div>
+                      </article>
+                    </section>
+
+                    <nav class="flex gap-2 justify-center h-full">
+                      <button
+                        data-modal-hide="storeInfoModal"
+                        class="button button_save"
+                      >
+                        취소
+                      </button>
+                      <button
+                        class="button button_yellow_lightText button_save"
+                      >
+                        저장
+                      </button>
+                    </nav>
+                  </form>
+                </div>
+              </div>
             </div>
-          </dialog>
+          </div>
         </main>
       </div>
     </section>
     <script type="text/javascript" src="/js/settings/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
 </html>

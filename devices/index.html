@@ -2119,19 +2119,18 @@
                           <h3 class="text-base font-bold text-grey-500">
                             휴점일설정
                           </h3>
-                          <ul class="flex justify-between items-center pt-2">
-                            <li class="flex items-center gap-1">
-                              <input type="checkbox" />
-                              <span class="text-grey-400 w-max"
-                                >휴점일 연동 미적용</span
-                              >
-                            </li>
-                            <li>
-                              <div class="datepicker relative">
-                                <input type="text" class="form-control" />
-                              </div>
-                            </li>
-                          </ul>
+                          <div class="flex items-center gap-3 pt-2">
+                            <input type="checkbox" />
+                            <span class="text-grey-400 w-max"
+                              >휴점일 연동 미적용</span
+                            >
+                            <div class="relative" data-te-datepicker-init>
+                              <input
+                                type="text"
+                                class="datepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                              />
+                            </div>
+                          </div>
                         </div>
                         <div class="flex flex-col">
                           <h3 class="text-base font-bold text-grey-500">
