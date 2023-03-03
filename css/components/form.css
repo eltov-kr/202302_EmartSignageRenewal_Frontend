@@ -20,8 +20,14 @@ input[type='password'] {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  font-size: 15px;
 }
-
+.form_dropdown_textGrey {
+  color: var(--grey-200);
+}
+.form_dropdown_textGrey i {
+  color: var(--grey-900);
+}
 .form_dropdown_label {
   font-size: 15px;
 }
