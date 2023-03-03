@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMART SIGNING 2.0 | 콘텐츠등록</title>
+    <title>EMART SIGNING 2.0 | 광고주 리포트</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
@@ -36,7 +36,6 @@
               <img src="/images/logo_emart.png" alt="Emart Logo" />
             </a>
           </li>
-
           <li>
             <a
               href="/devices/index.html"
@@ -49,54 +48,27 @@
           <li>
             <a
               href="/stores/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg hover:bg-grey-100 group"
             >
               <img src="/images/menu_icon_group.png" />
               <span class="ml-3">점포그룹관리</span>
             </a>
           </li>
-          <li class="bg-grey-100">
-            <a href="/ads/index.html">
-              <button
-                type="button"
-                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
-                aria-controls="dropdown-pages_device"
-                data-collapse-toggle="dropdown-pages_device"
+          <li>
+            <a
+              href="/ads/detail.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg hover:bg-grey-100 group"
+            >
+              <img src="/images/menu_icon_contents.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >광고주계약관리</span
               >
-                <img src="/images/menu_icon_contents_o.png" />
-                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
-                  >광고주계약관리</span
-                >
-              </button>
             </a>
-            <ul id="dropdown-pages_device" class="py-2 space-y-2">
-              <li>
-                <a
-                  href="/ads/index.html"
-                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-                  ></span
-                  >콘텐츠등록</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/ads/contract.html"
-                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  광고계약등록</a
-                >
-              </li>
-            </ul>
           </li>
           <li>
             <a
               href="/schedules/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg hover:bg-grey-100 group"
             >
               <img src="/images/menu_icon_schedule-1.png" />
               <span class="flex-1 ml-3 text-left whitespace-nowrap"
@@ -107,7 +79,7 @@
           <li>
             <a
               href="/sales/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg hover:bg-grey-100 group"
             >
               <img src="/images/menu_icon_schedule.png" />
               <span class="flex-1 ml-3 text-left whitespace-nowrap"
@@ -115,21 +87,123 @@
               >
             </a>
           </li>
-          <li>
-            <a
-              href="/reports/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_report.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >리포트</span
+          <li class="bg-grey-100">
+            <a href="/reports/index.html">
+              <button
+                type="button"
+                class="flex items-center px-4 py-2 w-full text-base font-normal text-grey-900 transition duration-75 group border-r-2 border-yellow-primary"
               >
+                <img src="/images/menu_icon_report_o.png" />
+                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
+                  >리포트</span
+                >
+              </button>
             </a>
+            <ul class="py-2 space-y-2">
+              <li>
+                <a
+                  href="/reports/index.html"
+                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                  ></span>
+                  광고주 리포트</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/issue.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  디바이스 이슈 리포트</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/monitor.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  디바이스 이슈 모니터링 통계</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/schedule.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  스케줄 배포 로그</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/screenshot.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  스크린샷 관리</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/manage.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  디바이스 운영 정보</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/log.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  디바이스 로그 정보</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/user.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  사용자 이용 내역 관리</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/reports/batch.html"
+                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group hover:bg-grey-100"
+                  ><span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span>
+                  배치 수행 데이터</a
+                >
+              </li>
+            </ul>
           </li>
           <li>
             <a
               href="/settings/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg hover:bg-grey-100 group"
             >
               <img src="/images/menu_icon_setting.png" />
               <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
@@ -227,27 +301,22 @@
         </nav>
 
         <header>
-          <h1 class="font-bold text-xl my-4">콘텐츠등록</h1>
+          <h1 class="font-bold text-xl my-4">점포 관리</h1>
           <div class="flex gap-3 items-center font-bold text-sm">
-            <h2 class="text-gray-400">광고주계약관리</h2>
+            <h2 class="text-gray-400">설정</h2>
             <span
               class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
             >
             </span>
-            <h3>콘텐츠등록</h3>
+            <h3>점포 관리</h3>
           </div>
         </header>
 
         <main class="w-full h-[80%] flex flex-col gap-3">
           <nav class="buttons">
-            <button
-              type="button"
-              class="button button_yellow_darkText"
-              data-modal-target="contentsRegisterModal"
-              data-modal-toggle="contentsRegisterModal"
-            >
+            <button type="button" class="button button_yellow_darkText">
               <i class="fa-solid fa-plus"></i>
-              <span>콘텐츠등록</span>
+              <span>지점등록</span>
             </button>
           </nav>
 
@@ -291,17 +360,17 @@
                     </li>
                   </ul>
                 </div>
-
                 <input
                   type="text"
                   placeholder="검색어를 입력하세요"
                   class="h-[40px] w-[450px]"
                 />
+                <button class="button button_big">조회</button>
               </nav>
 
               <div class="relative overflow-x-auto border-l border-r">
                 <table
-                  id="table-contents"
+                  id="table-settings-index"
                   class="w-full text-sm text-left text-gray-500 pt-[40px]"
                 >
                   <thead>
@@ -313,32 +382,14 @@
                           <div class="w-[50px]">No.</div>
                         </div>
                       </th>
-                      <th></th>
                       <th class="text-center font-normal">
                         <div
-                          class="flex justify-center items-center min-w-[150px]"
+                          class="flex justify-center items-center min-w-[75px]"
                         >
-                          <div class="">콘텐츠명</div>
+                          <div class="w-[50px]">권역정보</div>
                           <div class="flex items-center text-[10px]">
                             <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i
-                              class="fa-solid fa-magnifying-glass mr-1.5"
-                              id="tableSearchButton_contents"
-                              data-dropdown-toggle="tableSearch_contents"
-                            ></i>
-                            <!-- table search dropdown -->
-                            <div
-                              id="tableSearch_contents"
-                              class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
-                            >
-                              <div class="relative">
-                                <input
-                                  type="text"
-                                  class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
-                                  placeholder="매체명"
-                                />
-                              </div>
-                            </div>
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                           </div>
                         </div>
                       </th>
@@ -346,7 +397,40 @@
                         <div
                           class="flex justify-center items-center min-w-[75px]"
                         >
-                          <div class="w-[30px]">종류</div>
+                          <div class="w-[40px]">지점명</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[75px]"
+                        >
+                          <div class="w-[50px]">층 정보</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[75px]"
+                        >
+                          <div class="w-[50px]">대표번호</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[75px]"
+                        >
+                          <div class="w-[50px]">운영시간</div>
                           <div class="flex items-center text-[10px]">
                             <i class="fa-solid fa-chevron-down px-1.5"></i
                             ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
@@ -356,28 +440,6 @@
                       <th class="text-center font-normal">
                         <div
                           class="flex justify-center items-center min-w-[100px]"
-                        >
-                          <div class="w-[40px]">해상도</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[30px]">크기</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
                         >
                           <div class="w-[40px]">작성자</div>
                           <div class="flex items-center text-[10px]">
@@ -419,42 +481,41 @@
                           </div>
                         </div>
                       </th>
-                      <th class="w-[50px]"></th>
-                      <th class="w-[60px]"></th>
+                      <th class="text-center font-normal">
+                        <div
+                          class="flex justify-center items-center min-w-[75px]"
+                        >
+                          <div class="w-[40px]">Status</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="w-[90px]"></th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr class="bg-white hover:bg-grey-50 h-[70px]">
                       <td class="px-6 py-2 text-center">1</td>
-                      <td class="py-2">
-                        <div
-                          data-modal-target="contentsModal"
-                          data-modal-toggle="contentsModal"
-                          class="cursor-pointer"
+                      <td class="px-6 py-2 text-center">서울특별시</td>
+                      <td class="px-6 py-2 text-center">가든5점</td>
+                      <td class="px-6 py-2 text-center">7F</td>
+                      <td class="px-6 py-2 text-center">02-2009-1234</td>
+                      <td class="px-6 py-2 text-center">10:00~23:00</td>
+                      <td class="px-6 py-2 text-center">홍길동</td>
+                      <td class="px-6 py-2 text-center">2022-12-28 13:08:29</td>
+                      <td class="px-6 py-2 text-center">홍길동</td>
+                      <td class="px-6 py-2 text-center">2022-12-28 13:08:29</td>
+                      <td class="px-6 py-2 text-center">운영</td>
+                      <td class="text-center">
+                        <button
+                          data-modal-target="storeInfoModal"
+                          data-modal-toggle="storeInfoModal"
+                          class="button button_small"
                         >
-                          <video width="50">
-                            <source
-                              src="/videos/dogvideoplayback.mp4"
-                              type="video/mp4"
-                            />
-                          </video>
-                        </div>
-                      </td>
-                      <td class="py-2">
-                        전점-전매체-10월모니모-221017-221031-30s.mp4
-                      </td>
-                      <td class="px-6 py-2 text-center">Video</td>
-                      <td class="px-6 py-2 text-center">1920 x 1080</td>
-                      <td class="px-6 py-2 text-center">0.4</td>
-                      <td class="px-6 py-2 text-center">홍길동</td>
-                      <td class="px-6 py-2 text-center">2022-12-28 13:08:29</td>
-                      <td class="px-6 py-2 text-center">홍길동</td>
-                      <td class="px-6 py-2 text-center">2022-12-28 13:08:29</td>
-                      <td class="text-center">
-                        <button class="button button_small">삭제</button>
-                      </td>
-                      <td class="text-center">
-                        <button class="button button_small">수정</button>
+                          상세보기
+                        </button>
                       </td>
                     </tr>
                   </tbody>
@@ -538,163 +599,132 @@
             </div>
           </div>
 
-          <!-- 콘텐츠 등록 모달 -->
+          <!-- 점포 정보 확인 모달 -->
           <div
-            id="contentsRegisterModal"
+            id="storeInfoModal"
             tabindex="-1"
             aria-hidden="true"
             class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
           >
-            <div class="relative w-full max-w-[840px] h-auto">
+            <div class="relative w-full max-w-4xl h-auto">
               <div class="relative bg-white shadow">
                 <div class="px-8 py-6">
                   <header class="flex justify-between mb-6">
                     <h3 class="text-[22px] font-bold text-grey-500">
-                      콘텐츠등록
+                      점포 정보 확인
                     </h3>
                   </header>
-
-                  <form action="#" id="form_contentsRegister">
-                    <div class="fieldContainer">
-                      <label
-                        for="contentsRegister_uploader"
-                        class="flex flex-col items-center justify-center w-full h-[100px] border-grey-200 border rounded-md cursor-pointer bg-[#EDEFF1] hover:bg-grey-100"
-                      >
-                        <div class="flex items-center justify-center p-5 gap-2">
-                          <svg
-                            aria-hidden="true"
-                            class="w-10 h-10 text-grey-400"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
+                  <form method="dialog" action="#" class="form_storeInfo">
+                    <div class="form_storeInfoContainer">
+                      <span class="field">
+                        <label class="labelText">점포코드</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">점포명</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">대표번호</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">권역정보</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">상세주소</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">층 정보</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">운영시간</label>
+                        <input type="text" />
+                      </span>
+                      <span class="field">
+                        <label class="labelText">운영여부</label>
+                        <!-- tailwind element dropdown -->
+                        <div class="relative w-full" data-te-dropdown-ref>
+                          <button
+                            class="form_dropdown w-full"
+                            type="button"
+                            data-te-dropdown-toggle-ref
+                            aria-expanded="false"
                           >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                            ></path>
-                          </svg>
-                          <div class="flex flex-col gap-2 justify-center">
-                            <p class="text-sm text-grey-500 font-semibold">
-                              파일 업로드
-                            </p>
-                            <p class="text-xs text-grey-500">
-                              여기에 파일을 드롭하거나 클릭하십시오.
-                            </p>
-                          </div>
+                            <span class="form_dropdown_label"></span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </button>
+                          <ul
+                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                            data-te-dropdown-menu-ref
+                          >
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >운영</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >미운영</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                        <input
-                          id="contentsRegister_uploader"
-                          type="file"
-                          class="hidden"
-                        />
-                      </label>
+                      </span>
                     </div>
 
-                    <ul>
-                      <li>
-                        <label
-                          for="contentsRegister1_file"
-                          class="progressContainer"
-                        >
-                          <div class="fileStatus fileStatus_hidden">
-                            <i class="fa-solid fa-check"></i>
+                    <section>
+                      <article>
+                        <!-- 휴점일 추가 등록 -->
+                        <div class="flex flex-col">
+                          <h3 class="text-base font-bold text-grey-500">
+                            휴점일 추가 등록
+                          </h3>
+                          <div class="flex items-center gap-3 pt-2">
+                            <input type="checkbox" />
+                            <div class="relative" data-te-datepicker-init>
+                              <input
+                                type="text"
+                                class="datepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                              />
+                            </div>
                           </div>
-                          <span class="fileName"
-                            >전점-전매체-10월모니모-221017-221031-30s.mp4
-                          </span>
-                          <progress
-                            id="contentsRegister1_file"
-                            max="100"
-                            value="70"
-                            class="progress-ing"
-                          ></progress>
-                          <div class="fileSize">
-                            <span>618KB</span> /
-                            <span>618KB</span>
-                          </div>
-                        </label>
-                        <label
-                          for="contentsRegister1_time"
-                          class="timeContainer"
-                        >
-                          <span class="labelText">시간설정</span>
-                          <input type="text" id="contentsRegister1_time" />
-                          <button><i class="fa-solid fa-xmark"></i></button>
-                        </label>
-                      </li>
-                      <li>
-                        <label
-                          for="contentsRegister1_file"
-                          class="progressContainer"
-                        >
-                          <div class="fileStatus">
-                            <i class="fa-solid fa-check"></i>
-                          </div>
-                          <span class="fileName"
-                            >전점-전매체-10월모니모-221017-221031-30s.mp4
-                          </span>
-                          <progress
-                            id="contentsRegister1_file"
-                            max="100"
-                            value="100"
-                            class="progress-done"
-                          ></progress>
-                          <div class="fileSize">
-                            <span>618KB</span> /
-                            <span>618KB</span>
-                          </div>
-                        </label>
-                        <label
-                          for="contentsRegister1_time"
-                          class="timeContainer"
-                        >
-                          <span class="labelText">시간설정</span>
-                          <input type="text" id="contentsRegister1_time" />
-                          <button><i class="fa-solid fa-xmark"></i></button>
-                        </label>
-                      </li>
-                      <li>
-                        <label
-                          for="contentsRegister1_file"
-                          class="progressContainer"
-                        >
-                          <div class="fileStatus fileStatus_red">
-                            <i class="fa-solid fa-rotate-left"></i>
-                          </div>
-                          <span class="fileName"
-                            >전점-전매체-10월모니모-221017-221031-30s.mp4
-                          </span>
-                          <progress
-                            id="contentsRegister1_file"
-                            max="100"
-                            value="100"
-                            class="progress-red"
-                          ></progress>
-                          <div class="fileSize">
-                            <span>618KB</span> /
-                            <span>618KB</span>
-                          </div>
-                        </label>
-                        <label
-                          for="contentsRegister1_time"
-                          class="timeContainer"
-                        >
-                          <span class="labelText">시간설정</span>
-                          <input type="text" id="contentsRegister1_time" />
-                          <button><i class="fa-solid fa-xmark"></i></button>
-                        </label>
-                      </li>
-                    </ul>
+                        </div>
+                        <!--점포 휴점일 -->
+                        <div class="flex flex-col">
+                          <h3 class="text-base font-bold text-grey-500">
+                            점포 휴점일
+                          </h3>
+                          <ul class="flex flex-wrap pt-2 text-red text-sm">
+                            <li>2023-02-12(일),</li>
+                            <li>2023-02-12(일),</li>
+                            <li>2023-02-12(일),</li>
+                            <li>2023-02-12(일)</li>
+                          </ul>
+                        </div>
+                      </article>
+                    </section>
 
                     <nav class="flex gap-2 justify-center h-full">
-                      <button class="button button_save">모두삭제</button>
+                      <button
+                        data-modal-hide="storeInfoModal"
+                        class="button button_save"
+                      >
+                        취소
+                      </button>
                       <button
                         class="button button_yellow_lightText button_save"
                       >
-                        올리기
+                        저장
                       </button>
                     </nav>
                   </form>
@@ -702,52 +732,10 @@
               </div>
             </div>
           </div>
-
-          <!-- 콘텐츠 모달 -->
-          <div
-            id="contentsModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-[600px] h-auto">
-              <div class="relative bg-white shadow">
-                <div class="px-8 py-6">
-                  <header class="flex justify-between mb-6">
-                    <h3 class="text-[22px] font-bold text-grey-500">
-                      전점-전매체-10월모니모-221017-221031-30s.mp4
-                    </h3>
-                  </header>
-                  <section>
-                    <div>
-                      <video controls muted>
-                        <source
-                          src="/videos/dogvideoplayback.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </div>
-                    <nav class="flex gap-2 justify-center pt-6">
-                      <button
-                        data-modal-hide="contentsModal"
-                        class="button button_save"
-                      >
-                        닫기
-                      </button>
-                      <button
-                        class="button button_yellow_lightText button_save"
-                      >
-                        확인
-                      </button>
-                    </nav>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </div>
         </main>
       </div>
     </section>
+    <!-- <script type="text/javascript" src="/js/reports/index.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>

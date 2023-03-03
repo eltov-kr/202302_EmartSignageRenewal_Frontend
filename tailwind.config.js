@@ -16,6 +16,7 @@ module.exports = {
           300: '#919EAB',
           400: '#637381',
           500: '#45515B',
+          900: '#212B36',
           disabled: '#EDEFF1',
         },
         border: {
