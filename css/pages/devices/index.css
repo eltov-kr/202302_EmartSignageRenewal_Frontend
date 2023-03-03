@@ -1,9 +1,18 @@
-.nav-tabs .nav-link {
-  color: var(--grey-300) !important;
+#main_devices .tabsContainer {
+  min-height: 650px;
+  height: 100%;
+  width: 340px;
+  border: 1px solid var(--border-grey);
+  border-radius: 5px;
+  background-color: #fff;
 }
-.nav-tabs .nav-link.active {
-  color: var(--grey-500) !important;
-  border-color: var(--yellow-primary) !important;
+#main_devices #tabs-store {
+  height: 100%;
+  padding-bottom: 115px;
+}
+#main_devices #tabs-media {
+  height: 100%;
+  padding-bottom: 35px;
 }
 
 /* 디바이스 등록 Form & 디바이스 세부정보 수정 Form */
