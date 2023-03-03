@@ -265,8 +265,7 @@
                         required
                       />
                       <button
-                        data-modal-target="branchSearchModal"
-                        data-modal-toggle="branchSearchModal"
+                        id="branchSearchShowDialogButton"
                         class="button button_small"
                       >
                         점포검색
@@ -280,8 +279,7 @@
                         required
                       />
                       <button
-                        data-modal-target="idSearchModal"
-                        data-modal-toggle="idSearchModal"
+                        id="idSearchShowDialogButton"
                         class="button button_small"
                       >
                         사번검색
@@ -396,7 +394,7 @@
                       취소
                     </button>
                     <button
-                      id="registerConFirmShowDialogButton"
+                      id="userRegisterConFirmShowDialogButton"
                       class="button button_yellow_lightText button_save"
                     >
                       신청
@@ -409,130 +407,103 @@
         </div>
 
         <!-- 점포검색 모달 -->
-        <div
-          id="branchSearchModal"
-          tabindex="-1"
-          aria-hidden="true"
-          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-        >
-          <div class="relative w-full max-w-xl h-auto">
-            <div class="relative bg-white shadow">
-              <div class="px-8 py-6">
-                <h3 class="mb-6 text-[22px] font-bold text-grey-500">
-                  점포검색
-                </h3>
-                <form action="#" id="form_branchSearch">
-                  <fieldset>
-                    <span class="field">
-                      <label class="labelText">점포명</label>
-                      <input type="text" placeholder="점포명을 입력하세요" />
-                      <button class="button">검색</button>
-                    </span>
-                    <table class="scrolldown">
-                      <thead>
-                        <tr>
-                          <th>점포번호</th>
-                          <th>점포명</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>최상위 조직</td>
-                          <td>이마트</td>
-                        </tr>
-                        <tr>
-                          <td>1060</td>
-                          <td>평촌점</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </fieldset>
+        <dialog id="branchSearchDialog">
+          <div class="p-3">
+            <h3 class="mb-6 text-[22px] font-bold text-grey-500">점포검색</h3>
+            <form method="dialog" action="#" id="form_branchSearch">
+              <fieldset>
+                <span class="field">
+                  <label class="labelText">점포명</label>
+                  <input type="text" placeholder="점포명을 입력하세요" />
+                  <button class="button">검색</button>
+                </span>
+                <table class="scrolldown">
+                  <thead>
+                    <tr>
+                      <th>점포번호</th>
+                      <th>점포명</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>최상위 조직</td>
+                      <td>이마트</td>
+                    </tr>
+                    <tr>
+                      <td>1060</td>
+                      <td>평촌점</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
 
-                  <nav class="flex gap-2 justify-center">
-                    <button
-                      data-modal-hide="branchSearchModal"
-                      class="button button_save"
-                    >
-                      취소
-                    </button>
-                    <button class="button button_yellow_lightText button_save">
-                      신청
-                    </button>
-                  </nav>
-                </form>
-              </div>
-            </div>
+              <nav class="flex gap-2 justify-center">
+                <button class="button button_save">취소</button>
+                <button class="button button_yellow_lightText button_save">
+                  선택
+                </button>
+              </nav>
+            </form>
           </div>
-        </div>
+        </dialog>
 
         <!-- 사번검색 모달 -->
-        <div
-          id="idSearchModal"
-          tabindex="-1"
-          aria-hidden="true"
-          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-        >
-          <div class="relative w-full max-w-xl h-auto">
-            <div class="relative bg-white shadow">
-              <div class="px-8 py-6">
-                <h3 class="mb-6 text-[22px] font-bold text-grey-500">
-                  사번검색
-                </h3>
-                <form action="#" id="form_idSearch">
-                  <fieldset>
-                    <span class="field">
-                      <label class="labelText">사번</label>
-                      <input type="text" placeholder="사번을 입력하세요" />
-                      <button class="button">검색</button>
-                    </span>
-                    <table class="scrolldown">
-                      <thead>
-                        <tr>
-                          <th>사원번호</th>
-                          <th>사원명</th>
-                          <th>부서</th>
-                          <th>직책</th>
-                          <th>직무</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>053*36</td>
-                          <td>김*현</td>
-                          <td>연수점인사총무</td>
-                          <td>파트장(E점포)</td>
-                          <td>인사업무관리</td>
-                        </tr>
-                        <tr>
-                          <td>053*36</td>
-                          <td>김*현</td>
-                          <td>연수점인사총무</td>
-                          <td>파트장(E점포)</td>
-                          <td>인사업무관리</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </fieldset>
+        <dialog id="idSearchDialog">
+          <div class="p-3">
+            <h3 class="mb-6 text-[22px] font-bold text-grey-500">사번검색</h3>
+            <form method="dialog" action="#" id="form_idSearch">
+              <fieldset>
+                <span class="field">
+                  <label class="labelText">사번</label>
+                  <input type="text" placeholder="사번을 입력하세요" />
+                  <button class="button">검색</button>
+                </span>
+                <table class="scrolldown">
+                  <thead>
+                    <tr>
+                      <th>사원번호</th>
+                      <th>사원명</th>
+                      <th>부서</th>
+                      <th>직책</th>
+                      <th>직무</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>053*36</td>
+                      <td>김*현</td>
+                      <td>연수점인사총무</td>
+                      <td>파트장(E점포)</td>
+                      <td>인사업무관리</td>
+                    </tr>
+                    <tr>
+                      <td>053*36</td>
+                      <td>김*현</td>
+                      <td>연수점인사총무</td>
+                      <td>파트장(E점포)</td>
+                      <td>인사업무관리</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </fieldset>
 
-                  <nav class="flex gap-2 justify-center">
-                    <button
-                      data-modal-hide="idSearchModal"
-                      class="button button_save"
-                    >
-                      취소
-                    </button>
-                    <button class="button button_yellow_lightText button_save">
-                      신청
-                    </button>
-                  </nav>
-                </form>
-              </div>
-            </div>
+              <nav class="flex gap-2 justify-center">
+                <button
+                  data-modal-hide="idSearchModal"
+                  class="button button_save"
+                >
+                  취소
+                </button>
+                <button class="button button_yellow_lightText button_save">
+                  선택
+                </button>
+              </nav>
+            </form>
           </div>
-        </div>
+        </dialog>
 
         <!-- 사용자 등록 확인 모달 -->
-        <dialog id="registerConfirmDialog">
+        <dialog id="userRegisterConfirmDialog">
           <form
             method="dialog"
             class="w-[460px] py-6 flex flex-col justify-center items-center gap-6"
@@ -541,7 +512,7 @@
               신청이 완료되었습니다
             </h3>
             <button
-              id="registerConfirmOkButton"
+              id="userRegisterConfirmOkButton"
               class="button button_save button_yellow_lightText"
               data-modal-hide="userRegisterModal"
             >
