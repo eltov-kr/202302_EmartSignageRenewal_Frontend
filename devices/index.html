@@ -1808,7 +1808,7 @@
                           등록된 매체
                         </h3>
                         <button
-                          data-modal-toggle="mediaAddModal"
+                          id="mediaAddShowDialogButton"
                           class="button button_small"
                         >
                           <i class="fa-solid fa-plus"></i>
@@ -1909,196 +1909,174 @@
           </dialog>
 
           <!-- 매체 추가 모달 -->
-          <div
-            id="mediaAddModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-2xl h-auto">
-              <div class="relative bg-white shadow">
-                <div class="px-8 py-6">
-                  <header class="flex justify-between mb-6">
-                    <h3 class="text-[22px] font-bold text-grey-500">
-                      매체 추가
-                    </h3>
-                  </header>
-                  <form action="#" id="form_mediaAdd">
-                    <div class="formContainer">
-                      <label for="mediaAdd1" class="field">
-                        <span class="labelText">매체명</span>
-                        <input type="text" id="mediaAdd1" />
-                      </label>
-                      <label for="mediaAdd2" class="field">
-                        <span class="labelText">유형</span>
-                        <!-- tailwind element dropdown -->
-                        <div class="relative w-full" data-te-dropdown-ref>
-                          <button
-                            class="form_dropdown w-full"
-                            type="button"
-                            data-te-dropdown-toggle-ref
-                            aria-expanded="false"
+          <dialog id="mediaAddDialog">
+            <div class="p-3">
+              <header class="flex justify-between mb-6">
+                <h3 class="text-[22px] font-bold text-grey-500">매체 추가</h3>
+              </header>
+              <form method="dialog" action="#" id="form_mediaAdd">
+                <div class="formContainer">
+                  <label for="mediaAdd1" class="field">
+                    <span class="labelText">매체명</span>
+                    <input type="text" id="mediaAdd1" />
+                  </label>
+                  <label for="mediaAdd2" class="field">
+                    <span class="labelText">유형</span>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative w-full" data-te-dropdown-ref>
+                      <button
+                        class="form_dropdown w-full"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                      >
+                        <span class="form_dropdown_label"></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <ul
+                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >1</a
                           >
-                            <span class="form_dropdown_label"></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </button>
-                          <ul
-                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                            data-te-dropdown-menu-ref
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >2</a
                           >
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </label>
-                      <label for="mediaAdd3" class="field">
-                        <span class="labelText">해상도</span>
-                        <!-- tailwind element dropdown -->
-                        <div class="relative w-full" data-te-dropdown-ref>
-                          <button
-                            class="form_dropdown w-full"
-                            type="button"
-                            data-te-dropdown-toggle-ref
-                            aria-expanded="false"
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >3</a
                           >
-                            <span class="form_dropdown_label"></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </button>
-                          <ul
-                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                            data-te-dropdown-menu-ref
-                          >
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </label>
-                      <label for="mediaAdd4" class="field">
-                        <span class="labelText">방향</span>
-                        <!-- tailwind element dropdown -->
-                        <div class="relative w-full" data-te-dropdown-ref>
-                          <button
-                            class="form_dropdown w-full"
-                            type="button"
-                            data-te-dropdown-toggle-ref
-                            aria-expanded="false"
-                          >
-                            <span class="form_dropdown_label"></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </button>
-                          <ul
-                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                            data-te-dropdown-menu-ref
-                          >
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </label>
-                      <label for="mediaAdd5" class="field">
-                        <span class="labelText"
-                          ><input
-                            type="checkbox"
-                            id="mediaAdd5_checkbox"
-                          />자사광고 시간설정</span
-                        >
-                        <input type="text" id="mediaAdd5" />
-                      </label>
-                      <label for="mediaAdd6" class="field">
-                        <span class="labelText"
-                          ><input
-                            type="checkbox"
-                            id="mediaAdd6_checkbox"
-                          />상업광고 시간설정</span
-                        >
-                        <input type="text" id="mediaAdd6" />
-                      </label>
+                        </li>
+                      </ul>
                     </div>
-
-                    <nav class="flex gap-2 justify-center h-full">
+                  </label>
+                  <label for="mediaAdd3" class="field">
+                    <span class="labelText">해상도</span>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative w-full" data-te-dropdown-ref>
                       <button
-                        data-modal-hide="mediaAddModal"
-                        class="button button_save"
+                        class="form_dropdown w-full"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
                       >
-                        취소
+                        <span class="form_dropdown_label"></span>
+                        <i class="fa-solid fa-chevron-down"></i>
                       </button>
+                      <ul
+                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >3</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </label>
+                  <label for="mediaAdd4" class="field">
+                    <span class="labelText">방향</span>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative w-full" data-te-dropdown-ref>
                       <button
-                        class="button button_yellow_lightText button_save"
+                        class="form_dropdown w-full"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
                       >
-                        저장
+                        <span class="form_dropdown_label"></span>
+                        <i class="fa-solid fa-chevron-down"></i>
                       </button>
-                    </nav>
-                  </form>
+                      <ul
+                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >3</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </label>
+                  <label for="mediaAdd5" class="field">
+                    <span class="labelText"
+                      ><input type="checkbox" id="mediaAdd5_checkbox" />자사광고
+                      시간설정</span
+                    >
+                    <input type="text" id="mediaAdd5" />
+                  </label>
+                  <label for="mediaAdd6" class="field">
+                    <span class="labelText"
+                      ><input type="checkbox" id="mediaAdd6_checkbox" />상업광고
+                      시간설정</span
+                    >
+                    <input type="text" id="mediaAdd6" />
+                  </label>
                 </div>
-              </div>
+
+                <nav class="flex gap-2 justify-center h-full">
+                  <button class="button button_save">취소</button>
+                  <button class="button button_yellow_lightText button_save">
+                    저장
+                  </button>
+                </nav>
+              </form>
             </div>
-          </div>
+          </dialog>
 
           <!-- 메인 > 버튼 그룹 > 디바이스 사용 여부 모달 -->
           <div
