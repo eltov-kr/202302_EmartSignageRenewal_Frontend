@@ -136,7 +136,3 @@ progress {
 .selectBox .optionList::-webkit-scrollbar {
   width: 0;
 }
-
-.datepickerInput {
-  height: 30px !important;
-}

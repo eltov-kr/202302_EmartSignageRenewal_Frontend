@@ -96,8 +96,9 @@
   padding-bottom: 20px;
   border-bottom: 1px dashed var(--grey-200);
 }
-#form_detailEdit section article:nth-child(2) .datepicker input {
+#form_detailEdit section article:nth-child(2) .teDatepickerInput {
   height: 30px;
+  width: 172px;
 }
 /* 꺼짐설정 */
 #form_detailEdit .offContainer {

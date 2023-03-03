@@ -36,7 +36,6 @@
               <img src="/images/logo_emart.png" alt="Emart Logo" />
             </a>
           </li>
-
           <li>
             <a
               href="/devices/index.html"
@@ -69,11 +68,11 @@
                 >
               </button>
             </a>
-            <ul id="dropdown-pages_device" class="py-2 space-y-2">
+            <ul id="dropdown-pages_device" class="py-2 space-y-1">
               <li>
                 <a
                   href="/ads/index.html"
-                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
+                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
                   ><span
                     class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
                   >
@@ -84,7 +83,7 @@
               <li>
                 <a
                   href="/ads/contract.html"
-                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
+                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
                   ><span
                     class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
                   ></span
@@ -600,12 +599,18 @@
                         <div
                           class="flex justify-between items-center text-gray-400"
                         >
-                          <div class="datepicker relative">
-                            <input type="text" class="form-control" />
+                          <div class="relative" data-te-datepicker-init>
+                            <input
+                              type="text"
+                              class="peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            />
                           </div>
                           ~
-                          <div class="datepicker relative">
-                            <input type="text" class="form-control" />
+                          <div class="relative" data-te-datepicker-init>
+                            <input
+                              type="text"
+                              class="peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                            />
                           </div>
                         </div>
                       </label>

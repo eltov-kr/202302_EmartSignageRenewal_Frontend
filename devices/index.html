@@ -36,7 +36,6 @@
               <img src="/images/logo_emart.png" alt="Emart Logo" />
             </a>
           </li>
-
           <li class="bg-grey-100">
             <a href="/devices/index.html">
               <button
@@ -51,11 +50,11 @@
                 >
               </button>
             </a>
-            <ul id="dropdown-pages_device" class="py-2 space-y-2">
+            <ul id="dropdown-pages_device" class="py-2 space-y-1">
               <li>
                 <a
                   href="/devices/index.html"
-                  class="font-bold flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
+                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
                   ><span
                     class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
                   ></span
@@ -65,7 +64,7 @@
               <li>
                 <a
                   href="/devices/media.html"
-                  class="flex gap-2 items-center px-12 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
+                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
                   ><span
                     class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
                   >
@@ -86,7 +85,7 @@
           </li>
           <li>
             <a
-              href="/ads/detail.html"
+              href="/ads/index.html"
               class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
             >
               <img src="/images/menu_icon_contents.png" />
@@ -2339,15 +2338,17 @@
                           <h3 class="text-base font-bold text-grey-500">
                             휴점일설정
                           </h3>
-                          <div class="flex items-center gap-3 pt-2">
-                            <input type="checkbox" />
-                            <span class="text-grey-400 w-max"
-                              >휴점일 연동 미적용</span
+                          <div
+                            class="flex justify-between items-center gap-3 pt-2"
+                          >
+                            <span class="text-grey-400">
+                              <input type="checkbox" class="mr-2" />휴점일 연동
+                              미적용</span
                             >
                             <div class="relative" data-te-datepicker-init>
                               <input
                                 type="text"
-                                class="datepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                               />
                             </div>
                           </div>

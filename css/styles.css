@@ -17,6 +17,7 @@
 @import 'pages/settings/index.css';
 @import 'pages/settings/users.css';
 @import 'pages/settings/authors.css';
+@import 'pages/reports/index.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;

@@ -38,93 +38,93 @@
 }
 
 /* 점포 그룹 추가 Form */
-.form_groupAdd {
+#form_groupAdd {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.form_groupAdd .fieldContainer {
+#form_groupAdd .fieldContainer {
   display: grid;
   grid-template-rows: repeat(2, auto);
   row-gap: 1em;
 }
-.form_groupAdd .field {
+#form_groupAdd .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 5em auto;
   column-gap: 1em;
 }
-.form_groupAdd .labelText {
+#form_groupAdd .labelText {
   place-self: center end;
 }
-.form_groupAdd section {
+#form_groupAdd section {
   width: 100%;
   height: 480px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.form_groupAdd article:nth-child(1) {
+#form_groupAdd article:nth-child(1) {
   width: 100px;
 }
-.form_groupAdd article:nth-child(2) {
+#form_groupAdd article:nth-child(2) {
   width: 400px;
 }
-.form_groupAdd article:last-child {
+#form_groupAdd article:last-child {
   width: 250px;
 }
-.form_groupAdd .branchContainer {
+#form_groupAdd .branchContainer {
   height: 100%;
   border: 1px solid #dce0e4;
   font-size: 13px;
   padding: 5px;
   overflow-y: auto;
 }
-.form_groupAdd article .branchContainer {
+#form_groupAdd article .branchContainer {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.form_groupAdd article:nth-child(2) .branchContainer {
+#form_groupAdd article:nth-child(2) .branchContainer {
   display: grid;
   grid-template-columns: repeat(3, minmax(90px, auto));
   grid-template-rows: repeat(auto-fill, 20px);
 }
-.form_groupAdd article:last-child .branchContainer {
+#form_groupAdd article:last-child .branchContainer {
   display: grid;
   grid-template-columns: repeat(2, minmax(90px, auto));
   grid-template-rows: repeat(auto-fill, 20px);
 }
-.form_groupAdd .branchContainer .field {
+#form_groupAdd .branchContainer .field {
   display: flex;
   align-items: center;
   gap: 5px;
   color: var(--grey-400);
 }
-.form_groupAdd .branchContainer .field:focus {
+#form_groupAdd .branchContainer .field:focus {
   color: var(--yellow-primary);
 }
-.form_groupAdd .branchContainer .field:first-child {
+#form_groupAdd .branchContainer .field:first-child {
   cursor: pointer;
 }
 
 /* 점포관리 수정 form */
-.form_groupEdit .card {
+#form_groupEdit .card {
   border: 1px solid #dce0e4;
   background-color: #fff;
   padding: 15px 20px;
   display: grid;
 }
-.form_groupEdit .title {
+#form_groupEdit .title {
   font-size: 16px;
   font-weight: 600;
 }
-.form_groupEdit .contents {
+#form_groupEdit .contents {
   padding: 20px;
   display: grid;
   row-gap: 10px;
 }
-.form_groupEdit .field {
+#form_groupEdit .field {
   display: grid;
   grid: inherit;
   grid-template-columns: 5em auto;
@@ -132,14 +132,14 @@
   font-size: 14px;
   font-weight: 600;
 }
-.form_groupEdit .labelText {
+#form_groupEdit .labelText {
   place-self: start;
   color: var(--grey-400);
   font-size: 13px;
   font-weight: normal;
 }
 /* 설치점포 */
-.form_groupEdit .branchContainer {
+#form_groupEdit .branchContainer {
   height: 185px;
   border: 1px solid #dce0e4;
   padding: 10px;
@@ -149,7 +149,7 @@
   grid-template-rows: repeat(auto-fill, 20px);
   gap: 10px;
 }
-.form_groupEdit .branchContainer .field {
+#form_groupEdit .branchContainer .field {
   color: var(--grey-400);
   font-size: 13px;
   font-weight: normal;
