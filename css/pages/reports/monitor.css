@@ -1,0 +1,24 @@
+#reportsMonitorMain .mainTopNavbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#reportsMonitorMain .mainTopNavbar span {
+  flex-basis: 50px;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#reportsMonitorMain .mainTopNavbar .teDatepickerInput {
+  width: 172px;
+}
+
+#reportsMonitorMain .tableName {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  padding-left: 16px;
+  padding-bottom: 15px;
+}
