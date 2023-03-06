@@ -17,3 +17,12 @@
 #reportsIndexMain .mainTopNavbar .teDatepickerInput {
   width: 152px;
 }
+
+/* 테이블 */
+#table-reports-index th {
+  border: 1px solid #fff !important;
+}
+#table-reports-index td:not(:last-child) {
+  border-right: 1px solid var(--border-grey) !important;
+  border-bottom: none !important;
+}

@@ -488,110 +488,16 @@
               >
                 <div class="flex flex-col gap-4">
                   <span class="flex gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                    >
-                      <g id="btn_report_list01" transform="translate(-161 -31)">
-                        <g
-                          id="사각형"
-                          transform="translate(161 31)"
-                          fill="#fff"
-                          stroke="#45515b"
-                          stroke-width="1"
-                        >
-                          <rect width="30" height="30" rx="2" stroke="none" />
-                          <rect
-                            x="0.5"
-                            y="0.5"
-                            width="29"
-                            height="29"
-                            rx="1.5"
-                            fill="none"
-                          />
-                        </g>
-                        <g id="그룹" transform="translate(222 -130) rotate(90)">
-                          <rect
-                            id="사각형-2"
-                            data-name="사각형"
-                            width="4"
-                            height="14"
-                            transform="translate(169 39)"
-                            fill="#637381"
-                          />
-                          <rect
-                            id="사각형-3"
-                            data-name="사각형"
-                            width="4"
-                            height="14"
-                            transform="translate(174 39)"
-                            fill="#637381"
-                          />
-                          <rect
-                            id="사각형-4"
-                            data-name="사각형"
-                            width="4"
-                            height="14"
-                            transform="translate(179 39)"
-                            fill="#637381"
-                          />
-                        </g>
-                      </g>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 30 30"
-                    >
-                      <g id="btn_report_list02" transform="translate(-161 -31)">
-                        <g
-                          id="사각형"
-                          transform="translate(161 31)"
-                          fill="#fff"
-                          stroke="#c0c8cf"
-                          stroke-width="1"
-                        >
-                          <rect width="30" height="30" rx="2" stroke="none" />
-                          <rect
-                            x="0.5"
-                            y="0.5"
-                            width="29"
-                            height="29"
-                            rx="1.5"
-                            fill="none"
-                          />
-                        </g>
-                        <g id="그룹">
-                          <rect
-                            id="사각형-2"
-                            data-name="사각형"
-                            width="4"
-                            height="6"
-                            transform="translate(168.5 47)"
-                            fill="#637381"
-                          />
-                          <rect
-                            id="사각형-3"
-                            data-name="사각형"
-                            width="4"
-                            height="14"
-                            transform="translate(174.5 39)"
-                            fill="#637381"
-                          />
-                          <rect
-                            id="사각형-4"
-                            data-name="사각형"
-                            width="4"
-                            height="11"
-                            transform="translate(180.5 42)"
-                            fill="#637381"
-                          />
-                        </g>
-                      </g>
-                    </svg>
+                    <img
+                      id="horizontalIcon"
+                      class="cursor-pointer"
+                      src="/images/btn_report_list01_o.png"
+                    />
+                    <img
+                      id="verticalIcon"
+                      class="cursor-pointer"
+                      src="/images/btn_report_list02.png"
+                    />
                   </span>
                   <span>삼성전자 제트</span>
                 </div>
@@ -607,153 +513,99 @@
                 class="relative overflow-x-auto bg-white border border-t-0 rounded-sm"
               >
                 <table
-                  id="table-settings-index"
+                  id="table-reports-index"
                   class="w-full text-sm text-left text-gray-500 pt-[40px]"
                 >
                   <thead>
-                    <tr class="h-[60px] text-xs text-grey-500 bg-[#EDEFF1]">
+                    <tr class="h-[35px] text-xs text-grey-500 bg-border-grey">
+                      <th colspan="2" class="text-center font-normal">
+                        <div class="flex justify-center items-center">
+                          <div>구분</div>
+                        </div>
+                      </th>
+                      <th colspan="7" class="text-center font-normal">
+                        <div class="flex justify-center items-center">
+                          <div>일</div>
+                        </div>
+                      </th>
+                      <th rowspan="2" class="text-center font-normal">
+                        <div class="flex justify-center items-center">
+                          <div>합계</div>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr class="h-[35px] text-xs text-grey-500 bg-border-grey">
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[80px]"
-                        >
-                          <div class="w-[50px]">No.</div>
+                        <div class="flex justify-center items-center">
+                          <div>점포</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[50px]">권역정보</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>매체</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[40px]">지점명</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[50px]">층 정보</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[50px]">대표번호</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[50px]">운영시간</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[100px]"
-                        >
-                          <div class="w-[40px]">작성자</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[50px]">등록일시</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[40px]">수정자</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                        <div class="flex justify-center items-center">
+                          <div>2023-01-01</div>
                         </div>
                       </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[50px]">수정일시</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[40px]">Status</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="w-[90px]"></th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="bg-white hover:bg-grey-50 h-[70px]">
-                      <td class="px-6 py-2 text-center">1</td>
-                      <td class="px-6 py-2 text-center">서울특별시</td>
+                    <tr class="bg-white hover:bg-grey-50 h-[35px]">
                       <td class="px-6 py-2 text-center">가든5점</td>
-                      <td class="px-6 py-2 text-center">7F</td>
-                      <td class="px-6 py-2 text-center">02-2009-1234</td>
-                      <td class="px-6 py-2 text-center">10:00~23:00</td>
-                      <td class="px-6 py-2 text-center">홍길동</td>
-                      <td class="px-6 py-2 text-center">2022-12-28 13:08:29</td>
-                      <td class="px-6 py-2 text-center">홍길동</td>
-                      <td class="px-6 py-2 text-center">2022-12-28 13:08:29</td>
-                      <td class="px-6 py-2 text-center">운영</td>
-                      <td class="text-center">
-                        <button
-                          data-modal-target="storeInfoModal"
-                          data-modal-toggle="storeInfoModal"
-                          class="button button_small"
-                        >
-                          상세보기
-                        </button>
-                      </td>
+                      <td class="px-6 py-2 text-center">포스스크린</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">693</td>
+                    </tr>
+                    <tr class="bg-white hover:bg-grey-50 h-[35px]">
+                      <td class="px-6 py-2 text-center">가든5점</td>
+                      <td class="px-6 py-2 text-center">포스스크린</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">97</td>
+                      <td class="px-6 py-2 text-center">693</td>
                     </tr>
                   </tbody>
                 </table>
@@ -765,7 +617,7 @@
         </main>
       </div>
     </section>
-    <!-- <script type="text/javascript" src="/js/reports/index.js"></script> -->
+    <script type="text/javascript" src="/js/reports/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
