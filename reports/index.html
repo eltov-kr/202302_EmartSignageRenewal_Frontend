@@ -449,7 +449,13 @@
                   <label class="labelText">매체</label>
                   <input type="text" placeholder="매체를 입력하세요" />
                 </span>
-                <button class="button button_big">조회</button>
+                <button
+                  data-modal-target="adReportSearchModal"
+                  data-modal-toggle="adReportSearchModal"
+                  class="button button_big"
+                >
+                  조회
+                </button>
               </nav>
 
               <section
@@ -658,7 +664,78 @@
             </div>
           </div>
 
-          <!-- 모달 -->
+          <!-- 광고주 리포트 조회 모달 -->
+          <div
+            id="adReportSearchModal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+          >
+            <div class="relative w-full max-w-[840px] h-auto">
+              <div class="relative bg-white shadow">
+                <div class="px-8 py-6">
+                  <header class="flex justify-between mb-6">
+                    <h3 class="text-[22px] font-bold text-grey-500">
+                      광고주 리포트 조회
+                    </h3>
+                  </header>
+                  <form action="#" id="form_adReportSearch">
+                    <fieldset>
+                      <span class="field">
+                        <!-- tailwind element dropdown -->
+                        <div class="relative" data-te-dropdown-ref>
+                          <button
+                            class="form_dropdown w-[200px]"
+                            type="button"
+                            data-te-dropdown-toggle-ref
+                            aria-expanded="false"
+                          >
+                            <span class="form_dropdown_label">광고계약명</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </button>
+                          <ul
+                            class="w-[200px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                            data-te-dropdown-menu-ref
+                          >
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >1</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                                href="#"
+                                data-te-dropdown-item-ref
+                                >2</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="검색어를 입력하세요"
+                          class="h-[40px] w-full"
+                        />
+                      </span>
+                    </fieldset>
+
+                    <nav class="flex gap-2 justify-center mt-4">
+                      <button class="button button_save">취소</button>
+                      <button
+                        class="button button_yellow_lightText button_save"
+                      >
+                        선택
+                      </button>
+                    </nav>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </section>

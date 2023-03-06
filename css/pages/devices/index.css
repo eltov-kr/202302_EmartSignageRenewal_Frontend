@@ -22,8 +22,8 @@
   flex-direction: column;
   gap: 30px;
 }
-#form_device .form_deviceContainer,
-#form_detailEdit .form_detailEditContainer {
+#form_device .formContainer,
+#form_detailEdit .formContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;

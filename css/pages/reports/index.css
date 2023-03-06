@@ -52,3 +52,10 @@
   display: block;
   margin-bottom: 5px;
 }
+
+/*   광고주 리포트 조회  form */
+#form_adReportSearch .field {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
