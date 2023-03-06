@@ -2261,9 +2261,9 @@ video {
   background-color: rgb(255 238 204 / var(--tw-bg-opacity));
 }
 
-.bg-grey-300 {
+.bg-border-grey {
   --tw-bg-opacity: 1;
-  background-color: rgb(145 158 171 / var(--tw-bg-opacity));
+  background-color: rgb(220 224 228 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2271,9 +2271,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-border-grey {
+.bg-pink-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(220 224 228 / var(--tw-bg-opacity));
+  background-color: rgb(253 242 248 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2555,6 +2555,26 @@ video {
 
 .pt-2\.5 {
   padding-top: 0.625rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-left {

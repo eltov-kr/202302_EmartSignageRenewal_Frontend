@@ -1,14 +1,26 @@
-const horizontalIcon = document.getElementById('horizontalIcon');
-const verticalIcon = document.getElementById('verticalIcon');
+const tableIcon = document.getElementById('reports-index-tableIcon');
+const graphIcon = document.getElementById('reports-index-graphIcon');
+const table = document.getElementById('reports-index-table');
+const graph = document.getElementById('reports-index-graph');
+const buttonName = document.querySelector('#reports-index-downloadButton span');
 
-const changeHorizontalImage = () => {
-  horizontalIcon.src = '/images/btn_report_list01_o.png';
-  verticalIcon.src = '/images/btn_report_list02.png';
+graph.classList.add('hidden');
+
+const showTable = () => {
+  tableIcon.src = '/images/btn_report_list01_o.png';
+  graphIcon.src = '/images/btn_report_list02.png';
+  table.classList.remove('hidden');
+  graph.classList.add('hidden');
+  buttonName.innerText = '엑셀 다운받기';
 };
-const changeVerticalImage = () => {
-  horizontalIcon.src = '/images/btn_report_list01.png';
-  verticalIcon.src = '/images/btn_report_list02_o.png';
+const showGraph = () => {
+  tableIcon.src = '/images/btn_report_list01.png';
+  graphIcon.src = '/images/btn_report_list02_o.png';
+  graph.classList.remove('hidden');
+  graph.classList.add('grid');
+  table.classList.add('hidden');
+  buttonName.innerText = 'PDF 다운받기';
 };
 
-horizontalIcon.addEventListener('click', changeHorizontalImage);
-verticalIcon.addEventListener('click', changeVerticalImage);
+tableIcon.addEventListener('click', showTable);
+graphIcon.addEventListener('click', showGraph);

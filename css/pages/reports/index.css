@@ -19,10 +19,36 @@
 }
 
 /* 테이블 */
-#table-reports-index th {
+#reports-index-table th {
   border: 1px solid #fff !important;
 }
-#table-reports-index td:not(:last-child) {
+#reports-index-table td:not(:last-child) {
   border-right: 1px solid var(--border-grey) !important;
   border-bottom: none !important;
+}
+
+/* 그래프 */
+#reports-index-graph {
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  padding-top: 0;
+}
+#reports-index-graph article {
+  border: 1px solid var(--border-grey);
+  border-radius: 5px;
+  height: 350px;
+  padding: 15px;
+  font-size: 14px;
+}
+#reports-index-graph article {
+  border: 1px solid var(--border-grey);
+  border-radius: 5px;
+  height: 350px;
+  padding: 15px;
+}
+#reports-index-graph article span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
 }
