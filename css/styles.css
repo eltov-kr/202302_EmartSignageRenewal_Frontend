@@ -20,6 +20,7 @@
 @import 'pages/reports/index.css';
 @import 'pages/reports/issue.css';
 @import 'pages/reports/monitor.css';
+@import 'pages/reports/schedule.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
