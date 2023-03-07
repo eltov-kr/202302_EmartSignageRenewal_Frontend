@@ -1,3 +1,31 @@
+#reportsScreenshotMain .mainTopNavbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#reportsScreenshotMain .mainTopNavbar span {
+  flex-basis: 50px;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#reportsScreenshotMain .mainTopNavbar span:first-child {
+  margin-left: 10px;
+  margin-right: 50px;
+}
+#reportsScreenshotMain .mainTopNavbar .teDatepickerInput {
+  width: 172px;
+}
+#reportsScreenshotMain .tableName {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  padding-left: 16px;
+  padding-bottom: 15px;
+}
+
 #screenshotModal section {
   display: grid;
   grid-template-columns: repeat(auto-fit, 240px);

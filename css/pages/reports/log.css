@@ -1,24 +1,24 @@
-#reportsMonitorMain .mainTopNavbar {
+#reportsLogMain .mainTopNavbar {
   padding: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#reportsMonitorMain .mainTopNavbar span {
+#reportsLogMain .mainTopNavbar span {
   flex-basis: 50px;
   flex-shrink: 1;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#reportsMonitorMain .mainTopNavbar span:first-child {
-  margin-left: 20px;
+#reportsLogMain .mainTopNavbar span:first-child {
+  margin-left: 10px;
   margin-right: 50px;
 }
-#reportsMonitorMain .mainTopNavbar .teDatepickerInput {
+#reportsLogMain .mainTopNavbar .teDatepickerInput {
   width: 172px;
 }
-#reportsMonitorMain .tableName {
+#reportsLogMain .tableName {
   font-size: 20px;
   font-weight: 500;
   display: block;

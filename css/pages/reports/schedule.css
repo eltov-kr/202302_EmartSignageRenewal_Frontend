@@ -12,6 +12,7 @@
   gap: 10px;
 }
 #reportsScheduleMain .mainTopNavbar span:first-child {
+  margin-left: 10px;
   margin-right: 50px;
 }
 #reportsScheduleMain .mainTopNavbar .teDatepickerInput {
