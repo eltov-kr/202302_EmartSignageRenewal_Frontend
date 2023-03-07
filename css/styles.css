@@ -24,6 +24,7 @@
 @import 'pages/reports/screenshot.css';
 @import 'pages/reports/manage.css';
 @import 'pages/reports/log.css';
+@import 'pages/reports/user.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
