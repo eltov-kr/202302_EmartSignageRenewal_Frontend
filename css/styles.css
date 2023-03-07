@@ -21,6 +21,7 @@
 @import 'pages/reports/issue.css';
 @import 'pages/reports/monitor.css';
 @import 'pages/reports/schedule.css';
+@import 'pages/reports/screenshot.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;

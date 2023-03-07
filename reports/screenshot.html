@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMART SIGNING 2.0 | 스케줄 배포 로그</title>
+    <title>EMART SIGNING 2.0 | 스크린샷 관리</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link href="/dist/output.css" rel="stylesheet" />
@@ -17,6 +17,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -132,22 +136,22 @@
               <li>
                 <a
                   href="/reports/schedule.html"
-                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
+                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
                   ><span
-                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-                  ></span
+                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                  >
+                  </span
                   >스케줄 배포 로그</a
                 >
               </li>
               <li>
                 <a
                   href="/reports/screenshot.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
+                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
                   ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  스크린샷 관리</a
+                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                  ></span
+                  >스크린샷 관리</a
                 >
               </li>
               <li>
@@ -297,14 +301,14 @@
         </nav>
 
         <header>
-          <h1 class="font-bold text-xl my-4">스케줄 배포 로그</h1>
+          <h1 class="font-bold text-xl my-4">스크린샷 관리</h1>
           <div class="flex gap-3 items-center font-bold text-sm">
             <h2 class="text-gray-400">리포트</h2>
             <span
               class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
             >
             </span>
-            <h3>스케줄 배포 로그</h3>
+            <h3>스크린샷 관리</h3>
           </div>
         </header>
 
@@ -313,12 +317,9 @@
           class="w-full h-[80%] flex flex-col gap-3"
         >
           <nav class="buttons">
-            <button
-              type="button"
-              class="button button_yellow_darkText w-[79px]"
-            >
-              <span>재배포</span>
-            </button>
+            <button class="button button_dark">스크린샷 주기설정</button>
+            <button class="button button_dark">스크린샷 수집</button>
+            <button class="button button_dark">스크린샷 선택보기</button>
           </nav>
 
           <div class="flex gap-3 h-[90%]">
@@ -338,7 +339,7 @@
                       data-te-dropdown-toggle-ref
                       aria-expanded="false"
                     >
-                      콘텐츠 그룹명
+                      점포
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <ul
@@ -378,12 +379,110 @@
                         class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       />
                     </div>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative" data-te-dropdown-ref>
+                      <button
+                        class="form_dropdown w-[120px]"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                      >
+                        <span></span>
+                        <img src="/images/icon_form_watch.png" />
+                      </button>
+                      <ul
+                        class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >00:00~06:00</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >06:00~12:00</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >12:00~18:00</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >18:00~24:00</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                     ~
                     <div class="relative" data-te-datepicker-init>
                       <input
                         type="text"
                         class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                       />
+                    </div>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative" data-te-dropdown-ref>
+                      <button
+                        class="form_dropdown w-[120px]"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                      >
+                        <span></span>
+                        <img src="/images/icon_form_watch.png" />
+                      </button>
+                      <ul
+                        class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >00:00~06:00</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >06:00~12:00</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >12:00~18:00</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >18:00~24:00</a
+                          >
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </span>
@@ -403,9 +502,7 @@
                         <input type="checkbox" />
                       </th>
                       <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[160px]"
-                        >
+                        <div class="flex justify-center items-center">
                           <div>점포</div>
                           <div class="flex items-center text-[10px]">
                             <i class="fa-solid fa-chevron-down px-1.5"></i
@@ -414,25 +511,12 @@
                               id="tableSearchButton_media"
                               data-dropdown-toggle="tableSearch_media"
                             ></i>
-                            <!-- table search dropdown -->
-                            <div
-                              id="tableSearch_media"
-                              class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
-                            >
-                              <div class="relative">
-                                <input
-                                  type="text"
-                                  class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
-                                  placeholder="매체명"
-                                />
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </th>
                       <th class="text-center font-normal">
                         <div class="flex justify-center items-center">
-                          <div class="w-[70px]">광고주 계약명</div>
+                          <div class="w-[70px]">디바이스명</div>
                           <div class="flex items-center text-[10px]">
                             <i class="fa-solid fa-chevron-down px-1.5"></i
                             ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
@@ -441,7 +525,7 @@
                       </th>
                       <th class="text-center font-normal">
                         <div class="flex justify-center items-center">
-                          <div>콘텐츠명</div>
+                          <div>설치위치</div>
                           <div class="flex items-center text-[10px]">
                             <i class="fa-solid fa-chevron-down px-1.5"></i
                             ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
@@ -450,31 +534,14 @@
                       </th>
                       <th class="text-center font-normal">
                         <div class="flex justify-center items-center">
-                          <div>디바이스명</div>
+                          <div>업데이트 시간</div>
                           <div class="flex items-center text-[10px]">
                             <i class="fa-solid fa-chevron-down px-1.5"></i
                             ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                           </div>
                         </div>
                       </th>
-                      <th class="text-center font-normal">
-                        <div class="flex justify-center items-center">
-                          <div>마지막 통신시간</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div class="flex justify-center items-center">
-                          <div>배포 여부</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
+                      <th class="text-center font-normal"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -492,11 +559,18 @@
                         </div>
                       </td>
                       <td class="px-6 py-2 text-center">남양주점</td>
-                      <td class="px-6 py-2 text-center">SSG 세일</td>
-                      <td class="px-6 py-2 text-center">SSG닷컴_30s</td>
                       <td class="px-6 py-2 text-center">포스 스크린-1</td>
+                      <td class="px-6 py-2 text-center">1층 화장실 앞</td>
                       <td class="px-6 py-2 text-center">2023-10-27 09:00:11</td>
-                      <td class="px-6 py-2 text-center">성공</td>
+                      <td class="text-center">
+                        <button
+                          data-modal-target="screenshotModal"
+                          data-modal-toggle="screenshotModal"
+                          class="button button_small"
+                        >
+                          보기
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -574,21 +648,93 @@
                     </a>
                   </li>
                 </ul>
-                <div class="w-1/3 flex justify-end">
-                  <button class="button button_download">
-                    <i class="fa-solid fa-download pr-1"></i>
-                    엑셀 다운받기
-                  </button>
-                </div>
+                <div class="w-1/3 flex justify-end"></div>
               </nav>
             </div>
           </div>
 
-          <!-- 모달 -->
+          <!-- 스크린샷 모달 -->
+          <div
+            id="screenshotModal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full hidden"
+          >
+            <!-- <div class="relative w-full max-w-[1580px] h-auto"> -->
+            <div class="relative h-auto">
+              <div class="relative bg-white shadow">
+                <div class="px-8 py-6">
+                  <header class="flex justify-between mb-6">
+                    <h3 class="text-[22px] font-bold text-grey-500">
+                      스크린샷
+                    </h3>
+                  </header>
+
+                  <section>
+                    <article>
+                      <div class="imageContainer"></div>
+                      <ul>
+                        <li>
+                          <span class="labelText">스크린샷시간</span>
+                          <span class="content">2023-01-10 14:30:30</span>
+                        </li>
+                        <li>
+                          <span class="labelText">콘텐츠명</span>
+                          <span class="content">SSG.COM</span>
+                        </li>
+                        <li>
+                          <span class="labelText">디바이스명</span>
+                          <span class="content">포스 스크린1</span>
+                        </li>
+                        <li>
+                          <span class="labelText">점포명</span>
+                          <span class="content">성수점</span>
+                        </li>
+                      </ul>
+                    </article>
+                    <article>
+                      <div class="imageContainer"></div>
+                      <ul>
+                        <li>
+                          <span class="labelText">스크린샷시간</span>
+                          <span class="content">2023-01-10 14:30:30</span>
+                        </li>
+                        <li>
+                          <span class="labelText">콘텐츠명</span>
+                          <span class="content">SSG.COM</span>
+                        </li>
+                        <li>
+                          <span class="labelText">디바이스명</span>
+                          <span class="content">포스 스크린1</span>
+                        </li>
+                        <li>
+                          <span class="labelText">점포명</span>
+                          <span class="content">성수점</span>
+                        </li>
+                      </ul>
+                    </article>
+                  </section>
+
+                  <nav class="flex gap-2 justify-center mt-6">
+                    <button
+                      data-modal-hide="screenshotModal"
+                      class="button button_save"
+                    >
+                      취소
+                    </button>
+                    <button class="button button_yellow_lightText button_save">
+                      확인
+                    </button>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </section>
-    <!-- <script type="text/javascript" src="/js/reports/schedule.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/reports/screenshot.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
 </html>

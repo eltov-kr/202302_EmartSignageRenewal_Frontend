@@ -1,0 +1,32 @@
+#screenshotModal section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  gap: 10px;
+  max-width: 80vw;
+  max-height: 80vh;
+  overflow: auto;
+}
+#screenshotModal article {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey-100);
+}
+#screenshotModal .imageContainer {
+  height: 200px;
+}
+#screenshotModal img {
+  object-fit: contain;
+}
+#screenshotModal ul {
+  padding: 10px;
+}
+#screenshotModal li {
+  display: grid;
+  grid-template-columns: 6em auto;
+  font-size: 13px;
+}
+#screenshotModal .labelText {
+  color: var(--grey-300);
+  font-size: 13px;
+}
