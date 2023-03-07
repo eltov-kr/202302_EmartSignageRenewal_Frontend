@@ -1,0 +1,16 @@
+#reportsBatchMain .mainTopNavbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#reportsBatchMain .mainTopNavbar span {
+  flex-basis: 50px;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#reportsBatchMain .mainTopNavbar .teDatepickerInput {
+  width: 172px;
+}
