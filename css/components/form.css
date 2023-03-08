@@ -31,6 +31,9 @@ input[type='password'] {
 .form_dropdown_label {
   font-size: 15px;
 }
+.form_dropdown:disabled {
+  background-color: var(--grey-disabled) !important;
+}
 
 input:focus {
   outline: none !important;

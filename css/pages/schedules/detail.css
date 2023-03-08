@@ -1,0 +1,185 @@
+#schedulesDetailMain {
+  min-width: 1500px;
+}
+#schedulesDetailMain .cards {
+  display: grid;
+  grid-template-columns: 480px auto;
+  gap: 15px;
+  position: relative;
+}
+#schedulesDetailMain .cardColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#schedulesDetailMain .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid var(--border-grey);
+  border-radius: 5px;
+}
+#schedulesDetailMain .card h5 {
+  font-weight: bold;
+  font-size: 22px;
+}
+#schedulesDetailMain .card_first {
+  height: 640px;
+  overflow: hidden;
+}
+#schedulesDetailMain .card_first .mainTopNavbar {
+  border-bottom: 1px solid var(--border-grey);
+  padding: 15px;
+}
+#schedulesDetailMain .card_first .contentsContainer {
+  display: grid;
+  grid-template-columns: auto 280px;
+  height: 100%;
+  height: calc(100% - 70px);
+  position: relative;
+}
+#schedulesDetailMain .card_first .contentsContainer ul {
+  overflow-y: auto;
+}
+#schedulesDetailMain .card_first .contentsItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--grey-500);
+}
+#schedulesDetailMain .card_first .deviceList {
+  padding: 15px;
+  border-right: 1px solid var(--border-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#schedulesDetailMain .card_first .adList {
+  background-color: var(--grey-100);
+}
+#schedulesDetailMain .card_first .adList label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.5em;
+  height: 3em;
+}
+#schedulesDetailMain .card_first .adList .contentsItem {
+  display: grid;
+  grid-template-columns: 79px auto;
+  align-items: center;
+  height: 65px;
+  gap: 10px;
+  padding: 15px;
+}
+#schedulesDetailMain .card_first .adList .contentsItem.selected {
+  background-color: var(--yellow-light);
+}
+#schedulesDetailMain .card_first .adList img,
+#schedulesDetailMain .card_first .adList video {
+  width: 70px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* 컨텐츠 점포 설정 */
+#schedulesDetailMain .card_second,
+#schedulesDetailMain .card_last {
+  padding: 15px;
+}
+#schedulesDetailMain .card_second header,
+#schedulesDetailMain .card_last header {
+  padding-bottom: 5px;
+}
+/* form */
+#form_schedulesDetailStore {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#form_schedulesDetailStore .formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 20px;
+}
+#form_schedulesDetailStore .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em auto;
+  align-items: center;
+  column-gap: 1em;
+}
+#form_schedulesDetailStore .labelText {
+  place-self: center end;
+}
+#form_schedulesDetailStore .store {
+  display: flex;
+  flex-flow: wrap;
+  gap: 5px;
+  overflow-y: auto;
+}
+#form_schedulesDetailStore .store_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--grey-disabled);
+  border-radius: 15px;
+  font-size: 13px;
+  padding: 0 5px;
+  height: 25px;
+  user-select: none;
+}
+#form_schedulesDetailStore .store_item i {
+  color: var(--grey-300);
+  cursor: pointer;
+}
+#form_schedulesDetailStore .store_item.over {
+  background-color: var(--red);
+  color: #fff;
+}
+#form_schedulesDetailStore .store_item.over i {
+  color: var(--grey-900);
+}
+#form_schedulesDetailStore .device {
+  display: flex;
+  flex-flow: wrap;
+  overflow-y: auto;
+}
+#form_schedulesDetailStore .device_item {
+  padding: 3px 10px;
+  font-size: 13px;
+  user-select: none;
+}
+
+/* 컨텐츠 그룹 정보 */
+#form_schedulesDetailGroup .formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+#form_schedulesDetailGroup .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em auto;
+  align-items: center;
+  column-gap: 1em;
+}
+#form_schedulesDetailGroup .field:first-child {
+  grid-column: span 2;
+}
+#form_schedulesDetailGroup .field:last-child {
+  grid-template-columns: 5em auto 100px;
+}
+#form_schedulesDetailGroup .labelText {
+  place-self: center end;
+}

@@ -26,6 +26,7 @@
 @import 'pages/reports/log.css';
 @import 'pages/reports/user.css';
 @import 'pages/reports/batch.css';
+@import 'pages/schedules/detail.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
