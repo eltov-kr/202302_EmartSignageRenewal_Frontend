@@ -1,3 +1,33 @@
+.tableContainer {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+table {
+  width: 100%;
+  font-size: 13px;
+}
+.tableHead thead {
+  height: 60px;
+  background-color: var(--grey-disabled);
+  text-align: center;
+}
+.tableBody {
+  max-height: 320px;
+  overflow-y: scroll;
+  padding: 10px 0;
+}
+.tableBody td {
+  height: 40px;
+  text-align: center;
+}
+.tableBottom {
+  height: 60px;
+  border-top: 1px solid var(--border-grey);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
 tr {
   border: none !important;
 }
