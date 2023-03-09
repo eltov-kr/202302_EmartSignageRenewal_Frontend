@@ -27,6 +27,7 @@
 @import 'pages/reports/user.css';
 @import 'pages/reports/batch.css';
 @import 'pages/schedules/detail.css';
+@import 'pages/schedules/store.css';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
