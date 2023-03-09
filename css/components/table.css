@@ -1,3 +1,9 @@
+.tableTopContainer {
+  border: 1px solid var(--border-grey);
+  height: min-content;
+  border-radius: 5px;
+  overflow: hidden;
+}
 .tableContainer {
   position: relative;
   height: 100%;
@@ -13,7 +19,7 @@ table {
   text-align: center;
 }
 .tableBody {
-  max-height: 320px;
+  height: 320px;
   overflow-y: scroll;
   padding: 10px 0;
 }
