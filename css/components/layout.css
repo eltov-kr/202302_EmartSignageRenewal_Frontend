@@ -42,7 +42,7 @@ body > main > header {
 }
 body > main > header > .pageTitle {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 500;
 }
 body > main > header > .pageSubtitle {
   font-size: 15px;
