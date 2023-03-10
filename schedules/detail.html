@@ -5,6 +5,7 @@
     <title>EMART SIGNING 2.0 | 스케쥴편성</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/components/layout.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -24,613 +25,576 @@
     />
   </head>
   <body>
-    <section
-      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1920px] min-h-[1040px]"
-    >
-      <aside
-        class="w-64 shadow-md absolute top-0 left-0 py-5 h-full bg-white border-r border-gray-200 flex flex-col justify-between"
+    <aside>
+      <ul class="space-y-2">
+        <li>
+          <a href="/index.html" class="flex items-center px-4 pt-8 pb-16">
+            <img src="/images/logo_emart.png" alt="Emart Logo" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="/devices/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_device.png" />
+            <span class="ml-3">디바이스관리</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/stores/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_group.png" />
+            <span class="ml-3">점포그룹관리</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/ads/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_contents.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+              >광고주계약관리</span
+            >
+          </a>
+        </li>
+        <li class="bg-grey-100">
+          <a href="/schedules/index.html">
+            <button
+              type="button"
+              class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
+            >
+              <img src="/images/menu_icon_schedule_o.png" />
+              <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
+                >스케쥴관리</span
+              >
+            </button>
+          </a>
+          <ul class="py-2 space-y-1">
+            <li>
+              <a
+                href="/schedules/index.html"
+                class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
+                ><span
+                  class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                ></span>
+
+                스케쥴 조회</a
+              >
+            </li>
+            <li>
+              <a
+                href="/schedules/store.html"
+                class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
+                ><span
+                  class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                >
+                </span>
+                점포별 편성 현황</a
+              >
+            </li>
+            <li>
+              <a
+                href="/schedules/all.html"
+                class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
+                ><span
+                  class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                >
+                </span
+                >전 점포별 편성 현황</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="/sales/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_schedule.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+              >영업관리</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/reports/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_report.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">리포트</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/settings/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
+          >
+            <img src="/images/menu_icon_setting.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="p-5 pt-10">
+        <img src="/images/logo.png" />
+      </div>
+    </aside>
+
+    <nav class="flex justify-end items-center space-x-3">
+      <div class="flex items-center gap-2">
+        <strong>강변점</strong>/
+        <strong>점포 관리자</strong>
+      </div>
+      <div
+        class="flex justify-center items-center gap-1 border-grey-200 border-2 h-[28px] px-2"
       >
-        <ul class="space-y-2">
+        <span class="text-red text-[13px]">신규가입요청자</span>
+        <span
+          class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-[13px]"
+          >5</span
+        >
+      </div>
+      <button
+        id="dropdownDefaultButton"
+        data-dropdown-toggle="dropdown"
+        data-dropdown-placement="bottom-end"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 35 35"
+        >
+          <g id="top_menu_btn" transform="translate(-0.447)">
+            <circle
+              id="타원"
+              cx="17.5"
+              cy="17.5"
+              r="17.5"
+              transform="translate(0.447)"
+              fill="#dce0e4"
+            />
+            <line
+              id="선"
+              x2="12"
+              transform="translate(11.947 12.5)"
+              fill="none"
+              stroke="#637381"
+              stroke-width="2"
+            />
+            <line
+              id="선-2"
+              data-name="선"
+              x2="12"
+              transform="translate(11.947 17.5)"
+              fill="none"
+              stroke="#637381"
+              stroke-width="2"
+            />
+            <line
+              id="선-3"
+              data-name="선"
+              x2="12"
+              transform="translate(11.947 22.5)"
+              fill="none"
+              stroke="#637381"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </button>
+      <!-- Dropdown menu -->
+      <div
+        id="dropdown"
+        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
+      >
+        <ul
+          class="text-xs text-gray-700"
+          aria-labelledby="dropdownDefaultButton"
+        >
           <li>
-            <a href="/index.html" class="flex items-center px-4 py-2 mb-10">
-              <img src="/images/logo_emart.png" alt="Emart Logo" />
-            </a>
+            <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
           </li>
           <li>
-            <a
-              href="/devices/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_device.png" />
-              <span class="ml-3">디바이스관리</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="/stores/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_group.png" />
-              <span class="ml-3">점포그룹관리</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="/ads/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_contents.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >광고주계약관리</span
-              >
-            </a>
-          </li>
-          <li class="bg-grey-100">
-            <a href="/schedules/index.html">
-              <button
-                type="button"
-                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
-              >
-                <img src="/images/menu_icon_schedule_o.png" />
-                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
-                  >스케쥴관리</span
-                >
-              </button>
-            </a>
-            <ul class="py-2 space-y-1">
-              <li>
-                <a
-                  href="/schedules/index.html"
-                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border rounded-full border-yellow-primary flex justify-center"
-                  ></span>
-                  스케쥴 조회</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/schedules/store.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span
-                  >점포별 편성 현황</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/schedules/all.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span
-                  >전 점포별 편성 현황</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="/sales/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_schedule.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >영업관리</span
-              >
-            </a>
-          </li>
-          <li>
-            <a
-              href="/reports/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_report.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >리포트</span
-              >
-            </a>
-          </li>
-          <li>
-            <a
-              href="/settings/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
-            >
-              <img src="/images/menu_icon_setting.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
-            </a>
+            <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
           </li>
         </ul>
+      </div>
+    </nav>
 
-        <div class="pl-5 pt-5">
-          <img src="/images/logo.png" />
+    <main id="schedulesDetailMain">
+      <header>
+        <span class="pageTitle">스케쥴편성</span>
+        <div class="pageSubtitle">
+          <h2 class="text-gray-400">스케쥴관리</h2>
+          <span
+            class="w-1 h-1 border rounded-full border-yellow-primary flex justify-center"
+          >
+          </span>
+          <h3 class="text-gray-400">스케쥴조회</h3>
+          <span
+            class="w-1 h-1 border rounded-full border-yellow-primary flex justify-center"
+          >
+          </span>
+          <h4>스케쥴편성</h4>
         </div>
-      </aside>
+      </header>
 
-      <div class="pl-72 pr-8 h-screen">
-        <nav class="flex justify-end items-center space-x-3 h-[60px]">
-          <div class="flex items-center gap-2">
-            <strong>강변점</strong>/
-            <strong>점포 관리자</strong>
-          </div>
-          <div
-            class="flex justify-center items-center gap-1 border-grey-200 border h-[28px] px-2"
-          >
-            <span class="text-red text-[13px]">신규가입요청자</span>
-            <span
-              class="rounded-full bg-red w-4 h-4 text-white flex justify-center items-center text-[13px]"
-              >5</span
-            >
-          </div>
-          <button
-            id="dropdownDefaultButton"
-            data-dropdown-toggle="dropdown"
-            data-dropdown-placement="bottom-end"
-            type="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              viewBox="0 0 35 35"
-            >
-              <g id="top_menu_btn" transform="translate(-0.447)">
-                <circle
-                  id="타원"
-                  cx="17.5"
-                  cy="17.5"
-                  r="17.5"
-                  transform="translate(0.447)"
-                  fill="#dce0e4"
-                />
-                <line
-                  id="선"
-                  x2="12"
-                  transform="translate(11.947 12.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-                <line
-                  id="선-2"
-                  data-name="선"
-                  x2="12"
-                  transform="translate(11.947 17.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-                <line
-                  id="선-3"
-                  data-name="선"
-                  x2="12"
-                  transform="translate(11.947 22.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-              </g>
-            </svg>
-          </button>
-          <!-- Dropdown menu -->
-          <div
-            id="dropdown"
-            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border"
-          >
-            <ul
-              class="text-xs text-gray-700"
-              aria-labelledby="dropdownDefaultButton"
-            >
-              <li>
-                <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
-              </li>
-              <li>
-                <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <header>
-          <h1 class="font-bold text-xl my-4">스케쥴편성</h1>
-          <div class="flex gap-3 items-center font-bold text-sm">
-            <h2 class="text-gray-400">스케쥴관리</h2>
-            <span
-              class="w-1 h-1 border rounded-full border-yellow-primary flex justify-center"
-            >
-            </span>
-            <h3 class="text-gray-400">스케쥴조회</h3>
-            <span
-              class="w-1 h-1 border rounded-full border-yellow-primary flex justify-center"
-            >
-            </span>
-            <h4>스케쥴편성</h4>
-          </div>
-        </header>
-
-        <main class="w-full h-[80%]" id="schedulesDetailMain">
-          <div class="flex flex-col gap-6 h-[90%] w-full mt-10">
-            <section class="cards">
-              <div class="cardColumn">
-                <!-- 검색  -->
-                <article class="card card_first">
-                  <nav class="mainTopNavbar" aria-label="Contents navigation">
-                    <!-- tailwind element dropdown -->
-                    <div class="relative" data-te-dropdown-ref>
-                      <button
-                        class="form_dropdown w-full"
-                        type="button"
-                        data-te-dropdown-toggle-ref
-                        aria-expanded="false"
+      <div class="mainContents">
+        <section class="cards">
+          <div class="cardColumn">
+            <!-- 검색  -->
+            <article class="card card_first">
+              <div class="mainTopNavbar" aria-label="Contents navigation">
+                <!-- tailwind element dropdown -->
+                <div class="relative" data-te-dropdown-ref>
+                  <button
+                    class="form_dropdown w-full"
+                    type="button"
+                    data-te-dropdown-toggle-ref
+                    aria-expanded="false"
+                  >
+                    전체검색
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <ul
+                    class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                    data-te-dropdown-menu-ref
+                  >
+                    <li>
+                      <a
+                        class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                        href="#"
+                        data-te-dropdown-item-ref
+                        >1</a
                       >
-                        전체검색
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </button>
-                      <ul
-                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                        data-te-dropdown-menu-ref
+                    </li>
+                    <li>
+                      <a
+                        class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                        href="#"
+                        data-te-dropdown-item-ref
+                        >2</a
                       >
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >1</a
-                          >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contentsContainer">
+                <ul class="deviceList">
+                  <li class="contentsItem">
+                    <input type="checkbox" />
+                    <label>매장입구 스크린</label>
+                  </li>
+                  <li class="contentsItem">
+                    <input type="checkbox" />
+                    <label>포스 스크린</label>
+                  </li>
+                </ul>
+                <ul class="adList">
+                  <li class="contentsItem selected">
+                    <video>
+                      <source
+                        src="/videos/dogvideoplayback.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                    <label
+                      >전점-전매체-10월모니모-221017-221031-30s전점-전매체-10월모니모-221017-221031-30s.mp4</label
+                    >
+                  </li>
+                  <li class="contentsItem">
+                    <img
+                      src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+                    />
+                    <label>전점-전매체-10월모니모-221017-221031-30s.jpg</label>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="cardColumn">
+            <!--컨텐츠 점포 설정 -->
+            <article class="card card_second">
+              <h5>컨텐츠 점포 설정</h5>
+              <div class="contentsContainer">
+                <form action="#" id="form_schedulesDetailStore">
+                  <div class="formContainer">
+                    <label class="field">
+                      <span class="labelText">점포그룹</span>
+                      <!-- tailwind element dropdown -->
+                      <div class="relative w-full" data-te-dropdown-ref>
+                        <button
+                          class="form_dropdown w-full"
+                          type="button"
+                          data-te-dropdown-toggle-ref
+                          aria-expanded="false"
+                        >
+                          <span></span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul
+                          class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                          data-te-dropdown-menu-ref
+                        >
+                          <li>
+                            <a
+                              class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                              href="#"
+                              data-te-dropdown-item-ref
+                              >1</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                              href="#"
+                              data-te-dropdown-item-ref
+                              >2</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span class="labelText">점포검색</span>
+                      <input type="text" placeholder="점포를 검색하세요" />
+                    </label>
+                  </div>
+
+                  <!-- 설치점포 -->
+                  <div class="relative">
+                    <h6 class="text-base font-bold text-grey-500">설치점포</h6>
+                    <div
+                      class="w-full h-[100px] flex border rounded-[5px] p-1.5"
+                    >
+                      <ul class="store">
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
                         </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >2</a
-                          >
+                        <li class="store_item over">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>경기광주점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>마포점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li class="store_item">
+                          <span>가든5점</span>
+                          <i class="fa-solid fa-circle-xmark"></i>
                         </li>
                       </ul>
                     </div>
-                  </nav>
-                  <div class="contentsContainer">
-                    <ul class="deviceList">
-                      <li class="contentsItem">
-                        <input type="checkbox" />
-                        <label>매장입구 스크린</label>
-                      </li>
-                      <li class="contentsItem">
-                        <input type="checkbox" />
-                        <label>포스 스크린</label>
-                      </li>
-                    </ul>
-                    <ul class="adList">
-                      <li class="contentsItem selected">
-                        <video>
-                          <source
-                            src="/videos/dogvideoplayback.mp4"
-                            type="video/mp4"
+                    <p class="notice text-xs text-grey-300 absolute right-0">
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                      편성시간이 초과된 설치 지점은 빨간색으로 표시됩니다.
+                    </p>
+                  </div>
+
+                  <!-- 디바이스 -->
+                  <div>
+                    <h6 class="text-base font-bold text-grey-500">디바이스</h6>
+                    <div
+                      class="w-full h-[70px] flex flex-col border rounded-[5px] p-2 gap-3"
+                    >
+                      <ul class="device">
+                        <li class="device_item">매장입구 스크린 1</li>
+                        <li class="device_item">매장입구 스크린 2</li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </article>
+            <!-- 컨텐츠 그룹 정보 -->
+            <article class="card card_last">
+              <h5>컨텐츠 그룹 정보</h5>
+              <div class="contentsContainer">
+                <form action="#" id="form_schedulesDetailGroup">
+                  <div class="formContainer">
+                    <label class="field">
+                      <span class="labelText">콘텐츠 그룹명</span>
+                      <input type="text" disabled />
+                    </label>
+                    <label class="field">
+                      <span class="labelText">광고주</span>
+                      <input type="text" disabled />
+                    </label>
+                    <label class="field">
+                      <span class="labelText">광고구분</span>
+                      <input type="text" disabled />
+                    </label>
+                    <label class="field">
+                      <span class="labelText">송출 총횟수</span>
+                      <!-- tailwind element dropdown -->
+                      <div class="relative w-full" data-te-dropdown-ref>
+                        <button
+                          disabled
+                          class="form_dropdown w-full"
+                          type="button"
+                          data-te-dropdown-toggle-ref
+                          aria-expanded="false"
+                        >
+                          <span></span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul
+                          class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                          data-te-dropdown-menu-ref
+                        >
+                          <li>
+                            <a
+                              class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                              href="#"
+                              data-te-dropdown-item-ref
+                              >1</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                              href="#"
+                              data-te-dropdown-item-ref
+                              >2</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </label>
+                    <label class="field">
+                      <span class="labelText">일 송출횟수</span>
+                      <input type="text" disabled />
+                    </label>
+                    <label class="field">
+                      <span class="labelText">편성기간</span>
+                      <div
+                        class="flex justify-between items-center gap-2 text-gray-400"
+                      >
+                        <div class="relative" data-te-datepicker-init>
+                          <input
+                            disabled
+                            type="text"
+                            class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                           />
-                        </video>
-                        <label
-                          >전점-전매체-10월모니모-221017-221031-30s전점-전매체-10월모니모-221017-221031-30s.mp4</label
-                        >
-                      </li>
-                      <li class="contentsItem">
-                        <img
-                          src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
-                        />
-                        <label
-                          >전점-전매체-10월모니모-221017-221031-30s.jpg</label
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </article>
-              </div>
-              <div class="cardColumn">
-                <!--컨텐츠 점포 설정 -->
-                <article class="card card_second">
-                  <header>
-                    <h5>컨텐츠 점포 설정</h5>
-                  </header>
-                  <div class="contentsContainer">
-                    <form action="#" id="form_schedulesDetailStore">
-                      <div class="formContainer">
-                        <label class="field">
-                          <span class="labelText">점포그룹</span>
-                          <!-- tailwind element dropdown -->
-                          <div class="relative w-full" data-te-dropdown-ref>
-                            <button
-                              class="form_dropdown w-full"
-                              type="button"
-                              data-te-dropdown-toggle-ref
-                              aria-expanded="false"
-                            >
-                              <span></span>
-                              <i class="fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul
-                              class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                              data-te-dropdown-menu-ref
-                            >
-                              <li>
-                                <a
-                                  class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                  href="#"
-                                  data-te-dropdown-item-ref
-                                  >1</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                  href="#"
-                                  data-te-dropdown-item-ref
-                                  >2</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </label>
-                        <label class="field">
-                          <span class="labelText">점포검색</span>
-                          <input type="text" placeholder="점포를 검색하세요" />
-                        </label>
-                      </div>
-
-                      <!-- 설치점포 -->
-                      <div class="relative">
-                        <header class="text-base font-bold text-grey-500">
-                          설치점포
-                        </header>
-                        <div
-                          class="w-full h-[100px] flex flex-col border rounded-[5px] p-2 gap-3"
-                        >
-                          <ul class="store">
-                            <li class="store_item over">
-                              <span>연수점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>경기광주점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>마포점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                            <li class="store_item">
-                              <span>가든5점</span>
-                              <i class="fa-solid fa-circle-xmark"></i>
-                            </li>
-                          </ul>
                         </div>
-                        <p
-                          class="notice text-xs text-grey-300 absolute right-0"
-                        >
-                          <i class="fa-solid fa-circle-exclamation"></i>
-                          편성시간이 초과된 설치 지점은 빨간색으로 표시됩니다.
-                        </p>
-                      </div>
-
-                      <!-- 디바이스 -->
-                      <div>
-                        <header class="text-base font-bold text-grey-500">
-                          디바이스
-                        </header>
-                        <div
-                          class="w-full h-[70px] flex flex-col border rounded-[5px] p-2 gap-3"
-                        >
-                          <ul class="device">
-                            <li class="device_item">매장입구 스크린 1</li>
-                            <li class="device_item">매장입구 스크린 2</li>
-                          </ul>
+                        ~
+                        <div class="relative" data-te-datepicker-init>
+                          <input
+                            disabled
+                            type="text"
+                            class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                          />
                         </div>
                       </div>
-                    </form>
+                    </label>
+                    <label class="field">
+                      <span class="labelText">송출기간</span>
+                      <input type="text" disabled />
+                      <button class="button button_small">편성기간 수정</button>
+                    </label>
                   </div>
-                </article>
-                <!-- 컨텐츠 그룹 정보 -->
-                <article class="card card_last">
-                  <header>
-                    <h5>컨텐츠 그룹 정보</h5>
-                  </header>
-                  <div class="contentsContainer">
-                    <form action="#" id="form_schedulesDetailGroup">
-                      <div class="formContainer">
-                        <label class="field">
-                          <span class="labelText">콘텐츠 그룹명</span>
-                          <input type="text" disabled />
-                        </label>
-                        <label class="field">
-                          <span class="labelText">광고주</span>
-                          <input type="text" disabled />
-                        </label>
-                        <label class="field">
-                          <span class="labelText">광고구분</span>
-                          <input type="text" disabled />
-                        </label>
-                        <label class="field">
-                          <span class="labelText">송출 총횟수</span>
-                          <!-- tailwind element dropdown -->
-                          <div class="relative w-full" data-te-dropdown-ref>
-                            <button
-                              disabled
-                              class="form_dropdown w-full"
-                              type="button"
-                              data-te-dropdown-toggle-ref
-                              aria-expanded="false"
-                            >
-                              <span></span>
-                              <i class="fa-solid fa-chevron-down"></i>
-                            </button>
-                            <ul
-                              class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                              data-te-dropdown-menu-ref
-                            >
-                              <li>
-                                <a
-                                  class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                  href="#"
-                                  data-te-dropdown-item-ref
-                                  >1</a
-                                >
-                              </li>
-                              <li>
-                                <a
-                                  class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                  href="#"
-                                  data-te-dropdown-item-ref
-                                  >2</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </label>
-                        <label class="field">
-                          <span class="labelText">일 송출횟수</span>
-                          <input type="text" disabled />
-                        </label>
-                        <label class="field">
-                          <span class="labelText">편성기간</span>
-                          <div
-                            class="flex justify-between items-center gap-2 text-gray-400"
-                          >
-                            <div class="relative" data-te-datepicker-init>
-                              <input
-                                disabled
-                                type="text"
-                                class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                              />
-                            </div>
-                            ~
-                            <div class="relative" data-te-datepicker-init>
-                              <input
-                                disabled
-                                type="text"
-                                class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                              />
-                            </div>
-                          </div>
-                        </label>
-                        <label class="field">
-                          <span class="labelText">송출기간</span>
-                          <input type="text" disabled />
-                          <button class="button button_small">
-                            편성기간 수정
-                          </button>
-                        </label>
-                      </div>
-                    </form>
-                  </div>
-                </article>
-
-                <nav class="self-end flex gap-2 justify-center h-full">
-                  <button class="button button_save">취소</button>
-                  <button class="button button_yellow_lightText button_save">
-                    저장
-                  </button>
-                </nav>
+                </form>
               </div>
-            </section>
+            </article>
+
+            <div class="self-end flex gap-2 h-full">
+              <button class="button button_save">취소</button>
+              <button class="button button_yellow_lightText button_save">
+                저장
+              </button>
+            </div>
           </div>
-
-          <!--모달 -->
-        </main>
+        </section>
       </div>
-    </section>
+    </main>
     <!-- <script type="text/javascript" src="/js/schedules/detail.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>

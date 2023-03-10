@@ -1,5 +1,5 @@
 #schedulesDetailMain {
-  min-width: 1500px;
+  width: min-content;
 }
 #schedulesDetailMain .cards {
   display: grid;
@@ -97,7 +97,7 @@
 #schedulesDetailMain .card_last header {
   padding-bottom: 5px;
 }
-/* form */
+/* 컨텐츠 점포 설정 > form */
 #form_schedulesDetailStore {
   display: flex;
   flex-direction: column;
@@ -119,6 +119,7 @@
 #form_schedulesDetailStore .labelText {
   place-self: center end;
 }
+/* 컨텐츠 점포 설정 > 설치점포 */
 #form_schedulesDetailStore .store {
   display: flex;
   flex-flow: wrap;
@@ -148,6 +149,7 @@
 #form_schedulesDetailStore .store_item.over i {
   color: var(--grey-900);
 }
+/* 컨텐츠 점포 설정 > 디바이스 */
 #form_schedulesDetailStore .device {
   display: flex;
   flex-flow: wrap;
