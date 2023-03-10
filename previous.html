@@ -1,0 +1,283 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMART SIGNING 2.0 | 대시보드</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section
+      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1920px] min-h-[1040px]"
+    >
+      <aside
+        class="w-64 shadow-md absolute top-0 left-0 py-5 h-full bg-white border-r border-gray-200 flex flex-col justify-between"
+      >
+        <ul class="space-y-2">
+          <li>
+            <a href="/index.html" class="flex items-center px-4 py-2 mb-10">
+              <img src="/images/logo_emart.png" alt="Emart Logo" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/devices/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_device.png" />
+              <span class="ml-3">디바이스관리</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/stores/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_group.png" />
+              <span class="ml-3">점포그룹관리</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/ads/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_contents.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >광고주계약관리</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="/schedules/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_schedule-1.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >스케쥴관리</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="/sales/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_schedule.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >영업관리</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="/reports/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_report.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                >리포트</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="/settings/index.html"
+              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+            >
+              <img src="/images/menu_icon_setting.png" />
+              <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="pl-5 pt-5">
+          <img src="/images/logo.png" />
+        </div>
+      </aside>
+
+      <div class="pl-72 pr-8 h-screen">
+        <nav class="flex justify-end items-center space-x-3 h-[60px]">
+          <div class="flex items-center gap-2">
+            <strong>강변점</strong>/
+            <strong>점포 관리자</strong>
+          </div>
+          <div class="newUser">
+            <span class="text">신규가입요청자</span>
+          </div>
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            data-dropdown-placement="bottom-end"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+            >
+              <g id="top_menu_btn" transform="translate(-0.447)">
+                <circle
+                  id="타원"
+                  cx="17.5"
+                  cy="17.5"
+                  r="17.5"
+                  transform="translate(0.447)"
+                  fill="#dce0e4"
+                />
+                <line
+                  id="선"
+                  x2="12"
+                  transform="translate(11.947 12.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+                <line
+                  id="선-2"
+                  data-name="선"
+                  x2="12"
+                  transform="translate(11.947 17.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+                <line
+                  id="선-3"
+                  data-name="선"
+                  x2="12"
+                  transform="translate(11.947 22.5)"
+                  fill="none"
+                  stroke="#637381"
+                  stroke-width="2"
+                />
+              </g>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
+          >
+            <ul
+              class="text-xs text-gray-700"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
+              </li>
+              <li>
+                <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <header><h1 class="font-bold text-xl my-4">대시보드</h1></header>
+
+        <main class="w-full h-[80%] grid grid-rows-6 grid-flow-col gap-4">
+          <article
+            class="row-span-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          >
+            <h5 class="font-medium text-gray-700">디바이스 수량</h5>
+            <aside>
+              <div class="font-normal text-sm py-3">
+                <h5 class="font-medium text-2xl inline-block">400</h5>
+                대 /
+                <span>558</span>대
+              </div>
+            </aside>
+          </article>
+          <article
+            class="row-span-5 row-start-2 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          >
+            <h5 class="font-medium text-gray-700">전국분포도</h5>
+          </article>
+          <article
+            class="row-span-2 row-start-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          >
+            <aside class="grid grid-cols-3 gap-2 h-full">
+              <ul
+                class="col-span-2 flex flex-col justify-between border-r-2 border-dashed pr-6"
+              >
+                <li>
+                  <h5 class="font-medium text-gray-700">
+                    재생 비중<span class="text-gray-400 font-normal text-sm">
+                      (일 평균)</span
+                    >
+                  </h5>
+                </li>
+                <li>
+                  <h5 class="font-normal text-gray-700 text-sm">
+                    최대 재생 비중<span
+                      class="text-gray-400 font-normal text-sm"
+                    >
+                      (죽전점)</span
+                    >
+                  </h5>
+                </li>
+                <li>
+                  <h5 class="font-normal text-gray-700 text-sm">
+                    최소 재생 비중<span
+                      class="text-gray-400 font-normal text-sm"
+                    >
+                      (화정점)</span
+                    >
+                  </h5>
+                </li>
+              </ul>
+              <ul class="flex flex-col justify-between gap-4 my-10 mx-4">
+                <li class="flex justify-between">
+                  <span>편성횟수</span>
+                  <span
+                    ><h5 class="font-medium text-2xl inline-block">7</h5>
+                    건</span
+                  >
+                </li>
+                <li class="flex justify-between">
+                  <span>전월대비</span>
+                  <span
+                    ><h5 class="font-medium text-2xl inline-block">12</h5>
+                    %</span
+                  >
+                </li>
+              </ul>
+            </aside>
+          </article>
+          <article
+            class="row-span-2 row-start-3 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          >
+            <h5 class="font-medium text-gray-700">송출률 (%)</h5>
+          </article>
+          <article
+            class="row-span-2 row-start-5 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          >
+            <h5 class="font-medium text-gray-700">영업률 (%)</h5>
+          </article>
+        </main>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  </body>
+</html>
