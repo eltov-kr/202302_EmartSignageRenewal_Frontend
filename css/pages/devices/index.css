@@ -59,6 +59,23 @@
 #form_detailEdit .labelText {
   place-self: center end;
 }
+/* 등록된 매체 */
+.media {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+  overflow-y: auto;
+}
+.media_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5px;
+  height: 28px;
+  font-size: 13px;
+  border: 1px solid var(--grey-200);
+}
 
 /* 디바이스 세부정보 수정 Form > 볼륨조절, 휴점일, 꺼짐설정 */
 #form_detailEdit section {
@@ -137,4 +154,52 @@
   display: grid;
   grid-template-columns: 3em auto;
   align-items: center;
+}
+
+/* 매체 추가 Form & 매체 유형 수정 Form */
+#form_mediaAdd,
+#form_mediaEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#form_mediaAdd .formContainer,
+#form_mediaEdit .formContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+#form_mediaAdd .formContainer .field,
+#form_mediaEdit .formContainer .field {
+  display: grid;
+  grid: inherit;
+  grid-template-columns: 5em 180px;
+  column-gap: 1em;
+}
+#form_mediaAdd .formContainer .field:nth-child(1),
+#form_mediaAdd .formContainer .field:nth-child(5),
+#form_mediaAdd .formContainer .field:nth-child(6),
+#form_mediaEdit .formContainer .field:nth-child(1),
+#form_mediaEdit .formContainer .field:nth-child(5),
+#form_mediaEdit .formContainer .field:nth-child(6) {
+  grid-column: span 2;
+}
+#form_mediaAdd .formContainer .field:nth-child(1),
+#form_mediaEdit .formContainer .field:nth-child(1) {
+  grid-template-columns: 5em auto;
+}
+#form_mediaAdd .formContainer .field:nth-child(5),
+#form_mediaAdd .formContainer .field:nth-child(6),
+#form_mediaEdit .formContainer .field:nth-child(5),
+#form_mediaEdit .formContainer .field:nth-child(6) {
+  grid-template-columns: 10em auto;
+}
+#form_mediaAdd .formContainer .labelText,
+#form_mediaEdit .formContainer .labelText {
+  place-self: center end;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

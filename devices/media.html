@@ -5,6 +5,7 @@
     <title>EMART SIGNING 2.0 | 매체유형관리</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/pages/devices/media.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -24,622 +25,632 @@
     />
   </head>
   <body>
-    <section
-      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1920px] min-h-[1040px]"
-    >
-      <aside
-        class="w-64 shadow-md absolute top-0 left-0 py-5 h-full bg-white border-r border-gray-200 flex flex-col justify-between"
-      >
-        <ul class="space-y-2">
-          <li>
-            <a href="/index.html" class="flex items-center px-4 py-2 mb-10">
-              <img src="/images/logo_emart.png" alt="Emart Logo" />
-            </a>
-          </li>
+    <aside>
+      <ul class="space-y-2">
+        <li>
+          <a href="/index.html" class="flex items-center px-4 pt-8 pb-16">
+            <img src="/images/logo_emart.png" alt="Emart Logo" />
+          </a>
+        </li>
+        <li class="bg-grey-100">
+          <a href="/devices/index.html">
+            <button
+              type="button"
+              class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
+              aria-controls="dropdown-pages_device"
+              data-collapse-toggle="dropdown-pages_device"
+            >
+              <img src="/images/menu_icon_device_o.png" />
+              <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
+                >디바이스관리</span
+              >
+            </button>
+          </a>
+          <ul id="dropdown-pages_device" class="py-2 space-y-1">
+            <li>
+              <a
+                href="/devices/index.html"
+                class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
+                ><span
+                  class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
+                >
+                </span>
+                디바이스관리</a
+              >
+            </li>
+            <li>
+              <a
+                href="/devices/media.html"
+                class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
+                ><span
+                  class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+                ></span>
+                매체유형관리</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="/stores/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_group.png" />
+            <span class="ml-3">점포그룹관리</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/ads/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_contents.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+              >광고주계약관리</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/schedules/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_schedule-1.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+              >스케쥴관리</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/sales/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_schedule.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap"
+              >영업관리</span
+            >
+          </a>
+        </li>
+        <li>
+          <a
+            href="/reports/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
+          >
+            <img src="/images/menu_icon_report.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">리포트</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/settings/index.html"
+            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
+          >
+            <img src="/images/menu_icon_setting.png" />
+            <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
+          </a>
+        </li>
+      </ul>
 
-          <li class="bg-grey-100">
-            <a href="/devices/index.html">
-              <button
-                type="button"
-                class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
-                aria-controls="dropdown-pages_device"
-                data-collapse-toggle="dropdown-pages_device"
-              >
-                <img src="/images/menu_icon_device_o.png" />
-                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
-                  >디바이스관리</span
-                >
-              </button>
-            </a>
-            <ul id="dropdown-pages_device" class="py-2 space-y-1">
-              <li>
-                <a
-                  href="/devices/index.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                >
-                  <span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  디바이스관리</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/devices/media.html"
-                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
-                >
-                  <span
-                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-                  ></span>
-                  매체유형관리</a
-                >
-              </li>
-            </ul>
+      <div class="pl-5 pt-5">
+        <img src="/images/logo.png" />
+      </div>
+    </aside>
+
+    <nav>
+      <div class="flex items-center gap-2">
+        <strong>강변점</strong>/
+        <strong>점포 관리자</strong>
+      </div>
+      <div class="newUser new">
+        <span class="text">신규가입요청자</span>
+        <span class="number">5</span>
+      </div>
+      <button
+        id="dropdownDefaultButton"
+        data-dropdown-toggle="dropdown"
+        data-dropdown-placement="bottom-end"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 35 35"
+        >
+          <g id="top_menu_btn" transform="translate(-0.447)">
+            <circle
+              id="타원"
+              cx="17.5"
+              cy="17.5"
+              r="17.5"
+              transform="translate(0.447)"
+              fill="#dce0e4"
+            />
+            <line
+              id="선"
+              x2="12"
+              transform="translate(11.947 12.5)"
+              fill="none"
+              stroke="#637381"
+              stroke-width="2"
+            />
+            <line
+              id="선-2"
+              data-name="선"
+              x2="12"
+              transform="translate(11.947 17.5)"
+              fill="none"
+              stroke="#637381"
+              stroke-width="2"
+            />
+            <line
+              id="선-3"
+              data-name="선"
+              x2="12"
+              transform="translate(11.947 22.5)"
+              fill="none"
+              stroke="#637381"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </button>
+      <!-- Dropdown menu -->
+      <div
+        id="dropdown"
+        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
+      >
+        <ul
+          class="text-xs text-gray-700"
+          aria-labelledby="dropdownDefaultButton"
+        >
+          <li>
+            <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
           </li>
           <li>
-            <a
-              href="/stores/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_group.png" />
-              <span class="ml-3">점포그룹관리</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="/ads/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_contents.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >광고주계약관리</span
-              >
-            </a>
-          </li>
-          <li>
-            <a
-              href="/schedules/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_schedule-1.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >스케쥴관리</span
-              >
-            </a>
-          </li>
-          <li>
-            <a
-              href="/sales/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_schedule.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >영업관리</span
-              >
-            </a>
-          </li>
-          <li>
-            <a
-              href="/reports/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_report.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >리포트</span
-              >
-            </a>
-          </li>
-          <li>
-            <a
-              href="/settings/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="/images/menu_icon_setting.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
-            </a>
+            <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
           </li>
         </ul>
+      </div>
+    </nav>
 
-        <div class="pl-5 pt-5">
-          <img src="/images/logo.png" />
+    <main>
+      <header>
+        <span class="pageTitle">매체유형관리</span>
+        <div class="pageSubtitle">
+          <h2 class="text-gray-400">디바이스관리</h2>
+          <span
+            class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
+          >
+          </span>
+          <h3>매체유형관리</h3>
         </div>
-      </aside>
+      </header>
 
-      <div class="pl-72 pr-8 h-screen">
-        <nav class="flex justify-end items-center space-x-3 h-[60px]">
-          <div class="flex items-center gap-2">
-            <strong>강변점</strong>/
-            <strong>점포 관리자</strong>
-          </div>
-          <div class="newUser new">
-            <span class="text">신규가입요청자</span>
-            <span class="number">5</span>
-          </div>
-          <button
-            id="dropdownDefaultButton"
-            data-dropdown-toggle="dropdown"
-            data-dropdown-placement="bottom-end"
-            type="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              viewBox="0 0 35 35"
-            >
-              <g id="top_menu_btn" transform="translate(-0.447)">
-                <circle
-                  id="타원"
-                  cx="17.5"
-                  cy="17.5"
-                  r="17.5"
-                  transform="translate(0.447)"
-                  fill="#dce0e4"
-                />
-                <line
-                  id="선"
-                  x2="12"
-                  transform="translate(11.947 12.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-                <line
-                  id="선-2"
-                  data-name="선"
-                  x2="12"
-                  transform="translate(11.947 17.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-                <line
-                  id="선-3"
-                  data-name="선"
-                  x2="12"
-                  transform="translate(11.947 22.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-              </g>
-            </svg>
-          </button>
-          <!-- Dropdown menu -->
-          <div
-            id="dropdown"
-            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
-          >
-            <ul
-              class="text-xs text-gray-700"
-              aria-labelledby="dropdownDefaultButton"
-            >
-              <li>
-                <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
-              </li>
-              <li>
-                <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div class="buttons">
+        <button type="button" class="button button_yellow_darkText">
+          <i class="fa-solid fa-plus"></i>
+          <span>매체추가</span>
+        </button>
+      </div>
 
-        <header>
-          <h1 class="font-bold text-xl my-4">매체유형관리</h1>
-          <div class="flex gap-3 items-center font-bold text-sm">
-            <h2 class="text-gray-400">디바이스관리</h2>
-            <span
-              class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-            >
-            </span>
-            <h3>매체유형관리</h3>
-          </div>
-        </header>
-
-        <main class="w-full h-[80%] flex">
-          <div class="flex gap-3 h-[90%] w-full mt-10">
-            <!-- Table -->
-            <div class="w-full">
-              <div
-                class="relative overflow-x-auto border rounded-t-md border-b-0"
-              >
-                <table
-                  id="table-media"
-                  class="w-full text-sm text-left text-gray-500 pt-[40px]"
-                >
-                  <thead>
-                    <tr class="h-[60px] text-xs text-grey-500 bg-[#EDEFF1]">
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[80px]"
-                        >
-                          <div class="w-[50px]">No.</div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[150px]"
-                        >
-                          <div class="">매체명</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i
-                              class="fa-solid fa-magnifying-glass mr-1.5"
-                              id="tableSearchButton_media"
-                              data-dropdown-toggle="tableSearch_media"
-                            ></i>
-                            <!-- table search dropdown -->
-                            <div
-                              id="tableSearch_media"
-                              class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
-                            >
-                              <div class="relative">
-                                <input
-                                  type="text"
-                                  class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
-                                  placeholder="매체명"
-                                />
-                              </div>
+      <div class="mainContents withButtons">
+        <div class="tableTopContainer">
+          <section class="tableContainer">
+            <div class="tableHead">
+              <table>
+                <colgroup>
+                  <col width="10%" class="col1" />
+                  <col width="20%" class="col2" />
+                  <col width="10%" class="col3" />
+                  <col width="10%" class="col4" />
+                  <col width="10%" class="col5" />
+                  <col width="10%" class="col6" />
+                  <col width="15%" class="col7" />
+                  <col width="5%" class="col8" />
+                  <col width="5%" class="col9" />
+                </colgroup>
+                <thead>
+                  <tr class="h-[60px] text-xs text-grey-500 bg-[#EDEFF1]">
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[80px]"
+                      >
+                        <div>No.</div>
+                      </div>
+                    </th>
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[150px]"
+                      >
+                        <div>매체명</div>
+                        <div class="flex items-center text-[10px]">
+                          <i class="fa-solid fa-chevron-down px-1.5"></i
+                          ><i
+                            class="fa-solid fa-magnifying-glass mr-1.5"
+                            id="tableSearchButton_media"
+                            data-dropdown-toggle="tableSearch_media"
+                          ></i>
+                          <!-- table search dropdown -->
+                          <div
+                            id="tableSearch_media"
+                            class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
+                          >
+                            <div class="relative">
+                              <input
+                                type="text"
+                                class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
+                                placeholder="매체명"
+                              />
                             </div>
                           </div>
                         </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[80px]"
-                        >
-                          <div class="w-[50px]">매체유형</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                      </div>
+                    </th>
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[80px]"
+                      >
+                        <div>매체유형</div>
+                        <div class="flex items-center text-[10px]">
+                          <i class="fa-solid fa-chevron-down px-1.5"></i
+                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                         </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[100px]"
-                        >
-                          <div class="">해상도</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                      </div>
+                    </th>
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[100px]"
+                      >
+                        <div>해상도</div>
+                        <div class="flex items-center text-[10px]">
+                          <i class="fa-solid fa-chevron-down px-1.5"></i
+                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                         </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[75px]"
-                        >
-                          <div class="w-[30px]">방향</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                      </div>
+                    </th>
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[75px]"
+                      >
+                        <div>방향</div>
+                        <div class="flex items-center text-[10px]">
+                          <i class="fa-solid fa-chevron-down px-1.5"></i
+                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                         </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[80px]"
-                        >
-                          <div class="w-[70px]">상업 광고시간</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                      </div>
+                    </th>
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[80px]"
+                      >
+                        <div class="min-w-[80px]">상업 광고시간</div>
+                        <div class="flex items-center text-[10px]">
+                          <i class="fa-solid fa-chevron-down px-1.5"></i
+                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                         </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div
-                          class="flex justify-center items-center min-w-[80px]"
-                        >
-                          <div class="w-[70px]">자사 광고시간</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
+                      </div>
+                    </th>
+                    <th class="text-center font-normal">
+                      <div
+                        class="flex justify-center items-center min-w-[80px]"
+                      >
+                        <div class="min-w-[80px]">자사 광고시간</div>
+                        <div class="flex items-center text-[10px]">
+                          <i class="fa-solid fa-chevron-down px-1.5"></i
+                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
                         </div>
-                      </th>
-                      <th class="w-[50px]"></th>
-                      <th class="w-[90px]"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="bg-white hover:bg-grey-50 h-[40px]">
-                      <td class="px-6 py-2 text-center">1</td>
-                      <td class="px-1 py-2">
-                        매장입구 스크린(매장입구 스크린 1)
-                      </td>
-                      <td class="px-6 py-2 text-center">1x1</td>
-                      <td class="px-6 py-2 text-center">3840 x 2160</td>
-                      <td class="px-6 py-2 text-center">가로</td>
-                      <td class="px-6 py-2 text-center">150초</td>
-                      <td class="px-6 py-2 text-center">100초</td>
-                      <td class="pr-3 text-center">
-                        <button
-                          data-modal-target="mediaEditModal"
-                          data-modal-toggle="mediaEditModal"
-                          class="button button_small"
-                        >
-                          수정
-                        </button>
-                      </td>
-                      <td class="text-center relative">
-                        <label class="switch">
-                          <input type="checkbox" />
-                          <span class="slider"></span>
-                        </label>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                      </div>
+                    </th>
+                    <th class="w-[50px]"></th>
+                    <th class="w-[90px]"></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
 
-              <nav
-                class="flex justify-between items-center p-3 h-[60px] border rounded-b-md bg-white"
-                aria-label="Table navigation"
+            <div class="tableBody">
+              <table>
+                <colgroup>
+                  <col width="10%" class="col1" />
+                  <col width="20%" class="col2" />
+                  <col width="10%" class="col3" />
+                  <col width="10%" class="col4" />
+                  <col width="10%" class="col5" />
+                  <col width="10%" class="col6" />
+                  <col width="15%" class="col7" />
+                  <col width="5%" class="col8" />
+                  <col width="5%" class="col9" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>매장입구 스크린(매장입구 스크린 1)</td>
+                    <td>1x1</td>
+                    <td>3840 x 2160</td>
+                    <td>가로</td>
+                    <td>150초</td>
+                    <td>100초</td>
+                    <td>
+                      <button
+                        data-modal-target="mediaEditModal"
+                        data-modal-toggle="mediaEditModal"
+                        class="button button_small"
+                      >
+                        수정
+                      </button>
+                    </td>
+                    <td class="relative">
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider"></span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tableBottom">
+              <div class="w-1/3"></div>
+              <ul
+                class="w-1/3 inline-flex justify-center items-center space-x-2"
               >
-                <div class="w-1/3"></div>
-                <ul
-                  class="w-1/3 inline-flex justify-center items-center space-x-2"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+                <li>
+                  <a
+                    href="#"
+                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+                  >
+                    <span class="sr-only">Previous</span>
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <span class="sr-only">Previous</span>
-                      <svg
-                        class="w-5 h-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
-                      >1</a
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white"
+                    >...</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+                  >
+                    <span class="sr-only">Next</span>
+                    <svg
+                      class="w-5 h-5"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
-                      >2</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white"
-                      >...</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
-                    >
-                      <span class="sr-only">Next</span>
-                      <svg
-                        class="w-5 h-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                <div class="w-1/3 flex justify-end"></div>
-              </nav>
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="w-1/3 flex justify-end"></div>
             </div>
-          </div>
-
-          <!-- 매체 유형 수정 모달 -->
-          <div
-            id="mediaEditModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
-          >
-            <div class="relative w-full max-w-2xl h-auto">
-              <div class="relative bg-white shadow">
-                <div class="px-8 py-6">
-                  <header class="flex justify-between mb-6">
-                    <h3 class="text-[22px] font-bold text-grey-500">
-                      매체 유형 수정
-                    </h3>
-                  </header>
-                  <form action="#" id="form_mediaEdit">
-                    <div class="formContainer">
-                      <span class="field">
-                        <label class="labelText">매체명</label>
-                        <input type="text" />
-                      </span>
-                      <span class="field">
-                        <label class="labelText">유형</label>
-                        <!-- tailwind element dropdown -->
-                        <div class="relative w-full" data-te-dropdown-ref>
-                          <button
-                            class="form_dropdown w-full"
-                            type="button"
-                            data-te-dropdown-toggle-ref
-                            aria-expanded="false"
-                          >
-                            <span class="form_dropdown_label"></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </button>
-                          <ul
-                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                            data-te-dropdown-menu-ref
-                          >
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </span>
-                      <span class="field">
-                        <label class="labelText">해상도</label>
-                        <!-- tailwind element dropdown -->
-                        <div class="relative w-full" data-te-dropdown-ref>
-                          <button
-                            class="form_dropdown w-full"
-                            type="button"
-                            data-te-dropdown-toggle-ref
-                            aria-expanded="false"
-                          >
-                            <span class="form_dropdown_label"></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </button>
-                          <ul
-                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                            data-te-dropdown-menu-ref
-                          >
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </span>
-                      <span class="field">
-                        <label class="labelText">방향</label>
-                        <!-- tailwind element dropdown -->
-                        <div class="relative w-full" data-te-dropdown-ref>
-                          <button
-                            class="form_dropdown w-full"
-                            type="button"
-                            data-te-dropdown-toggle-ref
-                            aria-expanded="false"
-                          >
-                            <span class="form_dropdown_label"></span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                          </button>
-                          <ul
-                            class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                            data-te-dropdown-menu-ref
-                          >
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >1</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >2</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                                href="#"
-                                data-te-dropdown-item-ref
-                                >3</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </span>
-                      <span class="field">
-                        <label class="labelText"
-                          ><input type="checkbox" />자사광고 시간설정</label
-                        >
-                        <input type="text" />
-                      </span>
-                      <span class="field">
-                        <label class="labelText"
-                          ><input type="checkbox" />상업광고 시간설정</label
-                        >
-                        <input type="text" />
-                      </span>
-                    </div>
-
-                    <nav class="flex gap-2 justify-center h-full">
-                      <button
-                        data-modal-hide="mediaEditModal"
-                        class="button button_save"
-                      >
-                        취소
-                      </button>
-                      <button
-                        class="button button_yellow_lightText button_save"
-                      >
-                        저장
-                      </button>
-                    </nav>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+          </section>
+        </div>
       </div>
-    </section>
+
+      <!-- 매체 유형 수정 모달 -->
+      <div
+        id="mediaEditModal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full"
+      >
+        <div class="relative w-full max-w-2xl h-auto">
+          <div class="relative bg-white shadow">
+            <div class="px-8 py-6">
+              <header class="flex justify-between mb-6">
+                <h3 class="text-[22px] font-bold text-grey-500">
+                  매체 유형 수정
+                </h3>
+              </header>
+              <form action="#" id="form_mediaEdit">
+                <div class="formContainer">
+                  <span class="field">
+                    <label class="labelText">매체명</label>
+                    <input type="text" />
+                  </span>
+                  <span class="field">
+                    <label class="labelText">유형</label>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative w-full" data-te-dropdown-ref>
+                      <button
+                        class="form_dropdown w-full"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                      >
+                        <span class="form_dropdown_label"></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <ul
+                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >3</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </span>
+                  <span class="field">
+                    <label class="labelText">해상도</label>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative w-full" data-te-dropdown-ref>
+                      <button
+                        class="form_dropdown w-full"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                      >
+                        <span class="form_dropdown_label"></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <ul
+                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >3</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </span>
+                  <span class="field">
+                    <label class="labelText">방향</label>
+                    <!-- tailwind element dropdown -->
+                    <div class="relative w-full" data-te-dropdown-ref>
+                      <button
+                        class="form_dropdown w-full"
+                        type="button"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                      >
+                        <span class="form_dropdown_label"></span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <ul
+                        class="w-full max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                        data-te-dropdown-menu-ref
+                      >
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                            href="#"
+                            data-te-dropdown-item-ref
+                            >3</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </span>
+                  <span class="field">
+                    <label class="labelText"
+                      ><input type="checkbox" />자사광고 시간설정</label
+                    >
+                    <input type="text" />
+                  </span>
+                  <span class="field">
+                    <label class="labelText"
+                      ><input type="checkbox" />상업광고 시간설정</label
+                    >
+                    <input type="text" />
+                  </span>
+                </div>
+
+                <nav class="flex gap-2 justify-center h-full">
+                  <button
+                    data-modal-hide="mediaEditModal"
+                    class="button button_save"
+                  >
+                    취소
+                  </button>
+                  <button class="button button_yellow_lightText button_save">
+                    저장
+                  </button>
+                </nav>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>

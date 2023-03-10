@@ -1,21 +1,3 @@
-/* 등록된 매체 */
-.media {
-  display: flex;
-  flex-flow: wrap;
-  gap: 10px;
-  overflow-y: auto;
-}
-.media_item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 0 5px;
-  height: 28px;
-  font-size: 13px;
-  border: 1px solid var(--grey-200);
-}
-
 /* 매체 추가 Form & 매체 유형 수정 Form */
 #form_mediaAdd,
 #form_mediaEdit {
@@ -64,11 +46,11 @@
   gap: 5px;
 }
 
-#table-media .switch .slider {
+.tableBody .switch .slider {
   top: 8px;
   height: 25px;
 }
-#table-media .switch .slider:before {
+.tableBody .switch .slider:before {
   height: 19px;
   width: 19px;
   bottom: 3px;
