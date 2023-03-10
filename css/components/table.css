@@ -18,6 +18,15 @@ table {
   background-color: var(--grey-disabled);
   text-align: center;
 }
+.tableHead thead th {
+  font-size: 13px;
+  font-weight: normal;
+}
+.tableHead thead th > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .tableBody {
   height: 320px;
   overflow-y: scroll;

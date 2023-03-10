@@ -5,10 +5,11 @@
 @import 'components/table.css';
 @import 'components/form.css';
 @import 'components/switch.css';
+@import 'components/layout.css';
 
 /* Pages */
 @import 'pages/login.css';
-@import 'pages/devices/index.css';
+/* @import 'pages/devices/index.css'; */
 @import 'pages//devices/media.css';
 @import 'pages/stores/index.css';
 @import 'pages/ads/index.css';

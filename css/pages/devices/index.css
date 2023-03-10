@@ -1,16 +1,21 @@
-#main_devices .tabsContainer {
+.gridContainer {
+  display: grid;
+  grid-template-columns: minmax(280px, 340px) auto;
+  column-gap: 20px;
+  height: 80%;
+}
+.tabsContainer {
   min-height: 650px;
   height: 100%;
-  width: 340px;
   border: 1px solid var(--border-grey);
   border-radius: 5px;
   background-color: #fff;
 }
-#main_devices #tabs-store {
+#tabs-store {
   height: 100%;
   padding-bottom: 115px;
 }
-#main_devices #tabs-media {
+#tabs-media {
   height: 100%;
   padding-bottom: 35px;
 }

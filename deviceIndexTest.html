@@ -2,11 +2,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMART SIGNING 2.0 | 디바이스관리</title>
+    <title>test</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/components/layout.css" />
     <link rel="stylesheet" href="/css/pages/devices/index.css" />
+    <link rel="stylesheet" href="/css/pages/test.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -218,7 +219,7 @@
 
     <main>
       <header>
-        <span class="pageTitle">디바이스관리</span>
+        <span class="pageTitle">디바이스관리 test</span>
         <div class="pageSubtitle">
           <h2 class="text-gray-400">디바이스관리</h2>
           <span
@@ -1014,13 +1015,11 @@
           </div>
 
           <!-- Table -->
-          <div class="grow">
-            <div
-              class="flex items-center gap-2 p-3 h-[60px] border border-b-0 rounded-t-md bg-white"
-              aria-label="Table top navigation"
+          <!-- 점포별 테이블 -->
+          <div class="tableTopContainer">
+            <section
+              class="tableTopNav flex items-center gap-2 p-3 h-[60px] bg-white"
             >
-              <!-- 전체 검색 Dropdown -->
-              <!-- tailwind element dropdown -->
               <div class="relative" data-te-dropdown-ref>
                 <button
                   class="form_dropdown w-[200px]"
@@ -1059,585 +1058,340 @@
                 class="h-[40px] w-[450px]"
               />
               <button class="button button_big">조회</button>
-            </div>
-
-            <div class="relative overflow-x-auto border-l border-r">
-              <!-- 점포별 테이블 -->
-              <table
-                id="table-store"
-                class="w-full text-sm text-left text-gray-500"
-              >
-                <thead>
-                  <tr
-                    class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]"
-                  >
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[75px]"
-                      >
-                        <div class="w-[30px]">연결 상태</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i
-                            class="fa-solid fa-magnifying-glass mr-1.5"
-                            id="tableSearchButton_status"
-                            data-dropdown-toggle="tableSearch_status"
-                          ></i>
-                          <!-- table search dropdown -->
-                          <div
-                            id="tableSearch_status"
-                            class="z-10 hidden bg-white shadow rounded-md w-30 p-1"
-                          >
-                            <ul
-                              class="p-1 space-y-1 text-xs text-gray-700"
-                              aria-labelledby="tableSearchButton_status"
+            </section>
+            <section class="tableContainer">
+              <div class="tableHead">
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr
+                      class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]"
+                    >
+                      <th>
+                        <div>
+                          <div class="w-[30px]">연결<br />상태</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i
+                              class="fa-solid fa-magnifying-glass mr-1.5"
+                              id="tableSearchButton_status"
+                              data-dropdown-toggle="tableSearch_status"
+                            ></i>
+                            <!-- table search dropdown -->
+                            <div
+                              id="tableSearch_status"
+                              class="z-10 hidden bg-white shadow rounded-md w-30 p-1"
                             >
-                              <li>
-                                <div class="flex p-2 rounded hover:bg-grey-100">
-                                  <div class="flex gap-2 items-center h-5">
-                                    <input
-                                      id="tableSearchInput_status"
-                                      name="tableSearchInput_status"
-                                      type="radio"
-                                      value=""
-                                      class="w-4 h-4 bg-grey-100 border-gray-300"
-                                    />
-                                    <label for="tableSearchInput_status">
-                                      on
-                                    </label>
+                              <ul
+                                class="p-1 space-y-1 text-xs text-gray-700"
+                                aria-labelledby="tableSearchButton_status"
+                              >
+                                <li>
+                                  <div
+                                    class="flex p-2 rounded hover:bg-grey-100"
+                                  >
+                                    <div class="flex gap-2 items-center h-5">
+                                      <input
+                                        id="tableSearchInput_status"
+                                        name="tableSearchInput_status"
+                                        type="radio"
+                                        value=""
+                                        class="w-4 h-4 bg-grey-100 border-gray-300"
+                                      />
+                                      <label for="tableSearchInput_status">
+                                        on
+                                      </label>
+                                    </div>
                                   </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="flex p-2 rounded hover:bg-grey-100">
-                                  <div class="flex gap-2 items-center h-5">
-                                    <input
-                                      id="tableSearchInput_status"
-                                      name="tableSearchInput_status"
-                                      type="radio"
-                                      value=""
-                                      class="w-4 h-4 bg-grey-100 border-gray-300"
-                                    />
-                                    <label for="tableSearchInput_status">
-                                      off
-                                    </label>
+                                </li>
+                                <li>
+                                  <div
+                                    class="flex p-2 rounded hover:bg-grey-100"
+                                  >
+                                    <div class="flex gap-2 items-center h-5">
+                                      <input
+                                        id="tableSearchInput_status"
+                                        name="tableSearchInput_status"
+                                        type="radio"
+                                        value=""
+                                        class="w-4 h-4 bg-grey-100 border-gray-300"
+                                      />
+                                      <label for="tableSearchInput_status">
+                                        off
+                                      </label>
+                                    </div>
                                   </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-                    <th><input type="checkbox" /></th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[150px]"
-                      >
-                        <div class="">매체명</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i
-                            class="fa-solid fa-magnifying-glass mr-1.5"
-                            id="tableSearchButton_media"
-                            data-dropdown-toggle="tableSearch_media"
-                          ></i>
-                          <!-- table search dropdown -->
-                          <div
-                            id="tableSearch_media"
-                            class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
-                          >
-                            <div class="relative">
-                              <input
-                                type="text"
-                                class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
-                                placeholder="매체명"
-                              />
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[75px]"
-                      >
-                        <div class="w-[30px]">방향</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <input type="checkbox" />
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[100px]"
-                      >
-                        <div class="">해상도</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                        </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">설치위치</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                        </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">광고구분</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                        </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">전체구좌 정보(초)</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                        </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">상업구좌 정보(초)</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                        </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">자체구좌 정보(초)</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                        </div>
-                      </div>
-                    </th>
-                    <th class="w-[85px]"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="bg-white hover:bg-grey-50 h-[40px]">
-                    <td>
-                      <div class="mx-auto status status_on"></div>
-                    </td>
-                    <td>
-                      <div>
-                        <input
-                          id="checkbox-tableSearch-1"
-                          type="checkbox"
-                          class="border-gray-300 rounded mr-1"
-                        />
-                        <label for="checkbox-tableSearch-1" class="sr-only"
-                          >checkbox</label
-                        >
-                      </div>
-                    </td>
-                    <td class="px-1 py-2">
-                      매장입구 스크린(매장입구 스크린 1)
-                    </td>
-                    <td class="px-6 py-2 text-center">가로</td>
-                    <td class="px-6 py-2 text-center">3840 x 2160</td>
-                    <td class="px-6 py-2 text-center">포스1</td>
-                    <td class="px-6 py-2 text-center">상업 / 자체</td>
-                    <td class="px-6 py-2 text-center">240</td>
-                    <td class="px-6 py-2 text-center">160</td>
-                    <td class="px-6 py-2 text-center">80</td>
-                    <td class="py-2 text-center">
-                      <button
-                        data-modal-target="detailEditModal"
-                        data-modal-toggle="detailEditModal"
-                        class="button button_small"
-                      >
-                        세부정보
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="bg-white hover:bg-grey-50 h-[40px]">
-                    <td>
-                      <div class="mx-auto status"></div>
-                    </td>
-                    <td>
-                      <div>
-                        <input
-                          id="checkbox-tableSearch-1"
-                          type="checkbox"
-                          class="border-gray-300 rounded"
-                        />
-                        <label for="checkbox-tableSearch-1" class="sr-only"
-                          >checkbox</label
-                        >
-                      </div>
-                    </td>
-                    <td class="px-1 py-2">포스 스크린(포스 스크린 1)</td>
-                    <td class="px-6 py-2 text-center">가로</td>
-                    <td class="px-6 py-2 text-center">3840 x 2160</td>
-                    <td class="px-6 py-2 text-center">포스1</td>
-                    <td class="px-6 py-2 text-center">상업 / 자체</td>
-                    <td class="px-6 py-2 text-center">240</td>
-                    <td class="px-6 py-2 text-center">160</td>
-                    <td class="px-6 py-2 text-center">80</td>
-                    <td class="py-2 text-center">
-                      <button
-                        data-modal-target="detailEditModal"
-                        data-modal-toggle="detailEditModal"
-                        class="button button_small"
-                      >
-                        세부정보
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- 매체별 테이블 -->
-              <table
-                id="table-media"
-                class="w-full text-sm text-left text-gray-500"
-              >
-                <thead>
-                  <tr
-                    class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]"
-                  >
-                    <th class="text-center font-normal">
-                      <div class="flex justify-end items-center min-w-[75px]">
-                        <div class="w-[30px]">연결 상태</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i
-                            class="fa-solid fa-magnifying-glass mr-1.5"
-                            id="tableSearchButton_status"
-                            data-dropdown-toggle="tableSearch_status"
-                          ></i>
-                          <!-- table search dropdown -->
-                          <div
-                            id="tableSearch_status"
-                            class="z-10 hidden bg-white shadow rounded-md w-30 p-1"
-                          >
-                            <ul
-                              class="p-1 space-y-1 text-xs text-gray-700"
-                              aria-labelledby="tableSearchButton_status"
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[60px]">디바이스명</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i
+                              class="fa-solid fa-magnifying-glass mr-1.5"
+                              id="tableSearchButton_media"
+                              data-dropdown-toggle="tableSearch_media"
+                            ></i>
+                            <!-- table search dropdown -->
+                            <div
+                              id="tableSearch_media"
+                              class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
                             >
-                              <li>
-                                <div class="flex p-2 rounded hover:bg-grey-100">
-                                  <div class="flex gap-2 items-center h-5">
-                                    <input
-                                      id="tableSearchInput_status"
-                                      name="tableSearchInput_status"
-                                      type="radio"
-                                      value=""
-                                      class="w-4 h-4 bg-grey-100 border-gray-300"
-                                    />
-                                    <label for="tableSearchInput_status">
-                                      on
-                                    </label>
-                                  </div>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="flex p-2 rounded hover:bg-grey-100">
-                                  <div class="flex gap-2 items-center h-5">
-                                    <input
-                                      id="tableSearchInput_status"
-                                      name="tableSearchInput_status"
-                                      type="radio"
-                                      value=""
-                                      class="w-4 h-4 bg-grey-100 border-gray-300"
-                                    />
-                                    <label for="tableSearchInput_status">
-                                      off
-                                    </label>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </th>
-                    <th><input type="checkbox" /></th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[150px]"
-                      >
-                        <div class="">점포명</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i
-                            class="fa-solid fa-magnifying-glass mr-1.5"
-                            id="tableSearchButton_media"
-                            data-dropdown-toggle="tableSearch_media"
-                          ></i>
-                          <!-- table search dropdown -->
-                          <div
-                            id="tableSearch_media"
-                            class="z-10 hidden bg-white shadow rounded-md w-52 p-2"
-                          >
-                            <div class="relative">
-                              <input
-                                type="text"
-                                class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
-                                placeholder="매체명"
-                              />
+                              <div class="relative">
+                                <input
+                                  type="text"
+                                  class="block w-full text-xs text-gray-900 border border-gray-300 bg-grey-50 rounded-md"
+                                  placeholder="매체명"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[75px]"
-                      >
-                        <div class="w-[30px]">방향</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[30px]">방향</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[100px]"
-                      >
-                        <div class="">해상도</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[40px]">해상도</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">설치위치</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[50px]">설치위치</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">광고구분</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[50px]">광고구분</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">전체구좌 정보(초)</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[50px]">전체구좌 정보(초)</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">상업구좌 정보(초)</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[50px]">상업구좌 정보(초)</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="text-center font-normal">
-                      <div
-                        class="flex justify-center items-center min-w-[80px]"
-                      >
-                        <div class="w-[50px]">자체구좌 정보(초)</div>
-                        <div class="flex items-center text-[10px]">
-                          <i class="fa-solid fa-chevron-down px-1.5"></i
-                          ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                      </th>
+                      <th>
+                        <div>
+                          <div class="w-[50px]">자체구좌 정보(초)</div>
+                          <div class="flex items-center text-[10px]">
+                            <i class="fa-solid fa-chevron-down px-1.5"></i
+                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                          </div>
                         </div>
-                      </div>
-                    </th>
-                    <th class="w-[85px]"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="bg-white hover:bg-grey-50 h-[40px]">
-                    <td>
-                      <div class="mx-auto status status_on"></div>
-                    </td>
-                    <td>
-                      <div>
-                        <input
-                          id="checkbox-tableSearch-1"
-                          type="checkbox"
-                          class="border-gray-300 rounded mr-1"
-                        />
-                        <label for="checkbox-tableSearch-1" class="sr-only"
-                          >checkbox</label
-                        >
-                      </div>
-                    </td>
-                    <td class="px-1 py-2">가든5점</td>
-                    <td class="px-6 py-2 text-center">가로</td>
-                    <td class="px-6 py-2 text-center">3840 x 2160</td>
-                    <td class="px-6 py-2 text-center">포스1</td>
-                    <td class="px-6 py-2 text-center">상업 / 자체</td>
-                    <td class="px-6 py-2 text-center">240</td>
-                    <td class="px-6 py-2 text-center">160</td>
-                    <td class="px-6 py-2 text-center">80</td>
-                    <td class="py-2 text-center">
-                      <button
-                        data-modal-target="detailEditModal"
-                        data-modal-toggle="detailEditModal"
-                        class="button button_small"
-                      >
-                        세부정보
-                      </button>
-                    </td>
-                  </tr>
-                  <tr class="bg-white hover:bg-grey-50 h-[40px]">
-                    <td>
-                      <div class="mx-auto status"></div>
-                    </td>
-                    <td>
-                      <div>
-                        <input
-                          id="checkbox-tableSearch-1"
-                          type="checkbox"
-                          class="border-gray-300 rounded"
-                        />
-                        <label for="checkbox-tableSearch-1" class="sr-only"
-                          >checkbox</label
-                        >
-                      </div>
-                    </td>
-                    <td class="px-1 py-2">가양점</td>
-                    <td class="px-6 py-2 text-center">가로</td>
-                    <td class="px-6 py-2 text-center">3840 x 2160</td>
-                    <td class="px-6 py-2 text-center">포스1</td>
-                    <td class="px-6 py-2 text-center">상업 / 자체</td>
-                    <td class="px-6 py-2 text-center">240</td>
-                    <td class="px-6 py-2 text-center">160</td>
-                    <td class="px-6 py-2 text-center">80</td>
-                    <td class="py-2 text-center">
-                      <button
-                        data-modal-target="detailEditModal"
-                        data-modal-toggle="detailEditModal"
-                        class="button button_small"
-                      >
-                        세부정보
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div
-              class="flex justify-between items-center p-3 h-[60px] border rounded-b-md bg-white"
-              aria-label="Table bottom navigation"
-            >
-              <div class="w-1/3"></div>
-              <ul
-                class="w-1/3 inline-flex justify-center items-center space-x-2"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
-                  >
-                    <span class="sr-only">Previous</span>
-                    <svg
-                      class="w-5 h-5"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
-                    >1</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
-                    >2</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white"
-                    >...</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
-                  >
-                    <span class="sr-only">Next</span>
-                    <svg
-                      class="w-5 h-5"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <div class="w-1/3 flex justify-end">
-                <button class="button button_download">
-                  <i class="fa-solid fa-download pr-1"></i>
-                  엑셀 다운받기
-                </button>
+                      </th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                </table>
               </div>
-            </div>
+
+              <div class="tableBody">
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr class="bg-white hover:bg-grey-50 h-[40px]">
+                      <td>
+                        <div class="mx-auto status status_on"></div>
+                      </td>
+                      <td>
+                        <input
+                          id="checkbox-tableSearch-1"
+                          type="checkbox"
+                          class="border-gray-300 rounded mr-1"
+                        />
+                      </td>
+                      <td>매장입구 스크린(매장입구 스크린 1)</td>
+                      <td>가로</td>
+                      <td>3840 x 2160</td>
+                      <td>포스1</td>
+                      <td>상업 / 자체</td>
+                      <td>240</td>
+                      <td>160</td>
+                      <td>80</td>
+                      <td>
+                        <button
+                          data-modal-target="detailEditModal"
+                          data-modal-toggle="detailEditModal"
+                          class="button button_small"
+                        >
+                          세부정보
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>가든5점</td>
+                      <td>가든5점</td>
+                      <td>가든5점</td>
+                      <td>가든5점</td>
+                      <td>포스 스크린(포스 스크린 1)</td>
+                      <td>2022-12-28 13:08:29</td>
+                      <td>A</td>
+                      <td>2022-12-28 13:08:29</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="tableBottom">
+                <div class="w-1/3"></div>
+                <ul
+                  class="w-1/3 inline-flex justify-center items-center space-x-2"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+                    >
+                      <span class="sr-only">Previous</span>
+                      <svg
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
+                      >1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
+                      >2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white"
+                      >...</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+                    >
+                      <span class="sr-only">Next</span>
+                      <svg
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="w-1/3 flex justify-end">
+                  <button class="button button_download">
+                    <i class="fa-solid fa-download pr-1"></i>
+                    엑셀 다운받기
+                  </button>
+                </div>
+              </div>
+            </section>
           </div>
+
+          <!-- 매체별 테이블 -->
         </div>
 
         <!-- 디바이스 등록 모달 -->

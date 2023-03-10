@@ -6,7 +6,7 @@ body {
   grid-template-areas:
     'aside nav'
     'aside main';
-  grid-template-columns: 300px minmax(1100px, auto);
+  grid-template-columns: 256px minmax(1100px, auto);
   overflow-x: auto;
 }
 aside {
@@ -49,4 +49,33 @@ main {
 }
 .mainContents.withButtons {
   margin-top: 15px;
+}
+
+/* nav > 신규가입요청자 */
+.newUser {
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--grey-200);
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 13px;
+  user-select: none;
+}
+.newUser.new {
+  gap: 2px;
+  cursor: pointer;
+}
+.newUser.new .text {
+  color: var(--red);
+}
+.newUser.new .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: var(--red);
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
 }
