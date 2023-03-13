@@ -4,7 +4,7 @@
 #form_idSearch {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 #form_userRegister fieldset {
   display: grid;
@@ -14,7 +14,7 @@
   grid-template-columns: 100px auto;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #form_userRegister .labelText {
   place-self: center end;
