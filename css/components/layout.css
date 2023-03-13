@@ -14,6 +14,8 @@ body > aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 3px 6px #00000029;
+  z-index: 10;
 }
 body > nav {
   grid-area: nav;
@@ -23,7 +25,6 @@ body > nav {
   align-items: center;
   gap: 20px;
   background-color: var(--grey-100);
-  box-shadow: 0px 3px 6px #00000029;
 }
 body > main {
   grid-area: main;
@@ -31,7 +32,6 @@ body > main {
   padding: 40px;
   padding-top: 0;
   background-color: var(--grey-100);
-  box-shadow: 0px 3px 6px #00000029;
 }
 body > main > header {
   height: 70px;
