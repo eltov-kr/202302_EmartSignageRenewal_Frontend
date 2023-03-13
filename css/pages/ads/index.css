@@ -25,6 +25,8 @@ table .col10 {
 }
 #form_contentsRegister ul {
   min-height: 300px;
+  max-height: 450px;
+  overflow-y: auto;
 }
 #form_contentsRegister li {
   display: grid;
