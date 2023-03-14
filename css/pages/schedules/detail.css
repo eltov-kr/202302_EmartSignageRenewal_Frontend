@@ -1,47 +1,44 @@
-#schedulesDetailMain {
-  width: min-content;
-}
-#schedulesDetailMain .cards {
+.cards {
   display: grid;
   grid-template-columns: 480px auto;
   gap: 15px;
   position: relative;
 }
-#schedulesDetailMain .cardColumn {
+.cardColumn {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-#schedulesDetailMain .card {
+.card {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border: 1px solid var(--border-grey);
   border-radius: 5px;
 }
-#schedulesDetailMain .card h5 {
+.card h5 {
   font-weight: bold;
   font-size: 22px;
 }
-#schedulesDetailMain .card_first {
+.card_first {
   height: 640px;
   overflow: hidden;
 }
-#schedulesDetailMain .card_first .mainTopNavbar {
+.card_first .mainTopNavbar {
   border-bottom: 1px solid var(--border-grey);
   padding: 15px;
 }
-#schedulesDetailMain .card_first .contentsContainer {
+.card_first .contentsContainer {
   display: grid;
   grid-template-columns: auto 280px;
   height: 100%;
   height: calc(100% - 70px);
   position: relative;
 }
-#schedulesDetailMain .card_first .contentsContainer ul {
+.card_first .contentsContainer ul {
   overflow-y: auto;
 }
-#schedulesDetailMain .card_first .contentsItem {
+.card_first .contentsItem {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -49,17 +46,17 @@
   font-weight: 500;
   color: var(--grey-500);
 }
-#schedulesDetailMain .card_first .deviceList {
+.card_first .deviceList {
   padding: 15px;
   border-right: 1px solid var(--border-grey);
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#schedulesDetailMain .card_first .adList {
+.card_first .adList {
   background-color: var(--grey-100);
 }
-#schedulesDetailMain .card_first .adList label {
+.card_first .adList label {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -69,7 +66,7 @@
   line-height: 1.5em;
   height: 3em;
 }
-#schedulesDetailMain .card_first .adList .contentsItem {
+.card_first .adList .contentsItem {
   display: grid;
   grid-template-columns: 79px auto;
   align-items: center;
@@ -77,11 +74,11 @@
   gap: 10px;
   padding: 15px;
 }
-#schedulesDetailMain .card_first .adList .contentsItem.selected {
+.card_first .adList .contentsItem.selected {
   background-color: var(--yellow-light);
 }
-#schedulesDetailMain .card_first .adList img,
-#schedulesDetailMain .card_first .adList video {
+.card_first .adList img,
+.card_first .adList video {
   width: 70px;
   height: 40px;
   object-fit: cover;
@@ -89,12 +86,12 @@
 }
 
 /* 컨텐츠 점포 설정 */
-#schedulesDetailMain .card_second,
-#schedulesDetailMain .card_last {
+.card_second,
+.card_last {
   padding: 15px;
 }
-#schedulesDetailMain .card_second header,
-#schedulesDetailMain .card_last header {
+.card_second header,
+.card_last header {
   padding-bottom: 5px;
 }
 /* 컨텐츠 점포 설정 > form */

@@ -1,20 +1,20 @@
-#reportsUserMain .mainTopNavbar {
+.mainTopNavbar {
   padding: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#reportsUserMain .mainTopNavbar span {
+.mainTopNavbar span {
   flex-basis: 50px;
   flex-shrink: 1;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#reportsUserMain .mainTopNavbar span:first-child {
+.mainTopNavbar span:first-child {
   margin-left: 10px;
   margin-right: 50px;
 }
-#reportsUserMain .mainTopNavbar .teDatepickerInput {
+.mainTopNavbar .teDatepickerInput {
   width: 172px;
 }

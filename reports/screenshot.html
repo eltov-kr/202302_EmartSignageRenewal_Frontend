@@ -5,6 +5,7 @@
     <title>EMART SIGNING 2.0 | 스크린샷 관리</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/pages/reports/screenshot.css" />
     <link href="../dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -24,774 +25,754 @@
     />
   </head>
   <body>
-    <section
-      class="flex flex-col bg-grey-100 relative h-screen w-screen min-w-[1920px] min-h-[1040px]"
-    >
-      <aside
-        class="w-64 shadow-md absolute top-0 left-0 py-5 h-full bg-white border-r border-gray-200 flex flex-col justify-between"
-      >
-        <ul class="space-y-2">
-          <li>
-            <a href="../index.html" class="flex items-center px-4 py-2 mb-10">
-              <img src="../images/logo_emart.png" alt="Emart Logo" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="../devices/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-            >
-              <img src="../images/menu_icon_device.png" />
-              <span class="ml-3">디바이스관리</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="../stores/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
-            >
-              <img src="../images/menu_icon_group.png" />
-              <span class="ml-3">점포그룹관리</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="../ads/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
-            >
-              <img src="../images/menu_icon_contents.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >광고주계약관리</span
+    <aside>
+      <ul>
+        <li>
+          <a href="../index.html" class="logo">
+            <img src="../images/logo_emart.png" alt="Emart Logo"
+          /></a>
+        </li>
+        <li>
+          <a href="../devices/index.html">
+            <img src="../images/menu_icon_device.png" />
+            <span class="menuTitle">디바이스관리</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../devices/index.html"
+                ><span class="pageDivider"></span>디바이스관리</a
               >
-            </a>
-          </li>
-          <li>
-            <a
-              href="../schedules/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
-            >
-              <img src="../images/menu_icon_schedule-1.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >스케쥴관리</span
+            </li>
+            <li>
+              <a href="../devices/media.html"
+                ><span class="pageDivider"></span>매체유형관리</a
               >
-            </a>
-          </li>
-          <li>
-            <a
-              href="../sales/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
-            >
-              <img src="../images/menu_icon_schedule.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                >영업관리</span
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../stores/index.html">
+            <img src="../images/menu_icon_group.png" />
+            <span class="menuTitle">점포그룹관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="../ads/index.html">
+            <img src="../images/menu_icon_contents.png" />
+            <span class="menuTitle">광고주계약관리</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../ads/index.html"
+                ><span class="pageDivider"></span>콘텐츠등록</a
               >
-            </a>
-          </li>
-          <li class="bg-grey-100">
-            <a href="../reports/index.html">
-              <button
-                type="button"
-                class="flex items-center px-4 py-2 w-full text-base font-normal text-grey-900 transition duration-75 group border-r-2 border-yellow-primary"
+            </li>
+            <li>
+              <a href="../ads/contract.html"
+                ><span class="pageDivider"></span>광고계약등록</a
               >
-                <img src="../images/menu_icon_report_o.png" />
-                <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
-                  >리포트</span
-                >
-              </button>
-            </a>
-            <ul class="py-2 space-y-1">
-              <li>
-                <a
-                  href="../reports/index.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  광고주 리포트</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/issue.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  디바이스 이슈 리포트</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/monitor.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  디바이스 이슈 모니터링 통계</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/schedule.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span
-                  >스케쥴 배포 로그</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/screenshot.html"
-                  class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-                  ></span
-                  >스크린샷 관리</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/manage.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  디바이스 운영 정보</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/log.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  디바이스 로그 정보</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/user.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  사용자 이용 내역 관리</a
-                >
-              </li>
-              <li>
-                <a
-                  href="../reports/batch.html"
-                  class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                  ><span
-                    class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                  >
-                  </span>
-                  배치 수행 데이터</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="../settings/index.html"
-              class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../schedules/index.html">
+            <img src="../images/menu_icon_schedule.png" />
+            <span class="menuTitle">스케쥴관리</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../schedules/index.html" class="selectedMenu"
+                ><span class="pageDivider yellow"></span>스케쥴 조회</a
+              >
+            </li>
+            <li>
+              <a href="../schedules/store.html"
+                ><span class="pageDivider"></span>점포별 편성 현황</a
+              >
+            </li>
+            <li>
+              <a href="../schedules/all.html"
+                ><span class="pageDivider"></span>전 점포별 편성 현황</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../sales/index.html">
+            <img src="../images/menu_icon_schedule.png" />
+            <span class="menuTitle">영업관리</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../sales/index.html"
+                ><span class="pageDivider"></span>광고 노출 로그</a
+              >
+            </li>
+            <li>
+              <a href="../sales/ads.html"
+                ><span class="pageDivider"></span>광고주 통계</a
+              >
+            </li>
+            <li>
+              <a href="../sales/search.html"
+                ><span class="pageDivider"></span>영업률 조회</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="open">
+          <a href="../reports/index.html">
+            <button
+              type="button"
+              aria-controls="dropdown-submenu"
+              data-collapse-toggle="dropdown-submenu"
             >
-              <img src="../images/menu_icon_setting.png" />
-              <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
-            </a>
-          </li>
-        </ul>
+              <img src="../images/menu_icon_report_o.png" />
+              <span class="menuTitle">리포트</span>
+            </button>
+          </a>
+          <ul id="dropdown-submenu">
+            <li>
+              <a href="../reports/index.html"
+                ><span class="pageDivider"></span>광고주 리포트</a
+              >
+            </li>
+            <li>
+              <a href="../reports/issue.html"
+                ><span class="pageDivider"></span>디바이스 이슈 리포트</a
+              >
+            </li>
+            <li>
+              <a href="../reports/monitor.html"
+                ><span class="pageDivider"></span>디바이스 이슈 모니터링 통계</a
+              >
+            </li>
+            <li>
+              <a href="../reports/schedule.html"
+                ><span class="pageDivider"></span>스케쥴 배포 로그</a
+              >
+            </li>
+            <li>
+              <a href="../reports/screenshot.html" class="selectedMenu"
+                ><span class="pageDivider yellow"></span>스크린샷 관리</a
+              >
+            </li>
+            <li>
+              <a href="../reports/manage.html"
+                ><span class="pageDivider"></span>디바이스 운영 정보</a
+              >
+            </li>
+            <li>
+              <a href="../reports/log.html"
+                ><span class="pageDivider"></span>디바이스 로그 정보</a
+              >
+            </li>
+            <li>
+              <a href="../reports/user.html"
+                ><span class="pageDivider"></span>사용자 이용 내역 관리</a
+              >
+            </li>
+            <li>
+              <a href="../reports/batch.html"
+                ><span class="pageDivider"></span>배치 수행 데이터</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../settings/index.html">
+            <img src="../images/menu_icon_setting.png" />
+            <span class="menuTitle">설정</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../settings/index.html"
+                ><span class="pageDivider"></span>점포 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/users.html"
+                ><span class="pageDivider"></span>사용자 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/authors.html"
+                ><span class="pageDivider"></span>사용자 권한 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/functions.html"
+                ><span class="pageDivider"></span>기능 권한 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/codes.html"
+                ><span class="pageDivider"></span>코드 관리</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footerLogo">
+        <img src="../images/logo.png" />
+      </div>
+    </aside>
 
-        <div class="pl-5 pt-5">
-          <img src="../images/logo.png" />
+    <main>
+      <nav class="flex justify-end items-center space-x-3 h-[60px]">
+        <div class="flex items-center gap-2">
+          <strong>강변점</strong>/
+          <strong>점포 관리자</strong>
         </div>
-      </aside>
-
-      <div class="pl-72 pr-8 h-screen">
-        <nav class="flex justify-end items-center space-x-3 h-[60px]">
-          <div class="flex items-center gap-2">
-            <strong>강변점</strong>/
-            <strong>점포 관리자</strong>
-          </div>
-          <div class="newUser new">
-            <span class="text">신규가입요청자</span>
-            <span class="number">5</span>
-          </div>
-          <button
-            id="dropdownDefaultButton"
-            data-dropdown-toggle="dropdown"
-            data-dropdown-placement="bottom-end"
-            type="button"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              viewBox="0 0 35 35"
-            >
-              <g id="top_menu_btn" transform="translate(-0.447)">
-                <circle
-                  id="타원"
-                  cx="17.5"
-                  cy="17.5"
-                  r="17.5"
-                  transform="translate(0.447)"
-                  fill="#dce0e4"
-                />
-                <line
-                  id="선"
-                  x2="12"
-                  transform="translate(11.947 12.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-                <line
-                  id="선-2"
-                  data-name="선"
-                  x2="12"
-                  transform="translate(11.947 17.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-                <line
-                  id="선-3"
-                  data-name="선"
-                  x2="12"
-                  transform="translate(11.947 22.5)"
-                  fill="none"
-                  stroke="#637381"
-                  stroke-width="2"
-                />
-              </g>
-            </svg>
-          </button>
-          <!-- Dropdown menu -->
-          <div
-            id="dropdown"
-            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
-          >
-            <ul
-              class="text-xs text-gray-700"
-              aria-labelledby="dropdownDefaultButton"
-            >
-              <li>
-                <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
-              </li>
-              <li>
-                <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <header>
-          <h1 class="font-bold text-xl my-4">스크린샷 관리</h1>
-          <div class="flex gap-3 items-center font-bold text-sm">
-            <h2 class="text-gray-400">리포트</h2>
-            <span
-              class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-            >
-            </span>
-            <h3>스크린샷 관리</h3>
-          </div>
-        </header>
-
-        <main
-          id="reportsScreenshotMain"
-          class="w-full h-[80%] flex flex-col gap-3"
+        <div class="newUser new">
+          <span class="text">신규가입요청자</span>
+          <span class="number">5</span>
+        </div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          data-dropdown-placement="bottom-end"
+          type="button"
         >
-          <nav class="buttons">
-            <button class="button button_dark">스크린샷 주기설정</button>
-            <button class="button button_dark">스크린샷 수집</button>
-            <button class="button button_dark">스크린샷 선택보기</button>
-          </nav>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+          >
+            <g id="top_menu_btn" transform="translate(-0.447)">
+              <circle
+                id="타원"
+                cx="17.5"
+                cy="17.5"
+                r="17.5"
+                transform="translate(0.447)"
+                fill="#dce0e4"
+              />
+              <line
+                id="선"
+                x2="12"
+                transform="translate(11.947 12.5)"
+                fill="none"
+                stroke="#637381"
+                stroke-width="2"
+              />
+              <line
+                id="선-2"
+                data-name="선"
+                x2="12"
+                transform="translate(11.947 17.5)"
+                fill="none"
+                stroke="#637381"
+                stroke-width="2"
+              />
+              <line
+                id="선-3"
+                data-name="선"
+                x2="12"
+                transform="translate(11.947 22.5)"
+                fill="none"
+                stroke="#637381"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
+        >
+          <ul
+            class="text-xs text-gray-700"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
+            </li>
+            <li>
+              <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-          <div class="flex gap-3 h-[90%]">
-            <!-- Table -->
-            <div class="grow">
-              <nav
-                class="mainTopNavbar h-[70px] border border-b-0 rounded-t-md bg-white"
-                aria-label="Table top navigation"
+      <header>
+        <h1 class="pageTitle">스크린샷 관리</h1>
+        <div class="pageSubtitle">
+          <h2 class="megaMenu">리포트</h2>
+          <span class="pageDivider yellow"></span>
+          <h3>스크린샷 관리</h3>
+        </div>
+      </header>
+
+      <nav class="buttons">
+        <button class="button button_dark">스크린샷 주기설정</button>
+        <button class="button button_dark">스크린샷 수집</button>
+        <button class="button button_dark">스크린샷 선택보기</button>
+      </nav>
+
+      <div class="mainContents withButtons">
+        <!-- Table -->
+
+        <nav
+          class="mainTopNavbar h-[70px] border border-b-0 rounded-t-md bg-white"
+          aria-label="Table top navigation"
+        >
+          <span>
+            <input type="checkbox" />
+            <!-- tailwind element dropdown -->
+            <div class="relative" data-te-dropdown-ref>
+              <button
+                class="form_dropdown w-[200px]"
+                type="button"
+                data-te-dropdown-toggle-ref
+                aria-expanded="false"
               >
-                <span>
-                  <input type="checkbox" />
-                  <!-- tailwind element dropdown -->
-                  <div class="relative" data-te-dropdown-ref>
-                    <button
-                      class="form_dropdown w-[200px]"
-                      type="button"
-                      data-te-dropdown-toggle-ref
-                      aria-expanded="false"
-                    >
-                      점포
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <ul
-                      class="w-[200px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                      data-te-dropdown-menu-ref
-                    >
-                      <li>
-                        <a
-                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                          href="#"
-                          data-te-dropdown-item-ref
-                          >1</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                          href="#"
-                          data-te-dropdown-item-ref
-                          >2</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="검색어를 입력하세요"
-                    class="h-[40px] w-[450px]"
-                  />
-                </span>
-                <span>
-                  <input type="checkbox" />
-                  <div class="flex items-center gap-2 text-gray-400">
-                    <div class="relative" data-te-datepicker-init>
-                      <input
-                        type="text"
-                        class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      />
-                      <button
-                        data-te-datepicker-toggle-ref
-                        data-te-datepicker-toggle-button-ref
-                        class="justify-content-center absolute right-2.5 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center border-none bg-transparent outline-none"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="15"
-                          viewBox="0 0 15 15"
-                        >
-                          <g
-                            id="icon_form_calendar"
-                            transform="translate(-591 -551)"
-                          >
-                            <rect
-                              id="사각형"
-                              width="15"
-                              height="15"
-                              transform="translate(591 551)"
-                              fill="#fff"
-                              opacity="0"
-                            />
-                            <path
-                              id="패스"
-                              d="M110.852,867.5h-.741V866H108.63v1.5H102.7V866h-1.481v1.5h-.741a1.484,1.484,0,0,0-1.474,1.5L99,879.5a1.49,1.49,0,0,0,1.481,1.5h10.37a1.5,1.5,0,0,0,1.481-1.5V869A1.5,1.5,0,0,0,110.852,867.5Zm0,12h-10.37V872h10.37Zm-7.407-4.5h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm-5.926,3h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Z"
-                              transform="translate(492.833 -315)"
-                              fill="#637381"
-                            />
-                          </g>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- tailwind element dropdown -->
-                    <div class="relative" data-te-dropdown-ref>
-                      <button
-                        class="form_dropdown w-[120px]"
-                        type="button"
-                        data-te-dropdown-toggle-ref
-                        aria-expanded="false"
-                      >
-                        <span></span>
-                        <img src="../images/icon_form_watch.png" />
-                      </button>
-                      <ul
-                        class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                        data-te-dropdown-menu-ref
-                      >
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >00:00~06:00</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >06:00~12:00</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >12:00~18:00</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >18:00~24:00</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    ~
-                    <div class="relative" data-te-datepicker-init>
-                      <input
-                        type="text"
-                        class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                      />
-                      <button
-                        data-te-datepicker-toggle-ref
-                        data-te-datepicker-toggle-button-ref
-                        class="justify-content-center absolute right-2.5 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center border-none bg-transparent outline-none"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="15"
-                          viewBox="0 0 15 15"
-                        >
-                          <g
-                            id="icon_form_calendar"
-                            transform="translate(-591 -551)"
-                          >
-                            <rect
-                              id="사각형"
-                              width="15"
-                              height="15"
-                              transform="translate(591 551)"
-                              fill="#fff"
-                              opacity="0"
-                            />
-                            <path
-                              id="패스"
-                              d="M110.852,867.5h-.741V866H108.63v1.5H102.7V866h-1.481v1.5h-.741a1.484,1.484,0,0,0-1.474,1.5L99,879.5a1.49,1.49,0,0,0,1.481,1.5h10.37a1.5,1.5,0,0,0,1.481-1.5V869A1.5,1.5,0,0,0,110.852,867.5Zm0,12h-10.37V872h10.37Zm-7.407-4.5h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm-5.926,3h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Z"
-                              transform="translate(492.833 -315)"
-                              fill="#637381"
-                            />
-                          </g>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- tailwind element dropdown -->
-                    <div class="relative" data-te-dropdown-ref>
-                      <button
-                        class="form_dropdown w-[120px]"
-                        type="button"
-                        data-te-dropdown-toggle-ref
-                        aria-expanded="false"
-                      >
-                        <span></span>
-                        <img src="../images/icon_form_watch.png" />
-                      </button>
-                      <ul
-                        class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
-                        data-te-dropdown-menu-ref
-                      >
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >00:00~06:00</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >06:00~12:00</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >12:00~18:00</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
-                            href="#"
-                            data-te-dropdown-item-ref
-                            >18:00~24:00</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </span>
-                <button class="button button_big">조회</button>
-              </nav>
-
-              <div class="relative overflow-x-auto border-l border-r">
-                <table
-                  id="reports-issue-table"
-                  class="w-full text-sm text-left text-gray-500"
+                점포
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul
+                class="w-[200px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                data-te-dropdown-menu-ref
+              >
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                    href="#"
+                    data-te-dropdown-item-ref
+                    >2</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <input
+              type="text"
+              placeholder="검색어를 입력하세요"
+              class="h-[40px] w-[450px]"
+            />
+          </span>
+          <span>
+            <input type="checkbox" />
+            <div class="flex items-center gap-2 text-gray-400">
+              <div class="relative" data-te-datepicker-init>
+                <input
+                  type="text"
+                  class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                />
+                <button
+                  data-te-datepicker-toggle-ref
+                  data-te-datepicker-toggle-button-ref
+                  class="justify-content-center absolute right-2.5 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center border-none bg-transparent outline-none"
                 >
-                  <thead>
-                    <tr
-                      class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]"
-                    >
-                      <th class="text-center font-normal">
-                        <input type="checkbox" />
-                      </th>
-                      <th class="text-center font-normal">
-                        <div class="flex justify-center items-center">
-                          <div>점포</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i
-                              class="fa-solid fa-magnifying-glass mr-1.5"
-                              id="tableSearchButton_media"
-                              data-dropdown-toggle="tableSearch_media"
-                            ></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div class="flex justify-center items-center">
-                          <div class="w-[70px]">디바이스명</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div class="flex justify-center items-center">
-                          <div>설치위치</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal">
-                        <div class="flex justify-center items-center">
-                          <div>업데이트 시간</div>
-                          <div class="flex items-center text-[10px]">
-                            <i class="fa-solid fa-chevron-down px-1.5"></i
-                            ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
-                          </div>
-                        </div>
-                      </th>
-                      <th class="text-center font-normal"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="bg-white hover:bg-grey-50 h-[40px]">
-                      <td class="px-6 py-2 text-center">
-                        <div>
-                          <input
-                            id="checkbox-tableSearch-1"
-                            type="checkbox"
-                            class="border-gray-300 rounded"
-                          />
-                          <label for="checkbox-tableSearch-1" class="sr-only"
-                            >checkbox</label
-                          >
-                        </div>
-                      </td>
-                      <td class="px-6 py-2 text-center">남양주점</td>
-                      <td class="px-6 py-2 text-center">포스 스크린-1</td>
-                      <td class="px-6 py-2 text-center">1층 화장실 앞</td>
-                      <td class="px-6 py-2 text-center">2023-10-27 09:00:11</td>
-                      <td class="text-center">
-                        <button
-                          data-modal-target="screenshotModal"
-                          data-modal-toggle="screenshotModal"
-                          class="button button_small"
-                        >
-                          보기
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                  >
+                    <g id="icon_form_calendar" transform="translate(-591 -551)">
+                      <rect
+                        id="사각형"
+                        width="15"
+                        height="15"
+                        transform="translate(591 551)"
+                        fill="#fff"
+                        opacity="0"
+                      />
+                      <path
+                        id="패스"
+                        d="M110.852,867.5h-.741V866H108.63v1.5H102.7V866h-1.481v1.5h-.741a1.484,1.484,0,0,0-1.474,1.5L99,879.5a1.49,1.49,0,0,0,1.481,1.5h10.37a1.5,1.5,0,0,0,1.481-1.5V869A1.5,1.5,0,0,0,110.852,867.5Zm0,12h-10.37V872h10.37Zm-7.407-4.5h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm-5.926,3h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Z"
+                        transform="translate(492.833 -315)"
+                        fill="#637381"
+                      />
+                    </g>
+                  </svg>
+                </button>
               </div>
-
-              <nav
-                class="flex justify-between items-center p-3 h-[60px] border rounded-b-md bg-white"
-                aria-label="Table bottom navigation"
-              >
-                <div class="w-1/3"></div>
+              <!-- tailwind element dropdown -->
+              <div class="relative" data-te-dropdown-ref>
+                <button
+                  class="form_dropdown w-[120px]"
+                  type="button"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                >
+                  <span></span>
+                  <img src="../images/icon_form_watch.png" />
+                </button>
                 <ul
-                  class="w-1/3 inline-flex justify-center items-center space-x-2"
+                  class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                  data-te-dropdown-menu-ref
                 >
                   <li>
                     <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                       href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
-                    >
-                      <span class="sr-only">Previous</span>
-                      <svg
-                        class="w-5 h-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
-                      >1</a
+                      data-te-dropdown-item-ref
+                      >00:00~06:00</a
                     >
                   </li>
                   <li>
                     <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                       href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
-                      >2</a
+                      data-te-dropdown-item-ref
+                      >06:00~12:00</a
                     >
                   </li>
                   <li>
                     <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                       href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white"
-                      >...</a
+                      data-te-dropdown-item-ref
+                      >12:00~18:00</a
                     >
                   </li>
                   <li>
                     <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
                       href="#"
-                      class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+                      data-te-dropdown-item-ref
+                      >18:00~24:00</a
                     >
-                      <span class="sr-only">Next</span>
-                      <svg
-                        class="w-5 h-5"
-                        aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </a>
                   </li>
                 </ul>
-                <div class="w-1/3 flex justify-end"></div>
+              </div>
+              ~
+              <div class="relative" data-te-datepicker-init>
+                <input
+                  type="text"
+                  class="teDatepickerInput peer block w-full border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                />
+                <button
+                  data-te-datepicker-toggle-ref
+                  data-te-datepicker-toggle-button-ref
+                  class="justify-content-center absolute right-2.5 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center border-none bg-transparent outline-none"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                  >
+                    <g id="icon_form_calendar" transform="translate(-591 -551)">
+                      <rect
+                        id="사각형"
+                        width="15"
+                        height="15"
+                        transform="translate(591 551)"
+                        fill="#fff"
+                        opacity="0"
+                      />
+                      <path
+                        id="패스"
+                        d="M110.852,867.5h-.741V866H108.63v1.5H102.7V866h-1.481v1.5h-.741a1.484,1.484,0,0,0-1.474,1.5L99,879.5a1.49,1.49,0,0,0,1.481,1.5h10.37a1.5,1.5,0,0,0,1.481-1.5V869A1.5,1.5,0,0,0,110.852,867.5Zm0,12h-10.37V872h10.37Zm-7.407-4.5h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm-5.926,3h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Zm2.963,0h-1.481v-1.5h1.481Z"
+                        transform="translate(492.833 -315)"
+                        fill="#637381"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <!-- tailwind element dropdown -->
+              <div class="relative" data-te-dropdown-ref>
+                <button
+                  class="form_dropdown w-[120px]"
+                  type="button"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                >
+                  <span></span>
+                  <img src="../images/icon_form_watch.png" />
+                </button>
+                <ul
+                  class="w-[120px] max-h-[400px] absolute z-[1000] float-left m-0 hidden overflow-auto border border-grey-300 bg-white bg-clip-padding text-left text-base shadow-lg [&[data-te-dropdown-show]]:block"
+                  data-te-dropdown-menu-ref
+                >
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >00:00~06:00</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >06:00~12:00</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >12:00~18:00</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="block w-full whitespace-nowrap h-[25px] px-4 text-[13px] hover:bg-yellow-light"
+                      href="#"
+                      data-te-dropdown-item-ref
+                      >18:00~24:00</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </span>
+          <button class="button button_big">조회</button>
+        </nav>
+
+        <div class="relative overflow-x-auto border-l border-r">
+          <table
+            id="reports-issue-table"
+            class="w-full text-sm text-left text-gray-500"
+          >
+            <thead>
+              <tr class="h-[60px] text-xs text-grey-500 uppercase bg-[#EDEFF1]">
+                <th class="text-center font-normal">
+                  <input type="checkbox" />
+                </th>
+                <th class="text-center font-normal">
+                  <div class="flex justify-center items-center">
+                    <div>점포</div>
+                    <div class="flex items-center text-[10px]">
+                      <i class="fa-solid fa-chevron-down px-1.5"></i
+                      ><i
+                        class="fa-solid fa-magnifying-glass mr-1.5"
+                        id="tableSearchButton_media"
+                        data-dropdown-toggle="tableSearch_media"
+                      ></i>
+                    </div>
+                  </div>
+                </th>
+                <th class="text-center font-normal">
+                  <div class="flex justify-center items-center">
+                    <div class="w-[70px]">디바이스명</div>
+                    <div class="flex items-center text-[10px]">
+                      <i class="fa-solid fa-chevron-down px-1.5"></i
+                      ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                    </div>
+                  </div>
+                </th>
+                <th class="text-center font-normal">
+                  <div class="flex justify-center items-center">
+                    <div>설치위치</div>
+                    <div class="flex items-center text-[10px]">
+                      <i class="fa-solid fa-chevron-down px-1.5"></i
+                      ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                    </div>
+                  </div>
+                </th>
+                <th class="text-center font-normal">
+                  <div class="flex justify-center items-center">
+                    <div>업데이트 시간</div>
+                    <div class="flex items-center text-[10px]">
+                      <i class="fa-solid fa-chevron-down px-1.5"></i
+                      ><i class="fa-solid fa-magnifying-glass mr-1.5"></i>
+                    </div>
+                  </div>
+                </th>
+                <th class="text-center font-normal"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white hover:bg-grey-50 h-[40px]">
+                <td class="px-6 py-2 text-center">
+                  <div>
+                    <input
+                      id="checkbox-tableSearch-1"
+                      type="checkbox"
+                      class="border-gray-300 rounded"
+                    />
+                    <label for="checkbox-tableSearch-1" class="sr-only"
+                      >checkbox</label
+                    >
+                  </div>
+                </td>
+                <td class="px-6 py-2 text-center">남양주점</td>
+                <td class="px-6 py-2 text-center">포스 스크린-1</td>
+                <td class="px-6 py-2 text-center">1층 화장실 앞</td>
+                <td class="px-6 py-2 text-center">2023-10-27 09:00:11</td>
+                <td class="text-center">
+                  <button
+                    data-modal-target="screenshotModal"
+                    data-modal-toggle="screenshotModal"
+                    class="button button_small"
+                  >
+                    보기
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <nav
+          class="flex justify-between items-center p-3 h-[60px] border rounded-b-md bg-white"
+          aria-label="Table bottom navigation"
+        >
+          <div class="w-1/3"></div>
+          <ul class="w-1/3 inline-flex justify-center items-center space-x-2">
+            <li>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+              >
+                <span class="sr-only">Previous</span>
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
+                >1</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full focus:bg-grey-400 focus:text-white"
+                >2</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white"
+                >...</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-[30px] h-[30px] flex justify-center items-center leading-tight text-gray-500 bg-white rounded-full hover:bg-grey-100 hover:text-gray-700"
+              >
+                <span class="sr-only">Next</span>
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="w-1/3 flex justify-end"></div>
+        </nav>
+      </div>
+
+      <!-- 스크린샷 모달 -->
+      <div
+        id="screenshotModal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full hidden"
+      >
+        <!-- <div class="relative w-full max-w-[1580px] h-auto"> -->
+        <div class="relative h-auto">
+          <div class="relative bg-white shadow">
+            <div class="px-8 py-6">
+              <header class="flex justify-between mb-6">
+                <h3 class="text-[22px] font-bold text-grey-500">스크린샷</h3>
+              </header>
+
+              <section>
+                <article>
+                  <div class="imageContainer"></div>
+                  <ul>
+                    <li>
+                      <span class="labelText">스크린샷시간</span>
+                      <span class="content">2023-01-10 14:30:30</span>
+                    </li>
+                    <li>
+                      <span class="labelText">콘텐츠명</span>
+                      <span class="content">SSG.COM</span>
+                    </li>
+                    <li>
+                      <span class="labelText">디바이스명</span>
+                      <span class="content">포스 스크린1</span>
+                    </li>
+                    <li>
+                      <span class="labelText">점포명</span>
+                      <span class="content">성수점</span>
+                    </li>
+                  </ul>
+                </article>
+                <article>
+                  <div class="imageContainer"></div>
+                  <ul>
+                    <li>
+                      <span class="labelText">스크린샷시간</span>
+                      <span class="content">2023-01-10 14:30:30</span>
+                    </li>
+                    <li>
+                      <span class="labelText">콘텐츠명</span>
+                      <span class="content">SSG.COM</span>
+                    </li>
+                    <li>
+                      <span class="labelText">디바이스명</span>
+                      <span class="content">포스 스크린1</span>
+                    </li>
+                    <li>
+                      <span class="labelText">점포명</span>
+                      <span class="content">성수점</span>
+                    </li>
+                  </ul>
+                </article>
+              </section>
+
+              <nav class="flex gap-2 justify-center mt-6">
+                <button
+                  data-modal-hide="screenshotModal"
+                  class="button button_save"
+                >
+                  취소
+                </button>
+                <button class="button button_yellow_lightText button_save">
+                  확인
+                </button>
               </nav>
             </div>
           </div>
-
-          <!-- 스크린샷 모달 -->
-          <div
-            id="screenshotModal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto inset-0 h-modal h-full hidden"
-          >
-            <!-- <div class="relative w-full max-w-[1580px] h-auto"> -->
-            <div class="relative h-auto">
-              <div class="relative bg-white shadow">
-                <div class="px-8 py-6">
-                  <header class="flex justify-between mb-6">
-                    <h3 class="text-[22px] font-bold text-grey-500">
-                      스크린샷
-                    </h3>
-                  </header>
-
-                  <section>
-                    <article>
-                      <div class="imageContainer"></div>
-                      <ul>
-                        <li>
-                          <span class="labelText">스크린샷시간</span>
-                          <span class="content">2023-01-10 14:30:30</span>
-                        </li>
-                        <li>
-                          <span class="labelText">콘텐츠명</span>
-                          <span class="content">SSG.COM</span>
-                        </li>
-                        <li>
-                          <span class="labelText">디바이스명</span>
-                          <span class="content">포스 스크린1</span>
-                        </li>
-                        <li>
-                          <span class="labelText">점포명</span>
-                          <span class="content">성수점</span>
-                        </li>
-                      </ul>
-                    </article>
-                    <article>
-                      <div class="imageContainer"></div>
-                      <ul>
-                        <li>
-                          <span class="labelText">스크린샷시간</span>
-                          <span class="content">2023-01-10 14:30:30</span>
-                        </li>
-                        <li>
-                          <span class="labelText">콘텐츠명</span>
-                          <span class="content">SSG.COM</span>
-                        </li>
-                        <li>
-                          <span class="labelText">디바이스명</span>
-                          <span class="content">포스 스크린1</span>
-                        </li>
-                        <li>
-                          <span class="labelText">점포명</span>
-                          <span class="content">성수점</span>
-                        </li>
-                      </ul>
-                    </article>
-                  </section>
-
-                  <nav class="flex gap-2 justify-center mt-6">
-                    <button
-                      data-modal-hide="screenshotModal"
-                      class="button button_save"
-                    >
-                      취소
-                    </button>
-                    <button class="button button_yellow_lightText button_save">
-                      확인
-                    </button>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+        </div>
       </div>
-    </section>
+    </main>
+
     <!-- <script type="text/javascript" src="../js/reports/screenshot.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>

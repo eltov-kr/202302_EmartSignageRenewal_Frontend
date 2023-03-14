@@ -5,7 +5,7 @@
     <title>EMART SIGNING 2.0 | 점포별 편성 현황</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/components/layout.css" />
+    <link rel="stylesheet" href="../css/pages/schedules/store.css" />
     <link href="../dist/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -26,211 +26,282 @@
   </head>
   <body>
     <aside>
-      <ul class="space-y-2">
+      <ul>
         <li>
-          <a href="../index.html" class="flex items-center px-4 pt-8 pb-16">
-            <img src="../images/logo_emart.png" alt="Emart Logo" />
-          </a>
+          <a href="../index.html" class="logo">
+            <img src="../images/logo_emart.png" alt="Emart Logo"
+          /></a>
         </li>
         <li>
-          <a
-            href="../devices/index.html"
-            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-          >
+          <a href="../devices/index.html">
             <img src="../images/menu_icon_device.png" />
-            <span class="ml-3">디바이스관리</span>
+            <span class="menuTitle">디바이스관리</span>
           </a>
-        </li>
-        <li>
-          <a
-            href="../stores/index.html"
-            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-          >
-            <img src="../images/menu_icon_group.png" />
-            <span class="ml-3">점포그룹관리</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="../ads/index.html"
-            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-          >
-            <img src="../images/menu_icon_contents.png" />
-            <span class="flex-1 ml-3 text-left whitespace-nowrap"
-              >광고주계약관리</span
-            >
-          </a>
-        </li>
-        <li class="bg-grey-100">
-          <a href="../schedules/index.html">
-            <button
-              type="button"
-              class="flex items-center px-4 py-2 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-grey-100 border-r-2 border-yellow-primary"
-            >
-              <img src="../images/menu_icon_schedule_o.png" />
-              <span class="font-bold flex-1 ml-3 text-left whitespace-nowrap"
-                >스케쥴관리</span
-              >
-            </button>
-          </a>
-          <ul class="py-2 space-y-1">
+          <ul>
             <li>
-              <a
-                href="../schedules/index.html"
-                class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                ><span
-                  class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                >
-                </span>
-                스케쥴 조회</a
+              <a href="../devices/index.html"
+                ><span class="pageDivider"></span>디바이스관리</a
               >
             </li>
             <li>
-              <a
-                href="../schedules/store.html"
-                class="font-bold flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-900 rounded-lg transition duration-75 group"
-                ><span
-                  class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-                ></span>
-                점포별 편성 현황</a
-              >
-            </li>
-            <li>
-              <a
-                href="../schedules/all.html"
-                class="flex gap-2 items-center pl-11 py-2 w-full text-sm text-grey-300 rounded-lg transition duration-75 group"
-                ><span
-                  class="w-1 h-1 border-2 rounded-full border-grey-200 flex justify-center"
-                >
-                </span
-                >전 점포별 편성 현황</a
+              <a href="../devices/media.html"
+                ><span class="pageDivider"></span>매체유형관리</a
               >
             </li>
           </ul>
         </li>
         <li>
-          <a
-            href="../sales/index.html"
-            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-          >
-            <img src="../images/menu_icon_schedule.png" />
-            <span class="flex-1 ml-3 text-left whitespace-nowrap"
-              >영업관리</span
+          <a href="../stores/index.html">
+            <img src="../images/menu_icon_group.png" />
+            <span class="menuTitle">점포그룹관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="../ads/index.html">
+            <img src="../images/menu_icon_contents.png" />
+            <span class="menuTitle">광고주계약관리</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../ads/index.html"
+                ><span class="pageDivider"></span>콘텐츠등록</a
+              >
+            </li>
+            <li>
+              <a href="../ads/contract.html"
+                ><span class="pageDivider"></span>광고계약등록</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="open">
+          <a href="../schedules/index.html">
+            <button
+              type="button"
+              aria-controls="dropdown-submenu"
+              data-collapse-toggle="dropdown-submenu"
             >
+              <img src="../images/menu_icon_schedule_o.png" />
+              <span class="menuTitle">스케쥴관리</span>
+            </button>
           </a>
+          <ul id="dropdown-submenu">
+            <li>
+              <a href="../schedules/index.html"
+                ><span class="pageDivider"></span>스케쥴 조회</a
+              >
+            </li>
+            <li>
+              <a href="../schedules/store.html" class="selectedMenu"
+                ><span class="pageDivider yellow"></span>점포별 편성 현황</a
+              >
+            </li>
+            <li>
+              <a href="../schedules/all.html"
+                ><span class="pageDivider"></span>전 점포별 편성 현황</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
-          <a
-            href="../reports/index.html"
-            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg group"
-          >
+          <a href="../sales/index.html">
+            <img src="../images/menu_icon_schedule.png" />
+            <span class="menuTitle">영업관리</span>
+          </a>
+          <ul>
+            <li>
+              <a href="../sales/index.html"
+                ><span class="pageDivider"></span>광고 노출 로그</a
+              >
+            </li>
+            <li>
+              <a href="../sales/ads.html"
+                ><span class="pageDivider"></span>광고주 통계</a
+              >
+            </li>
+            <li>
+              <a href="../sales/search.html"
+                ><span class="pageDivider"></span>영업률 조회</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../reports/index.html">
             <img src="../images/menu_icon_report.png" />
-            <span class="flex-1 ml-3 text-left whitespace-nowrap">리포트</span>
+            <span class="menuTitle">리포트</span>
           </a>
+          <ul>
+            <li>
+              <a href="../reports/index.html"
+                ><span class="pageDivider"></span>광고주 리포트</a
+              >
+            </li>
+            <li>
+              <a href="../reports/issue.html"
+                ><span class="pageDivider"></span>디바이스 이슈 리포트</a
+              >
+            </li>
+            <li>
+              <a href="../reports/monitor.html"
+                ><span class="pageDivider"></span>디바이스 이슈 모니터링 통계</a
+              >
+            </li>
+            <li>
+              <a href="../reports/schedule.html"
+                ><span class="pageDivider"></span>스케쥴 배포 로그</a
+              >
+            </li>
+            <li>
+              <a href="../reports/screenshot.html"
+                ><span class="pageDivider"></span>스크린샷 관리</a
+              >
+            </li>
+            <li>
+              <a href="../reports/manage.html"
+                ><span class="pageDivider"></span>디바이스 운영 정보</a
+              >
+            </li>
+            <li>
+              <a href="../reports/log.html"
+                ><span class="pageDivider"></span>디바이스 로그 정보</a
+              >
+            </li>
+            <li>
+              <a href="../reports/user.html"
+                ><span class="pageDivider"></span>사용자 이용 내역 관리</a
+              >
+            </li>
+            <li>
+              <a href="../reports/batch.html"
+                ><span class="pageDivider"></span>배치 수행 데이터</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
-          <a
-            href="../settings/index.html"
-            class="flex items-center px-4 py-2 text-base font-normal text-grey-300 rounded-lg"
-          >
+          <a href="../settings/index.html">
             <img src="../images/menu_icon_setting.png" />
-            <span class="flex-1 ml-3 text-left whitespace-nowrap">설정</span>
+            <span class="menuTitle">설정</span>
           </a>
+          <ul>
+            <li>
+              <a href="../settings/index.html"
+                ><span class="pageDivider"></span>점포 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/users.html"
+                ><span class="pageDivider"></span>사용자 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/authors.html"
+                ><span class="pageDivider"></span>사용자 권한 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/functions.html"
+                ><span class="pageDivider"></span>기능 권한 관리</a
+              >
+            </li>
+            <li>
+              <a href="../settings/codes.html"
+                ><span class="pageDivider"></span>코드 관리</a
+              >
+            </li>
+          </ul>
         </li>
       </ul>
-
-      <div class="p-5 pt-10">
+      <div class="footerLogo">
         <img src="../images/logo.png" />
       </div>
     </aside>
 
-    <nav class="flex justify-end items-center space-x-3">
-      <div class="flex items-center gap-2">
-        <strong>강변점</strong>/
-        <strong>점포 관리자</strong>
-      </div>
-      <div class="newUser new">
-        <span class="text">신규가입요청자</span>
-        <span class="number">5</span>
-      </div>
-      <button
-        id="dropdownDefaultButton"
-        data-dropdown-toggle="dropdown"
-        data-dropdown-placement="bottom-end"
-        type="button"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="35"
-          height="35"
-          viewBox="0 0 35 35"
-        >
-          <g id="top_menu_btn" transform="translate(-0.447)">
-            <circle
-              id="타원"
-              cx="17.5"
-              cy="17.5"
-              r="17.5"
-              transform="translate(0.447)"
-              fill="#dce0e4"
-            />
-            <line
-              id="선"
-              x2="12"
-              transform="translate(11.947 12.5)"
-              fill="none"
-              stroke="#637381"
-              stroke-width="2"
-            />
-            <line
-              id="선-2"
-              data-name="선"
-              x2="12"
-              transform="translate(11.947 17.5)"
-              fill="none"
-              stroke="#637381"
-              stroke-width="2"
-            />
-            <line
-              id="선-3"
-              data-name="선"
-              x2="12"
-              transform="translate(11.947 22.5)"
-              fill="none"
-              stroke="#637381"
-              stroke-width="2"
-            />
-          </g>
-        </svg>
-      </button>
-      <!-- Dropdown menu -->
-      <div
-        id="dropdown"
-        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
-      >
-        <ul
-          class="text-xs text-gray-700"
-          aria-labelledby="dropdownDefaultButton"
-        >
-          <li>
-            <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
-          </li>
-          <li>
-            <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <main id="schedulesStoreMain">
+      <nav>
+        <div class="flex items-center gap-2">
+          <strong>강변점</strong>/
+          <strong>점포 관리자</strong>
+        </div>
+        <div class="newUser new">
+          <span class="text">신규가입요청자</span>
+          <span class="number">5</span>
+        </div>
+        <button
+          id="dropdownDefaultButton"
+          data-dropdown-toggle="dropdown"
+          data-dropdown-placement="bottom-end"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+          >
+            <g id="top_menu_btn" transform="translate(-0.447)">
+              <circle
+                id="타원"
+                cx="17.5"
+                cy="17.5"
+                r="17.5"
+                transform="translate(0.447)"
+                fill="#dce0e4"
+              />
+              <line
+                id="선"
+                x2="12"
+                transform="translate(11.947 12.5)"
+                fill="none"
+                stroke="#637381"
+                stroke-width="2"
+              />
+              <line
+                id="선-2"
+                data-name="선"
+                x2="12"
+                transform="translate(11.947 17.5)"
+                fill="none"
+                stroke="#637381"
+                stroke-width="2"
+              />
+              <line
+                id="선-3"
+                data-name="선"
+                x2="12"
+                transform="translate(11.947 22.5)"
+                fill="none"
+                stroke="#637381"
+                stroke-width="2"
+              />
+            </g>
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div
+          id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-[85px] border-2"
+        >
+          <ul
+            class="text-xs text-gray-700"
+            aria-labelledby="dropdownDefaultButton"
+          >
+            <li>
+              <a href="#" class="block p-2 hover:bg-grey-100">사용자 정보</a>
+            </li>
+            <li>
+              <a href="#" class="block p-2 hover:bg-grey-100">로그아웃</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <header>
         <h1 class="pageTitle">점포별 편성 현황</h1>
         <div class="pageSubtitle">
-          <h2 class="text-gray-400">스케쥴관리</h2>
-          <span
-            class="w-1 h-1 border-2 rounded-full border-yellow-primary flex justify-center"
-          >
-          </span>
+          <h2 class="megaMenu">스케쥴관리</h2>
+          <span class="pageDivider yellow"></span>
           <h3>점포별 편성 현황</h3>
         </div>
       </header>

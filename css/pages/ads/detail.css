@@ -1,29 +1,26 @@
-#adDetailMain {
-  min-width: 1500px;
-}
-#adDetailMain .mainTopNavbar {
+.mainTopNavbar {
   padding: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#adDetailMain .mainTopNavbar span {
+.mainTopNavbar span {
   flex-basis: 50px;
   flex-shrink: 1;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#adDetailMain .mainTopNavbar .teDatepickerInput {
+.mainTopNavbar .teDatepickerInput {
   width: 152px;
 }
-#adDetailMain .cardContainer {
+.cardContainer {
   height: 630px;
   border: 1px solid var(--border-grey);
   display: grid;
   grid-template-columns: 322px 349px auto;
 }
-#adDetailMain .card {
+.card {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -31,7 +28,7 @@
   background-color: #fff;
   border-right: 1px solid var(--border-grey);
 }
-#adDetailMain .card .contentsContainer {
+.card .contentsContainer {
   height: 570px;
   width: 100%;
   display: flex;
@@ -39,18 +36,18 @@
   padding-bottom: 8px;
   margin-top: -8px;
 }
-#adDetailMain .card .contentsContainer ul {
+.card .contentsContainer ul {
   margin-top: 10px;
   overflow-y: auto;
 }
-#adDetailMain .card header {
+.card header {
   display: flex;
   justify-content: space-between;
 }
-#adDetailMain .card h5 {
+.card h5 {
   font-weight: bold;
 }
-#adDetailMain .contentsItem {
+.contentsItem {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -59,39 +56,39 @@
   color: var(--grey-500);
   margin-bottom: 20px;
 }
-#adDetailMain .screenboxContainer {
+.screenboxContainer {
   display: flex;
   height: 25px;
   margin-bottom: 5px;
 }
-#adDetailMain .screenboxContainer li {
+.screenboxContainer li {
   border: 1px solid var(--grey-400);
   border-right: 0;
   height: 100%;
   width: 42px;
 }
-#adDetailMain .screenboxContainer li:last-child {
+.screenboxContainer li:last-child {
   border-right: 1px solid var(--grey-400);
 }
 
 /* 2. 콘텐츠 선택 */
-#adDetailMain .card:nth-child(2) {
+.card:nth-child(2) {
   background-color: var(--grey-100);
 }
-#adDetailMain .card:nth-child(2) .mainTopNavbar {
+.card:nth-child(2) .mainTopNavbar {
   gap: 10px;
   padding: 10px 0;
 }
-#adDetailMain .card:nth-child(2) .mainTopNavbar .form_dropdown_label {
+.card:nth-child(2) .mainTopNavbar .form_dropdown_label {
   min-width: 80px;
 }
-#adDetailMain .card:nth-child(2) .contentsItem {
+.card:nth-child(2) .contentsItem {
   display: flex;
   gap: 10px;
   padding-right: 10px;
 }
-#adDetailMain .card:nth-child(2) img,
-#adDetailMain .card:nth-child(2) video {
+.card:nth-child(2) img,
+.card:nth-child(2) video {
   width: 50px;
   height: 30px;
   object-fit: cover;
@@ -99,25 +96,25 @@
 }
 
 /* 3. 광고 상세설정 */
-#adDetailMain .card:last-child {
+.card:last-child {
   border-right: 0;
 }
-#adDetailMain .card:last-child .screenboxContainer {
+.card:last-child .screenboxContainer {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#adDetailMain .card:last-child .screenboxContainer li {
+.card:last-child .screenboxContainer li {
   width: 300px;
   height: 200px;
 }
-#adDetailMain .card:last-child .selectedContainer {
+.card:last-child .selectedContainer {
   max-height: 170px;
   min-height: 35px;
 }
-#adDetailMain .card:last-child .selectedContainer .contentsItem {
+.card:last-child .selectedContainer .contentsItem {
   background-color: var(--grey-100);
   border: 1px solid var(--border-grey);
   border-radius: 5px;
@@ -128,24 +125,20 @@
   display: flex;
   justify-content: space-between;
 }
-#adDetailMain .card:last-child .selectedContainer .contentsItem div {
+.card:last-child .selectedContainer .contentsItem div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#adDetailMain .card:last-child .selectedContainer .contentsItem div:last-child {
+.card:last-child .selectedContainer .contentsItem div:last-child {
   gap: 40px;
 }
-#adDetailMain .card:last-child .selectedContainer .time {
+.card:last-child .selectedContainer .time {
   height: 22px;
   width: 60px;
 }
-#adDetailMain
-  .card:last-child
-  .selectedContainer
-  .contentsItem
-  div:last-child
-  button {
+
+.card:last-child .selectedContainer .contentsItem div:last-child button {
   height: 22px;
 }
 
