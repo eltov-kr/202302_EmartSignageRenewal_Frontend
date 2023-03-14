@@ -1,31 +1,28 @@
-#schedulesStoreMain {
-  /* max-width: 1000px; */
-}
-#schedulesStoreMain .cards {
+.cards {
   display: grid;
   grid-template-columns: 280px auto;
   gap: 15px;
   position: relative;
 }
-#schedulesStoreMain .cardColumn {
+.cardColumn {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-#schedulesStoreMain .card {
+.card {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   border: 1px solid var(--border-grey);
   border-radius: 5px;
 }
-#schedulesStoreMain .card_first {
+.card_first {
   height: 300px;
 }
-#schedulesStoreMain .card_third {
+.card_third {
   /* height: 330px; */
   height: 750px;
 }
-#schedulesStoreMain .card_last {
+.card_last {
   height: 440px;
 }
