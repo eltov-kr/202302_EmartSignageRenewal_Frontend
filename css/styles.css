@@ -12,7 +12,12 @@
 /* @import 'pages/devices/index.css'; */
 /* @import 'pages/devices/media.css'; */
 /* @import 'pages/stores/index.css'; */
+<<<<<<< Updated upstream
 /* @import 'pages/ads/index.css'; */
+=======
+@import 'pages/index.css';
+@import 'pages/ads/index.css';
+>>>>>>> Stashed changes
 @import 'pages/ads/contract.css';
 @import 'pages/ads/detail.css';
 @import 'pages/settings/index.css';
