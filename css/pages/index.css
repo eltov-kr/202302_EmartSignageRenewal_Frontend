@@ -38,7 +38,10 @@
     50%{transform: rotate(180deg);}
   }
 
+.bg_y{background-color: #fdaa00;}
+.bg_p{background-color: #48338c;}
+.box {display: inline-block; width: 8px; height: 8px; }
 
-.emission_com {background-color: #48338c; color: #fff; text-align: center; font-size: 0.6rem; line-height: 1.4rem;}
+.emission_com {background-color: #48338c; color: #fff; text-align: center; font-size: 0.6rem; line-height: 1.2rem;}
 .emission_busi {background-color:#fdaa00; color: #fff; text-align: center; font-size: 0.6rem; line-height: 1.2rem;}
 .emission_base {background-color: #dce0e4;}
