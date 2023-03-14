@@ -1,6 +1,5 @@
 .cards {
-  display: grid;
-  grid-template-columns: 480px auto;
+  display: flex;
   gap: 15px;
   position: relative;
 }
@@ -8,6 +7,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.cardColumn:first-child {
+  width: 480px;
+}
+.cardColumn:last-child {
+  width: 100%;
 }
 .card {
   display: flex;
@@ -30,7 +35,7 @@
 }
 .card_first .contentsContainer {
   display: grid;
-  grid-template-columns: auto 280px;
+  grid-template-columns: max-content minmax(200px, 280px);
   height: 100%;
   height: calc(100% - 70px);
   position: relative;
