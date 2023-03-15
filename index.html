@@ -293,71 +293,113 @@
         <h1 class="pageTitle">대시보드</h1>
       </header>
 
-      <section class="w-full grid grid-rows-6 grid-flow-col gap-4">
+      <section class="w-full h-[100%] grid grid-rows-6 grid-flow-col gap-4" style="grid-template-columns: 44% auto;">
+        
         <article
-          class="row-span-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          class="row-span-1  p-4 bg-white border border-gray-200 rounded-sm shadow grid grid-cols-3 gap-2 " style="grid-template-columns: 40% 150px auto;"
         >
-          <h5 class="font-medium text-gray-700">디바이스 수량</h5>
-          <aside>
-            <div class="font-normal text-sm py-3">
-              <h5 class="font-medium text-2xl inline-block">400</h5>
-              대 /
-              <span>558</span>대
-            </div>
-          </aside>
+          <div>
+            <h5 class="text-medium text-gray-700">디바이스 수량</h5>
+            <aside>
+              <div class="font-normal text-sm pt-3">
+                <h5 class="font-medium text-3xl inline-block">1,400</h5>
+                대 /
+                <span>1,558</span>대
+              </div>
+            </aside>
+          </div>
+
+          <div>
+            <div class="semi-donut margin" style="--percentage : (calc( 1400 / 1558 * 100 )); --fill: #fdaa00 ; ">
+            </div> <!-- 연결수량 / 총 수량 * 100 -->
+          </div>
+
+          <ul class="device_count">
+            <li><span class="box bg_y"></span> <a href="#" class="text-xs" style="color:#fdaa00;
+            " >연 결 (1,457) ></a></li>
+            <li><span  class="box bg-gray-300"></span> <a href="#" class="text-xs text-grey-300">비연결 (158) ></a></li>
+            <li><span  class="box bg-gray-300"></span> <a href="#" class="text-xs text-grey-300">휴 점 (26) ></a></li>
+          </ul>
         </article>
+
+
+
         <article
           class="row-span-5 row-start-2 block p-6 bg-white border border-gray-200 rounded-sm shadow"
         >
           <h5 class="font-medium text-gray-700">전국분포도</h5>
         </article>
+
+
         <article
-          class="row-span-2 row-start-1 block p-6 bg-white border border-gray-200 rounded-sm shadow"
+          class="row-span-2 row-start-1 block p-4 bg-white border border-gray-200 rounded-sm shadow"
         >
           <aside class="grid grid-cols-3 gap-2 h-full">
             <ul
-              class="col-span-2 flex flex-col justify-between border-r-2 border-dashed pr-6"
+              class="col-span-2 flex flex-col justify-around border-r-2 border-dashed pr-6"
             >
-              <li>
+              <li style="position: relative;" >
                 <h5 class="font-medium text-gray-700">
-                  재생 비중<span class="text-gray-400 font-normal text-sm">
-                    (일 평균)</span
-                  >
+                  송출 비중<span class="text-gray-400 font-normal text-sm">
+                    (일 평균)</span>
+
                 </h5>
+
+                <article style="position: absolute; top:0; right:0;">
+                  <span class="box bg_y" ></span> <span class="text-xs text-grey-300">자사</span><span  class="box bg_p ml-2"></span> <span class="text-xs text-grey-300">상업</span>
+                </article>
+
+                <div class="w-[100%] h-5 grid rounded-sm overflow-hidden mt-1 " style="grid-template-columns: 20% 40% auto;"><!--%로 변환,  상업/자사/배경 -->
+                  <div class="emission_com">6건</div><!--상업-->
+                  <div class="emission_busi">4건</div><!--자사-->
+                  <div class="emission_base"></div><!--배경-->
+                </div>
               </li>
               <li>
                 <h5 class="font-normal text-gray-700 text-sm">
-                  최대 재생 비중<span class="text-gray-400 font-normal text-sm">
+                  최대 송출 비중<span class="text-gray-400 font-normal text-sm">
                     (죽전점)</span
                   >
                 </h5>
+                <div class="w-[100%] h-5 grid rounded-sm overflow-hidden mt-1 " style="grid-template-columns: 20% 50% auto;"><!--%로 변환,  상업/자사/배경-->
+                  <div class="emission_com">6건</div><!--상업-->
+                  <div class="emission_busi">4건</div><!--자사-->
+                  <div class="emission_base"></div><!--배경-->
+                </div>
               </li>
               <li>
                 <h5 class="font-normal text-gray-700 text-sm">
-                  최소 재생 비중<span class="text-gray-400 font-normal text-sm">
+                  최소 송출 비중<span class="text-gray-400 font-normal text-sm">
                     (화정점)</span
                   >
                 </h5>
+                <div class="w-[100%] h-5 grid rounded-sm overflow-hidden mt-1 " style="grid-template-columns: 10% 20% auto;"><!--%로 변환,  상업/자사/배경 -->
+                  <div class="emission_com">6건</div><!--상업-->
+                  <div class="emission_busi">4건</div><!--자사-->
+                  <div class="emission_base"></div><!--배경-->
+                </div>
               </li>
             </ul>
-            <ul class="flex flex-col justify-between gap-4 my-10 mx-4">
+            <ul class="flex flex-col justify-around gap-4 my-10 mx-4">
               <li class="flex justify-between">
-                <span>편성횟수</span>
+                <span class="text-xs mt-4">편성횟수</span>
                 <span
-                  ><h5 class="font-medium text-2xl inline-block">7</h5>
+                  ><h5 class="font-medium text-3xl inline-block">7</h5>
                   건</span
                 >
               </li>
               <li class="flex justify-between">
-                <span>전월대비</span>
+                <span class="text-xs  mt-4">전월대비</span>
                 <span
-                  ><h5 class="font-medium text-2xl inline-block">12</h5>
+                  ><h5 class="font-medium text-3xl inline-block">12.0</h5>
                   %</span
                 >
               </li>
             </ul>
           </aside>
         </article>
+
+        
         <article
           class="row-span-2 row-start-3 block p-6 bg-white border border-gray-200 rounded-sm shadow"
         >
