@@ -7,6 +7,9 @@
 @import 'components/switch.css';
 @import 'components/layout.css';
 
+/* 대시보드 */
+@import 'pages/index.css';
+
 * {
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;

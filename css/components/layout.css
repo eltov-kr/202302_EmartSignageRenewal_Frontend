@@ -121,7 +121,7 @@ body > main > nav {
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
-  height: 60px;
+  height: 40px;
 }
 body > main > header {
   height: 70px;
@@ -162,6 +162,7 @@ body > main > header > .pageSubtitle > .megaMenu {
 }
 .mainContents.withButtons {
   margin-top: 15px;
+  height: calc( 100% - 165px);
 }
 
 @media (max-width: 1600px) {
