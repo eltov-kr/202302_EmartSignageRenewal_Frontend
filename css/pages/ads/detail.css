@@ -1,3 +1,8 @@
+.mainContents {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .mainTopNavbar {
   padding: 10px;
   display: flex;
@@ -14,11 +19,14 @@
 .mainTopNavbar .teDatepickerInput {
   width: 152px;
 }
+.mainContents > div > .mainTopNavbar input[type='text'] {
+  width: 144px;
+}
 .cardContainer {
   height: 630px;
   border: 1px solid var(--border-grey);
   display: grid;
-  grid-template-columns: 322px 349px auto;
+  grid-template-columns: 300px 300px auto;
 }
 .card {
   display: flex;
@@ -30,7 +38,6 @@
 }
 .card .contentsContainer {
   height: 570px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding-bottom: 8px;
@@ -64,7 +71,6 @@
 .screenboxContainer li {
   border: 1px solid var(--grey-400);
   border-right: 0;
-  height: 100%;
   width: 42px;
 }
 .screenboxContainer li:last-child {
@@ -99,8 +105,11 @@
 .card:last-child {
   border-right: 0;
 }
+.card:last-child .mainTopNavbar {
+  display: grid;
+  gap: 10px;
+}
 .card:last-child .screenboxContainer {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -119,7 +128,6 @@
   border: 1px solid var(--border-grey);
   border-radius: 5px;
   height: 30px;
-  width: 100%;
   padding: 0 10px;
   margin-bottom: 5px;
   display: flex;
@@ -137,7 +145,6 @@
   height: 22px;
   width: 60px;
 }
-
 .card:last-child .selectedContainer .contentsItem div:last-child button {
   height: 22px;
 }
