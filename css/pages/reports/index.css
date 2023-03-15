@@ -2,7 +2,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .mainTopNavbar span {
   flex-basis: 50px;
@@ -12,7 +12,7 @@
   gap: 10px;
 }
 .mainTopNavbar .teDatepickerInput {
-  width: 152px;
+  width: 130px;
 }
 
 /* 테이블 */
